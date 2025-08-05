@@ -1,0 +1,80 @@
+[
+  {
+    "index": 1,
+    "route_name": "TAMBARAM",
+    "full_text": "1TAMBARAM",
+    "html": "<li><span>1</span>\tTAMBARAM</li>"
+  },
+  {
+    "index": 2,
+    "route_name": "T.B.SANATORIUM",
+    "full_text": "2T.B.SANATORIUM",
+    "html": "<li><span>2</span>\tT.B.SANATORIUM</li>"
+  },
+  {
+    "index": 3,
+    "route_name": "CHROMEPET",
+    "full_text": "3CHROMEPET",
+    "html": "<li><span>3</span>\tCHROMEPET</li>"
+  },
+  {
+    "index": 4,
+    "route_name": "PALLAVARAM",
+    "full_text": "4PALLAVARAM",
+    "html": "<li><span>4</span>\tPALLAVARAM</li>"
+  },
+  {
+    "index": 5,
+    "route_name": "PAMMAL",
+    "full_text": "5PAMMAL",
+    "html": "<li><span>5</span>\tPAMMAL</li>"
+  },
+  {
+    "index": 6,
+    "route_name": "ANAKAPUTHUR",
+    "full_text": "6ANAKAPUTHUR",
+    "html": "<li><span>6</span>\tANAKAPUTHUR</li>"
+  },
+  {
+    "index": 7,
+    "route_name": "ANDARKUPPAM",
+    "full_text": "7ANDARKUPPAM",
+    "html": "<li><span>7</span>\tANDARKUPPAM</li>"
+  },
+  {
+    "index": 8,
+    "route_name": "KUNDRATHUR B.S.",
+    "full_text": "8KUNDRATHUR B.S.",
+    "html": "<li><span>8</span>\tKUNDRATHUR B.S.</li>"
+  },
+  {
+    "index": 9,
+    "route_name": "KOLLAICHERI",
+    "full_text": "9KOLLAICHERI",
+    "html": "<li><span>9</span>\tKOLLAICHERI</li>"
+  },
+  {
+    "index": 10,
+    "route_name": "SIKKARAYAPURAM",
+    "full_text": "10SIKKARAYAPURAM",
+    "html": "<li><span>10</span>\tSIKKARAYAPURAM</li>"
+  },
+  {
+    "index": 11,
+    "route_name": "MANGADU",
+    "full_text": "11MANGADU",
+    "html": "<li><span>11</span>\tMANGADU</li>"
+  },
+  {
+    "index": 12,
+    "route_name": "KUMUNANCHAVADI",
+    "full_text": "12KUMUNANCHAVADI",
+    "html": "<li><span>12</span>\tKUMUNANCHAVADI</li>"
+  },
+  {
+    "index": 13,
+    "route_name": "POONAMALLEE",
+    "full_text": "13POONAMALLEE",
+    "html": "<li><span>13</span>\tPOONAMALLEE</li>"
+  }
+]
