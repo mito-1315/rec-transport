@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Road Coordinates JSON Visualizer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .controls {
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .file-input-container {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .file-input {
+            position: absolute;
+            left: -9999px;
+        }
+
+        .file-label {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .file-label:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .status {
+            flex-grow: 1;
+            font-weight: bold;
+            color: #333;
+            padding: 10px;
+        }
+
+        .visualization-controls {
+            background: white;
+            padding: 15px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            border-top: 1px solid #eee;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .control-group label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #3498db;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .color-input {
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .range-input {
+            width: 100px;
+        }
+
+        #map {
+            height: 70vh;
+            width: 100%;
+            border-top: 4px solid #3498db;
+        }
+
+        .data-info {
+            background: white;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .info-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border-left: 4px solid #3498db;
+        }
+
+        .info-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #3498db;
+            display: block;
+        }
+
+        .info-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .road-list {
+            background: white;
+            margin: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .road-list-header {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        .road-item {
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .road-item:hover {
+            background: #f8f9fa;
+        }
+
+        .road-item.highlight {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+        }
+
+        .road-name {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .road-type {
+            background: #6c757d;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+        }
+
+        .highway-type {
+            background: #007bff;
+        }
+
+        .arterial-type {
+            background: #ff9500;
+        }
+
+        .road-stats {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .drop-zone {
+            border: 3px dashed #3498db;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            background: rgba(52, 152, 219, 0.1);
+            margin: 20px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .drop-zone.drag-over {
+            border-color: #2980b9;
+            background: rgba(52, 152, 219, 0.2);
+            transform: scale(1.02);
+        }
+
+        .drop-zone h3 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        .loading {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .spinner {
+            border: 4px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top: 4px solid white;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>🗺️ Road Coordinates JSON Visualizer</h1>
+    <p>Upload your JSON file to visualize highway and arterial road coordinates</p>
+</div>
+
+<div class="controls">
+    <div class="file-input-container">
+        <input type="file" id="jsonFile" class="file-input" accept=".json" onchange="handleFileUpload(event)">
+        <label for="jsonFile" class="file-label">📁 Choose JSON File</label>
+    </div>
+    <button class="btn" onclick="clearVisualization()" id="clearBtn" disabled>🗑️ Clear</button>
+    <button class="btn" onclick="fitAllRoads()" id="fitBtn" disabled>🎯 Fit All Roads</button>
+    <button class="btn" onclick="exportCurrentView()" id="exportBtn" disabled>📷 Export View</button>
+    <div class="status" id="status">Ready - Upload a JSON file to begin</div>
+</div>
+
+<div class="visualization-controls" id="vizControls" style="display: none;">
+    <div class="control-group">
+        <label>Show Highways:</label>
+        <label class="toggle-switch">
+            <input type="checkbox" id="showHighways" checked onchange="toggleRoadType('highways')">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="control-group">
+        <label>Show Arterials:</label>
+        <label class="toggle-switch">
+            <input type="checkbox" id="showArterials" checked onchange="toggleRoadType('arterials')">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="control-group">
+        <label>Highway Color:</label>
+        <input type="color" id="highwayColor" class="color-input" value="#007bff" onchange="updateRoadColors()">
+    </div>
+    <div class="control-group">
+        <label>Arterial Color:</label>
+        <input type="color" id="arterialColor" class="color-input" value="#ff9500" onchange="updateRoadColors()">
+    </div>
+    <div class="control-group">
+        <label>Line Width:</label>
+        <input type="range" id="lineWidth" class="range-input" min="1" max="10" value="3" onchange="updateLineWidth()">
+        <span id="widthValue">3</span>
+    </div>
+    <div class="control-group">
+        <label>Opacity:</label>
+        <input type="range" id="opacity" class="range-input" min="0.3" max="1" step="0.1" value="0.8" onchange="updateOpacity()">
+        <span id="opacityValue">0.8</span>
+    </div>
+</div>
+
+<div id="map"></div>
+
+<div class="drop-zone" id="dropZone" onclick="document.getElementById('jsonFile').click()">
+    <h3>📂 Drop JSON file here or click to browse</h3>
+    <p>Supports JSON files with highway and arterial road coordinates</p>
+</div>
+
+<div class="data-info" id="dataInfo" style="display: none;">
+    <div class="info-card">
+        <span class="info-number" id="totalRoads">0</span>
+        <div class="info-label">Total Roads</div>
+    </div>
+    <div class="info-card">
+        <span class="info-number" id="highwayCount">0</span>
+        <div class="info-label">Highways</div>
+    </div>
+    <div class="info-card">
+        <span class="info-number" id="arterialCount">0</span>
+        <div class="info-label">Arterials</div>
+    </div>
+    <div class="info-card">
+        <span class="info-number" id="totalPoints">0</span>
+        <div class="info-label">Coordinate Points</div>
+    </div>
+    <div class="info-card">
+        <span class="info-number" id="fileSize">0</span>
+        <div class="info-label">File Size (KB)</div>
+    </div>
+</div>
+
+<div class="road-list" id="roadList" style="display: none;">
+    <div class="road-list-header">🛣️ Road Network</div>
+    <div id="roadListContent"></div>
+</div>
+
+<div class="loading" id="loading">
+    <div class="spinner"></div>
+    <div>Processing road coordinates...</div>
+</div>
+
+<script>
+    let map;
+    let roadData = null;
+    let drawnRoads = [];
+    let roadPolylines = { highways: [], arterials: [] };
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: 13.0827, lng: 80.2707 }, // Chennai
+            zoom: 10,
+            styles: [
+                {
+                    featureType: 'road',
+                    stylers: [{ visibility: 'simplified' }]
+                },
+                {
+                    featureType: 'poi',
+                    stylers: [{ visibility: 'off' }]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'geometry.fill',
+                    stylers: [{ color: '#a8d7ff' }]
+                }
+            ]
+        });
+    }
+
+    // Drag and drop functionality
+    const dropZone = document.getElementById('dropZone');
+    
+    dropZone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dropZone.classList.add('drag-over');
+    });
+
+    dropZone.addEventListener('dragleave', () => {
+        dropZone.classList.remove('drag-over');
+    });
+
+    dropZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropZone.classList.remove('drag-over');
+        const files = e.dataTransfer.files;
+        if (files.length > 0) {
+            handleFile(files[0]);
+        }
+    });
+
+    function handleFileUpload(event) {
+        const file = event.target.files[0];
+        if (file) {
+            handleFile(file);
+        }
+    }
+
+    function handleFile(file) {
+        if (!file.name.toLowerCase().endsWith('.json')) {
+            alert('Please select a valid JSON file');
+            return;
+        }
+
+        document.getElementById('loading').style.display = 'block';
+        document.getElementById('status').textContent = 'Loading JSON file...';
+
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            try {
+                const jsonData = JSON.parse(e.target.result);
+                processRoadData(jsonData, file.size);
+            } catch (error) {
+                alert('Error parsing JSON file: ' + error.message);
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('status').textContent = 'Error loading file';
+            }
+        };
+        reader.readAsText(file);
+    }
+
+    function processRoadData(data, fileSize) {
+        roadData = data;
+        
+        // Hide drop zone and show controls
+        document.getElementById('dropZone').style.display = 'none';
+        document.getElementById('vizControls').style.display = 'flex';
+        document.getElementById('dataInfo').style.display = 'grid';
+        document.getElementById('roadList').style.display = 'block';
+        
+        // Enable buttons
+        document.getElementById('clearBtn').disabled = false;
+        document.getElementById('fitBtn').disabled = false;
+        document.getElementById('exportBtn').disabled = false;
+
+        // Update info cards
+        const totalRoads = (data.highways?.length || 0) + (data.arterials?.length || 0);
+        const totalPoints = calculateTotalPoints(data);
+        
+        document.getElementById('totalRoads').textContent = totalRoads.toLocaleString();
+        document.getElementById('highwayCount').textContent = (data.highways?.length || 0).toLocaleString();
+        document.getElementById('arterialCount').textContent = (data.arterials?.length || 0).toLocaleString();
+        document.getElementById('totalPoints').textContent = totalPoints.toLocaleString();
+        document.getElementById('fileSize').textContent = (fileSize / 1024).toFixed(1);
+
+        // Process and visualize roads
+        visualizeRoads(data);
+        populateRoadList(data);
+
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('status').textContent = `✅ Loaded ${totalRoads} roads with ${totalPoints} coordinates`;
+    }
+
+    function calculateTotalPoints(data) {
+        let total = 0;
+        if (data.highways) {
+            data.highways.forEach(road => {
+                total += road.coordinates?.length || 0;
+            });
+        }
+        if (data.arterials) {
+            data.arterials.forEach(road => {
+                total += road.coordinates?.length || 0;
+            });
+        }
+        return total;
+    }
+
+    function visualizeRoads(data) {
+        clearAllRoads();
+
+        // Visualize highways
+        if (data.highways) {
+            data.highways.forEach(road => {
+                if (road.coordinates && road.coordinates.length > 1) {
+                    const path = road.coordinates.map(coord => ({
+                        lat: coord[0],
+                        lng: coord[1]
+                    }));
+
+                    const polyline = new google.maps.Polyline({
+                        path: path,
+                        geodesic: true,
+                        strokeColor: document.getElementById('highwayColor').value,
+                        strokeOpacity: parseFloat(document.getElementById('opacity').value),
+                        strokeWeight: parseInt(document.getElementById('lineWidth').value) + 1,
+                        map: map
+                    });
+
+                    // Add click listener
+                    polyline.addListener('click', () => {
+                        showRoadInfo(road, 'highway');
+                    });
+
+                    roadPolylines.highways.push({ polyline, road });
+                    drawnRoads.push(polyline);
+                }
+            });
+        }
+
+        // Visualize arterials
+        if (data.arterials) {
+            data.arterials.forEach(road => {
+                if (road.coordinates && road.coordinates.length > 1) {
+                    const path = road.coordinates.map(coord => ({
+                        lat: coord[0],
+                        lng: coord[1]
+                    }));
+
+                    const polyline = new google.maps.Polyline({
+                        path: path,
+                        geodesic: true,
+                        strokeColor: document.getElementById('arterialColor').value,
+                        strokeOpacity: parseFloat(document.getElementById('opacity').value),
+                        strokeWeight: parseInt(document.getElementById('lineWidth').value),
+                        map: map
+                    });
+
+                    // Add click listener
+                    polyline.addListener('click', () => {
+                        showRoadInfo(road, 'arterial');
+                    });
+
+                    roadPolylines.arterials.push({ polyline, road });
+                    drawnRoads.push(polyline);
+                }
+            });
+        }
+
+        // Fit map to show all roads
+        setTimeout(fitAllRoads, 500);
+    }
+
+    function populateRoadList(data) {
+        const listContent = document.getElementById('roadListContent');
+        listContent.innerHTML = '';
+
+        // Add highways
+        if (data.highways) {
+            data.highways.forEach((road, index) => {
+                const roadItem = createRoadListItem(road, 'highway', index);
+                listContent.appendChild(roadItem);
+            });
+        }
+
+        // Add arterials
+        if (data.arterials) {
+            data.arterials.forEach((road, index) => {
+                const roadItem = createRoadListItem(road, 'arterial', index);
+                listContent.appendChild(roadItem);
+            });
+        }
+    }
+
+    function createRoadListItem(road, type, index) {
+        const item = document.createElement('div');
+        item.className = 'road-item';
+        item.onclick = () => focusOnRoad(road, type);
+        
+        item.innerHTML = `
+            <div>
+                <div class="road-name">${road.name || `Unnamed ${type}`}</div>
+                <div class="road-stats">${road.coordinates?.length || 0} points • ${road.type || type}</div>
+            </div>
+            <div class="road-type ${type}-type">${type.toUpperCase()}</div>
+        `;
+        
+        return item;
+    }
+
+    function focusOnRoad(road, type) {
+        if (!road.coordinates || road.coordinates.length === 0) return;
+
+        // Calculate bounds for this road
+        const bounds = new google.maps.LatLngBounds();
+        road.coordinates.forEach(coord => {
+            bounds.extend(new google.maps.LatLng(coord[0], coord[1]));
+        });
+
+        map.fitBounds(bounds);
+        
+        // Highlight the road temporarily
+        const targetPolylines = roadPolylines[type + 's'] || [];
+        const roadPolyline = targetPolylines.find(rp => rp.road === road);
+        
+        if (roadPolyline) {
+            const originalColor = roadPolyline.polyline.get('strokeColor');
+            roadPolyline.polyline.setOptions({ strokeColor: '#ff0000', strokeWeight: 6 });
+            
+            setTimeout(() => {
+                roadPolyline.polyline.setOptions({ 
+                    strokeColor: originalColor, 
+                    strokeWeight: parseInt(document.getElementById('lineWidth').value) + (type === 'highway' ? 1 : 0)
+                });
+            }, 2000);
+        }
+
+        showRoadInfo(road, type);
+    }
+
+    function showRoadInfo(road, type) {
+        const info = `
+Road: ${road.name || 'Unnamed'}
+Type: ${road.type || type}
+Category: ${type.toUpperCase()}
+Coordinates: ${road.coordinates?.length || 0} points
+${road.estimatedLength ? `Length: ~${road.estimatedLength.toFixed(2)}km` : ''}
+        `;
+        
+        console.log('=== ROAD DETAILS ===');
+        console.log(info);
+        console.log('Coordinates:', road.coordinates);
+        
+        document.getElementById('status').textContent = `Selected: ${road.name || 'Unnamed'} (${type})`;
+    }
+
+    function toggleRoadType(type) {
+        const show = document.getElementById(`show${type.charAt(0).toUpperCase() + type.slice(1)}`).checked;
+        
+        roadPolylines[type].forEach(({ polyline }) => {
+            polyline.setVisible(show);
+        });
+    }
+
+    function updateRoadColors() {
+        const highwayColor = document.getElementById('highwayColor').value;
+        const arterialColor = document.getElementById('arterialColor').value;
+
+        roadPolylines.highways.forEach(({ polyline }) => {
+            polyline.setOptions({ strokeColor: highwayColor });
+        });
+
+        roadPolylines.arterials.forEach(({ polyline }) => {
+            polyline.setOptions({ strokeColor: arterialColor });
+        });
+    }
+
+    function updateLineWidth() {
+        const width = parseInt(document.getElementById('lineWidth').value);
+        document.getElementById('widthValue').textContent = width;
+
+        roadPolylines.highways.forEach(({ polyline }) => {
+            polyline.setOptions({ strokeWeight: width + 1 });
+        });
+
+        roadPolylines.arterials.forEach(({ polyline }) => {
+            polyline.setOptions({ strokeWeight: width });
+        });
+    }
+
+    function updateOpacity() {
+        const opacity = parseFloat(document.getElementById('opacity').value);
+        document.getElementById('opacityValue').textContent = opacity;
+
+        drawnRoads.forEach(polyline => {
+            polyline.setOptions({ strokeOpacity: opacity });
+        });
+    }
+
+    function fitAllRoads() {
+        if (drawnRoads.length === 0) return;
+
+        const bounds = new google.maps.LatLngBounds();
+        
+        if (roadData.highways) {
+            roadData.highways.forEach(road => {
+                if (road.coordinates) {
+                    road.coordinates.forEach(coord => {
+                        bounds.extend(new google.maps.LatLng(coord[0], coord[1]));
+                    });
+                }
+            });
+        }
+        
+        if (roadData.arterials) {
+            roadData.arterials.forEach(road => {
+                if (road.coordinates) {
+                    road.coordinates.forEach(coord => {
+                        bounds.extend(new google.maps.LatLng(coord[0], coord[1]));
+                    });
+                }
+            });
+        }
+
+        map.fitBounds(bounds);
+    }
+
+    function clearVisualization() {
+        clearAllRoads();
+        roadData = null;
+        
+        // Reset UI
+        document.getElementById('dropZone').style.display = 'block';
+        document.getElementById('vizControls').style.display = 'none';
+        document.getElementById('dataInfo').style.display = 'none';
+        document.getElementById('roadList').style.display = 'none';
+        
+        // Disable buttons
+        document.getElementById('clearBtn').disabled = true;
+        document.getElementById('fitBtn').disabled = true;
+        document.getElementById('exportBtn').disabled = true;
+        
+        document.getElementById('status').textContent = 'Ready - Upload a JSON file to begin';
+        document.getElementById('jsonFile').value = '';
+    }
+
+    function clearAllRoads() {
+        drawnRoads.forEach(polyline => polyline.setMap(null));
+        drawnRoads = [];
+        roadPolylines = { highways: [], arterials: [] };
+    }
+
+    function exportCurrentView() {
+        if (!roadData) return;
+        
+        const currentView = {
+            center: {
+                lat: map.getCenter().lat(),
+                lng: map.getCenter().lng()
+            },
+            zoom: map.getZoom(),
+            bounds: {
+                northeast: {
+                    lat: map.getBounds().getNorthEast().lat(),
+                    lng: map.getBounds().getNorthEast().lng()
+                },
+                southwest: {
+                    lat: map.getBounds().getSouthWest().lat(),
+                    lng: map.getBounds().getSouthWest().lng()
+                }
+            },
+            visibleRoads: {
+                highways: document.getElementById('showHighways').checked,
+                arterials: document.getElementById('showArterials').checked
+            },
+            settings: {
+                highwayColor: document.getElementById('highwayColor').value,
+                arterialColor: document.getElementById('arterialColor').value,
+                lineWidth: document.getElementById('lineWidth').value,
+                opacity: document.getElementById('opacity').value
+            }
+        };
+
+        const dataStr = JSON.stringify(currentView, null, 2);
+        const dataBlob = new Blob([dataStr], { type: 'application/json' });
+        const url = URL.createObjectURL(dataBlob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `road-view-export-${new Date().toISOString().split('T')[0]}.json`;
+        link.click();
+        
+        document.getElementById('status').textContent = '✅ Current view exported!';
+    }
+</script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKrYOHcwBxUYQDPGo19lDNJtn_sukLn60&callback=initMap">
+</script>
+
+</body>
+</html>
