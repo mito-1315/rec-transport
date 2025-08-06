@@ -1,0 +1,19 @@
+route_number,stop_number,stop_name,sequence,latitude,longitude,full_location_name,geocoding_confidence,geocoding_source,query_used
+101,1,THIRUVOTRIYUR,1,13.1586407,80.2962076,"Tiruvottiyur, Ennore High Road, CMWSSB Division 7, Zone 1 Tiruvottiyur, Mathavaram, Thiruvallur, Tamil Nadu, 600019, India",high,nominatim,TIRUVOTTIYUR
+101,2,THRUVOTRIYUR TEMPLE,2,,,,none,not_found,
+101,4,ANNA NAGAR,4,13.0872004,80.2164421,"Zone 8 Anna Nagar, Chennai, Tamil Nadu, 600001, India",high,nominatim,ANNA NAGAR
+101,5,ROYAPURAM P.S,5,13.1042898,80.2936125,"Royapuram, North Terminus Road, Ward 52, Zone 5 Royapuram, Chennai, Tamil Nadu, 600001, India",high,nominatim,ROYAPURAM
+101,6,CLIVE BATTERY,6,13.0990436,80.2937634,"Clive Battery, Rajaji Salai, CMWSSB Division 60, Zone 5 Royapuram, Chennai, Tamil Nadu, 600001, India",high,nominatim,CLIVE BATTERY ROYAPURAM
+101,7,PARRYS,7,13.0888351,80.2903703,"Parrys Corner, Rajaji Salai, CMWSSB Division 60, Zone 5 Royapuram, Chennai, Tamil Nadu, 600001, India",high,nominatim,PARRYS CORNER
+101,8,M.G.R.CENTRAL,8,13.0824232,80.2759622,"Puratchi Thalaivar Dr. M. G. Ramachandran Central, pathway, Evening Bazaar, CMWSSB Division 59, Zone 5 Royapuram, Chennai, Tamil Nadu, 600001, India",high,nominatim,CHENNAI CENTRAL
+101,9,DASAPRAKASH,9,13.0728321,80.2576906,"Egmore, Zone 5 Royapuram, Chennai, Tamil Nadu, 600001, India",high,nominatim,EGMORE
+101,10,TAYLORS ROAD,10,13.0817548,80.2383092,"Taylors Road, Reserve Bank Staff Quarters, Ward 103, Zone 8 Anna Nagar, Chennai, Tamil Nadu, 600001, India",medium,nominatim,TAYLORS ROAD Chennai
+101,11,AMINJIKARAI,11,13.0721399,80.2205453,"Aminjikarai, Zone 8 Anna Nagar, Chennai, Tamil Nadu, 600001, India",high,nominatim,AMINJIKARAI
+101,12,NADUVANKARAI,12,,,,none,not_found,
+101,13,ARUMBAKKAM,13,13.074371,80.2081312,"Arumbakkam, Zone 8 Anna Nagar, Chennai, Tamil Nadu, 600001, India",high,nominatim,ARUMBAKKAM
+101,14,NERKUNDRAM,14,13.0688386,80.1838987,"Nerkundram, Zone 11 Valasaravakkam, Ambattur, Thiruvallur, Tamil Nadu, 600105, India",high,nominatim,NERKUNDRAM
+101,15,MADURAVOYAL,15,13.0601732,80.1665988,"Maduravoyal, Zone 11 Valasaravakkam, Ambattur, Thiruvallur, Tamil Nadu, 600095, India",high,nominatim,MADURAVOYAL
+101,16,VAANAGARAM,16,13.0604406,80.1533447,"Vanagaram, Ambattur, Thiruvallur, Tamil Nadu, 600095, India",high,nominatim,VANAGARAM
+101,17,VELAPPANCHAVADI,17,13.0610323,80.1386139,"Velappanchavadi, NH48, Vanagaram, Ambattur, Thiruvallur, Tamil Nadu, 600077, India",high,nominatim,VELAPPANCHAVADI
+101,18,KUMUNANCHAVADI,18,12.9957704,80.0973114,"Kundrathur, Pallavaram, Chengalpattu, Tamil Nadu, 600069, India",high,nominatim,KUNDRATHUR
+101,19,POONAMALLEE,19,13.0492031,80.1010677,"Poonamallee, Thiruvallur, Tamil Nadu, 600056, India",high,nominatim,POONAMALLEE

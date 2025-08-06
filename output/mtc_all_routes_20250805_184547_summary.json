@@ -1,0 +1,2875 @@
+{
+  "metadata": {
+    "total_routes": 573,
+    "scraped_routes": 573,
+    "failed_routes": [],
+    "scraping_timestamp": "2025-08-05 18:24:56"
+  },
+  "route_summary": {
+    "102A": {
+      "total_stops": 14,
+      "first_stop": "THIRUVANMIYUR",
+      "last_stop": "PUDUPAKKAM/VANDALOOR RD.J"
+    },
+    "102C": {
+      "total_stops": 17,
+      "first_stop": "BROADWAY",
+      "last_stop": "SEMMANCHERI S.C.B."
+    },
+    "102CT": {
+      "total_stops": 12,
+      "first_stop": "THIRUVANMIYUR",
+      "last_stop": "SIRUSERI I.T.PARK"
+    },
+    "102K": {
+      "total_stops": 13,
+      "first_stop": "BROADWAY",
+      "last_stop": "KANNAGI NAGAR S.C.B."
+    },
+    "102K#": {
+      "total_stops": 13,
+      "first_stop": "BROADWAY",
+      "last_stop": "KANNAGI NAGAR S.C.B."
+    },
+    "102M": {
+      "total_stops": 25,
+      "first_stop": "ADYAR B.S.",
+      "last_stop": "MANAMATHI"
+    },
+    "102P": {
+      "total_stops": 17,
+      "first_stop": "BROADWAY",
+      "last_stop": "PERUMPAKKAM S.C.B."
+    },
+    "102S": {
+      "total_stops": 12,
+      "first_stop": "BROADWAY",
+      "last_stop": "OKK.THORAIPAKM SEC.COLONY"
+    },
+    "102X": {
+      "total_stops": 25,
+      "first_stop": "BROADWAY",
+      "last_stop": "THIRUPORUR"
+    },
+    "104A": {
+      "total_stops": 23,
+      "first_stop": "AVADI",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "104C": {
+      "total_stops": 18,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "104CX": {
+      "total_stops": 20,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "GUDUVANCHERY"
+    },
+    "104F": {
+      "total_stops": 25,
+      "first_stop": "MADHAVARAM B.S.",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "104G": {
+      "total_stops": 25,
+      "first_stop": "M.K.B.NAGAR",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "104K": {
+      "total_stops": 26,
+      "first_stop": "REDHILLS",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "104M": {
+      "total_stops": 22,
+      "first_stop": "M.M.B.T.",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "104P": {
+      "total_stops": 24,
+      "first_stop": "PERAMBUR",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "104T": {
+      "total_stops": 23,
+      "first_stop": "THIRU.VI.KA.NAGAR",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "105A": {
+      "total_stops": 16,
+      "first_stop": "TAMBARAM WEST",
+      "last_stop": "SIRUSERI I.T.PARK"
+    },
+    "109A": {
+      "total_stops": 24,
+      "first_stop": "BROADWAY",
+      "last_stop": "THIRUVIDANTHAI"
+    },
+    "109C": {
+      "total_stops": 14,
+      "first_stop": "THIRUVANMIYUR",
+      "last_stop": "KOVALAM"
+    },
+    "109CT": {
+      "total_stops": 16,
+      "first_stop": "ADYAR B.S.",
+      "last_stop": "KOVALAM"
+    },
+    "109T": {
+      "total_stops": 28,
+      "first_stop": "THIRUVOTRIYUR",
+      "last_stop": "KOVALAM"
+    },
+    "109X": {
+      "total_stops": 28,
+      "first_stop": "BROADWAY",
+      "last_stop": "THIRUPORUR"
+    },
+    "10A": {
+      "total_stops": 15,
+      "first_stop": "TOLLGATE",
+      "last_stop": "SAIDAPET WEST"
+    },
+    "10E": {
+      "total_stops": 13,
+      "first_stop": "BROADWAY",
+      "last_stop": "EKKATTUTHANGAL"
+    },
+    "111ET": {
+      "total_stops": 23,
+      "first_stop": "THIRUVERKADU",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "113A": {
+      "total_stops": 12,
+      "first_stop": "GUINDY TVK ESTATE",
+      "last_stop": "TEACHERS COLONY"
+    },
+    "114A": {
+      "total_stops": 10,
+      "first_stop": "REDHILLS",
+      "last_stop": "AYANAVARAM B.S."
+    },
+    "114C": {
+      "total_stops": 22,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "TAMARAPAKKAM KOOT RD"
+    },
+    "114CCT": {
+      "total_stops": 17,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "GNAYARU"
+    },
+    "114D": {
+      "total_stops": 23,
+      "first_stop": "ARANI",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "114E": {
+      "total_stops": 20,
+      "first_stop": "KOYAMBEDU MARKET",
+      "last_stop": "NEW ERUMAIVETTIPALAYAM"
+    },
+    "114ET": {
+      "total_stops": 23,
+      "first_stop": "MAHINDRA IND.PARK",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "114G": {
+      "total_stops": 24,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "GNAYARU"
+    },
+    "114P": {
+      "total_stops": 12,
+      "first_stop": "PADIYANALLUR",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "114S": {
+      "total_stops": 23,
+      "first_stop": "SEEMAVARAM",
+      "last_stop": "KOYAMBEDU MARKET"
+    },
+    "118ET": {
+      "total_stops": 16,
+      "first_stop": "TAMBARAM",
+      "last_stop": "KALIVANTHAPATTU"
+    },
+    "118G": {
+      "total_stops": 12,
+      "first_stop": "TAMBARAM",
+      "last_stop": "KAVANOOR KOOT ROAD"
+    },
+    "118N": {
+      "total_stops": 10,
+      "first_stop": "TAMBARAM",
+      "last_stop": "NEELAMANGALAM"
+    },
+    "118P": {
+      "total_stops": 10,
+      "first_stop": "TAMBARAM",
+      "last_stop": "PARAMESWARI NAGAR"
+    },
+    "118T": {
+      "total_stops": 11,
+      "first_stop": "TAMBARAM",
+      "last_stop": "DHARGAS NAGAR"
+    },
+    "119G": {
+      "total_stops": 15,
+      "first_stop": "GUINDY TVK ESTATE",
+      "last_stop": "PERUMPAKKAM S.C.B."
+    },
+    "11G": {
+      "total_stops": 11,
+      "first_stop": "BROADWAY",
+      "last_stop": "K.K.NAGAR"
+    },
+    "11M": {
+      "total_stops": 15,
+      "first_stop": "BROADWAY",
+      "last_stop": "IYYAPPANTHANGAL"
+    },
+    "120A": {
+      "total_stops": 21,
+      "first_stop": "BROADWAY",
+      "last_stop": "ARAKKAMBAKKAM"
+    },
+    "120CT": {
+      "total_stops": 14,
+      "first_stop": "BROADWAY",
+      "last_stop": "VENKATACHALAM NAGAR"
+    },
+    "120E": {
+      "total_stops": 23,
+      "first_stop": "BROADWAY",
+      "last_stop": "KILKONDAIYUR"
+    },
+    "120F": {
+      "total_stops": 13,
+      "first_stop": "BROADWAY",
+      "last_stop": "ORAGADAM"
+    },
+    "120G": {
+      "total_stops": 13,
+      "first_stop": "BROADWAY",
+      "last_stop": "MENAMBEDU"
+    },
+    "120K": {
+      "total_stops": 21,
+      "first_stop": "BROADWAY",
+      "last_stop": "KADHAVOOR"
+    },
+    "120KET": {
+      "total_stops": 23,
+      "first_stop": "BROADWAY",
+      "last_stop": "KILKONDAIYUR"
+    },
+    "121A": {
+      "total_stops": 13,
+      "first_stop": "MANALI",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "121C": {
+      "total_stops": 18,
+      "first_stop": "ENNORE",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "121CT": {
+      "total_stops": 7,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "M.M.B.T."
+    },
+    "121D": {
+      "total_stops": 17,
+      "first_stop": "MANALI NEW TOWN",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "121G": {
+      "total_stops": 11,
+      "first_stop": "K.KANNADASAN NAGAR",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "121M": {
+      "total_stops": 12,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "MANALI"
+    },
+    "121MET": {
+      "total_stops": 8,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "MADHAVARAM B.S."
+    },
+    "129C": {
+      "total_stops": 17,
+      "first_stop": "PERAMBUR",
+      "last_stop": "NANGANALLUR"
+    },
+    "12B": {
+      "total_stops": 8,
+      "first_stop": "VADAPALANI",
+      "last_stop": "FORESHORE ESTATE"
+    },
+    "12G": {
+      "total_stops": 11,
+      "first_stop": "ANNA SQUARE",
+      "last_stop": "K.K.NAGAR"
+    },
+    "12M": {
+      "total_stops": 12,
+      "first_stop": "MANDAVELI",
+      "last_stop": "IYYAPPANTHANGAL"
+    },
+    "12X": {
+      "total_stops": 10,
+      "first_stop": "FORESHORE ESTATE",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "142B": {
+      "total_stops": 9,
+      "first_stop": "BROADWAY",
+      "last_stop": "THANIKACHALAM NAGAR"
+    },
+    "142P": {
+      "total_stops": 6,
+      "first_stop": "PERAMBUR",
+      "last_stop": "PUTHAGARAM"
+    },
+    "147A": {
+      "total_stops": 10,
+      "first_stop": "T.NAGAR",
+      "last_stop": "J.J.NAGAR EAST"
+    },
+    "147B": {
+      "total_stops": 10,
+      "first_stop": "T.NAGAR",
+      "last_stop": "J.J.NAGAR WEST"
+    },
+    "147C": {
+      "total_stops": 13,
+      "first_stop": "AMBATTUR O.T.",
+      "last_stop": "THIAGARAYA NAGAR"
+    },
+    "147CCT": {
+      "total_stops": 11,
+      "first_stop": "AMBATTUR I.E.",
+      "last_stop": "THIAGARAYA NAGAR"
+    },
+    "147V": {
+      "total_stops": 15,
+      "first_stop": "VENKATACHALAM NAGAR",
+      "last_stop": "THIAGARAYA NAGAR"
+    },
+    "153A": {
+      "total_stops": 21,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "THIRUVALLUR"
+    },
+    "153P": {
+      "total_stops": 26,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "PERAMBAKKAM"
+    },
+    "153T": {
+      "total_stops": 28,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "THIRUVALLUR"
+    },
+    "154B": {
+      "total_stops": 13,
+      "first_stop": "NANGANALLUR",
+      "last_stop": "POONAMALLEE"
+    },
+    "154E": {
+      "total_stops": 12,
+      "first_stop": "EKKATTUTHANGAL",
+      "last_stop": "VELLAVEDU"
+    },
+    "154P": {
+      "total_stops": 12,
+      "first_stop": "T.NAGAR",
+      "last_stop": "PATTUR"
+    },
+    "155A": {
+      "total_stops": 18,
+      "first_stop": "BROADWAY",
+      "last_stop": "PAZHANTHANDALAM"
+    },
+    "157E": {
+      "total_stops": 19,
+      "first_stop": "ENNORE",
+      "last_stop": "REDHILLS"
+    },
+    "159E": {
+      "total_stops": 19,
+      "first_stop": "ENNORE",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "159K": {
+      "total_stops": 17,
+      "first_stop": "KARGIL NAGAR",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "15BET": {
+      "total_stops": 14,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "ODEANMANI"
+    },
+    "15C": {
+      "total_stops": 11,
+      "first_stop": "BROADWAY",
+      "last_stop": "ANNA NAGAR WEST"
+    },
+    "15F": {
+      "total_stops": 12,
+      "first_stop": "BROADWAY",
+      "last_stop": "VADAPALANI"
+    },
+    "15G": {
+      "total_stops": 7,
+      "first_stop": "BROADWAY",
+      "last_stop": "M.M.D.A.COLONY"
+    },
+    "164E": {
+      "total_stops": 7,
+      "first_stop": "PERAMBUR B.T",
+      "last_stop": "MANALI"
+    },
+    "166K": {
+      "total_stops": 17,
+      "first_stop": "PORUR",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "16J": {
+      "total_stops": 9,
+      "first_stop": "POONAMALLEE",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "16K": {
+      "total_stops": 11,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "KUNDRATHUR B.S."
+    },
+    "170A": {
+      "total_stops": 21,
+      "first_stop": "MADHAVARAM B.S.",
+      "last_stop": "TAMBARAM"
+    },
+    "170C": {
+      "total_stops": 13,
+      "first_stop": "THIRU.VI.KA.NAGAR",
+      "last_stop": "GUINDY TVK ESTATE"
+    },
+    "170CE": {
+      "total_stops": 18,
+      "first_stop": "MANALI",
+      "last_stop": "GUINDY TVK ESTATE"
+    },
+    "170K": {
+      "total_stops": 12,
+      "first_stop": "PERAVALLUR KUMARAN NAGAR",
+      "last_stop": "GUINDY TVK ESTATE"
+    },
+    "170T": {
+      "total_stops": 22,
+      "first_stop": "K.KANNADASAN NAGAR",
+      "last_stop": "TAMBARAM"
+    },
+    "170TX": {
+      "total_stops": 26,
+      "first_stop": "K.KANNADASAN NAGAR",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "17D": {
+      "total_stops": 12,
+      "first_stop": "BROADWAY",
+      "last_stop": "K.K.NAGAR"
+    },
+    "17E": {
+      "total_stops": 11,
+      "first_stop": "BROADWAY",
+      "last_stop": "SALIGRAMAM"
+    },
+    "17K": {
+      "total_stops": 11,
+      "first_stop": "BROADWAY",
+      "last_stop": "DASARATHAPURAM"
+    },
+    "188A": {
+      "total_stops": 12,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "KUNDRATHUR B.S."
+    },
+    "188C": {
+      "total_stops": 18,
+      "first_stop": "BROADWAY",
+      "last_stop": "KUNDRATHUR B.S."
+    },
+    "188ET": {
+      "total_stops": 18,
+      "first_stop": "BROADWAY",
+      "last_stop": "KUNDRATHUR B.S."
+    },
+    "188K": {
+      "total_stops": 17,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "KATRAMBAKKAM"
+    },
+    "18A": {
+      "total_stops": 21,
+      "first_stop": "BROADWAY",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "18ACT": {
+      "total_stops": 13,
+      "first_stop": "GUINDY TVK ESTATE",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "18B": {
+      "total_stops": 10,
+      "first_stop": "BROADWAY",
+      "last_stop": "KOTTURPURAM"
+    },
+    "18D": {
+      "total_stops": 16,
+      "first_stop": "BROADWAY",
+      "last_stop": "KILKATTALAI"
+    },
+    "18E": {
+      "total_stops": 13,
+      "first_stop": "BROADWAY",
+      "last_stop": "RAMAPURAM"
+    },
+    "18H": {
+      "total_stops": 6,
+      "first_stop": "TAMBARAM",
+      "last_stop": "NADUVEERAPATTU"
+    },
+    "18K": {
+      "total_stops": 8,
+      "first_stop": "BROADWAY",
+      "last_stop": "SAIDAPET WEST"
+    },
+    "18N": {
+      "total_stops": 16,
+      "first_stop": "NANGANALLUR",
+      "last_stop": "GUDUVANCHERY"
+    },
+    "18P": {
+      "total_stops": 18,
+      "first_stop": "BROADWAY",
+      "last_stop": "KILKATTALAI"
+    },
+    "18R": {
+      "total_stops": 13,
+      "first_stop": "BROADWAY",
+      "last_stop": "NANGANALLUR"
+    },
+    "18RX": {
+      "total_stops": 15,
+      "first_stop": "BROADWAY",
+      "last_stop": "KILKATTALAI"
+    },
+    "18S": {
+      "total_stops": 16,
+      "first_stop": "N.G.O.COLONY",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "18X": {
+      "total_stops": 24,
+      "first_stop": "BROADWAY",
+      "last_stop": "OONAMANCHERI"
+    },
+    "19A": {
+      "total_stops": 13,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "SEMMANCHERI S.C.B."
+    },
+    "19B": {
+      "total_stops": 17,
+      "first_stop": "SAIDAPET",
+      "last_stop": "KELAMBAKKAM"
+    },
+    "19BET": {
+      "total_stops": 22,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "THAIYUR KOMAN NAGAR"
+    },
+    "19C": {
+      "total_stops": 8,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "OKK.THORAIPAKM SEC.COLONY"
+    },
+    "19D": {
+      "total_stops": 11,
+      "first_stop": "ADYAR B.S.",
+      "last_stop": "SEMMANCHERI S.C.B."
+    },
+    "19T": {
+      "total_stops": 19,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "KOVALAM"
+    },
+    "1C": {
+      "total_stops": 19,
+      "first_stop": "ENNORE",
+      "last_stop": "THIRUVANMIYUR"
+    },
+    "1D": {
+      "total_stops": 21,
+      "first_stop": "ENNORE",
+      "last_stop": "THIRUVANMIYUR"
+    },
+    "202A": {
+      "total_stops": 19,
+      "first_stop": "TAMBARAM",
+      "last_stop": "AVADI"
+    },
+    "202X": {
+      "total_stops": 20,
+      "first_stop": "KILAMBAKKAM B.S.",
+      "last_stop": "AVADI"
+    },
+    "20A": {
+      "total_stops": 11,
+      "first_stop": "BROADWAY",
+      "last_stop": "J.J.NAGAR WEST"
+    },
+    "20D": {
+      "total_stops": 8,
+      "first_stop": "BROADWAY",
+      "last_stop": "SIDCO NAGAR"
+    },
+    "20P": {
+      "total_stops": 9,
+      "first_stop": "AMBATTUR I.E.",
+      "last_stop": "POONAMALLEE"
+    },
+    "21C": {
+      "total_stops": 14,
+      "first_stop": "BROADWAY",
+      "last_stop": "KANNAGI NAGAR S.C.B."
+    },
+    "21EET": {
+      "total_stops": 15,
+      "first_stop": "BROADWAY",
+      "last_stop": "IYYAPPANTHANGAL"
+    },
+    "21G": {
+      "total_stops": 22,
+      "first_stop": "BROADWAY",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "21L": {
+      "total_stops": 12,
+      "first_stop": "BROADWAY",
+      "last_stop": "VELACHERY"
+    },
+    "23C": {
+      "total_stops": 14,
+      "first_stop": "BESANT NAGAR",
+      "last_stop": "AYANAVARAM B.S."
+    },
+    "23V": {
+      "total_stops": 15,
+      "first_stop": "VELACHERY",
+      "last_stop": "VILLIVAKKAM"
+    },
+    "24A": {
+      "total_stops": 9,
+      "first_stop": "ANNA NAGAR WEST",
+      "last_stop": "VIVEKANANDA HOUSE"
+    },
+    "24AX": {
+      "total_stops": 13,
+      "first_stop": "TEACHERS COLONY",
+      "last_stop": "VIVEKANANDA HOUSE"
+    },
+    "26B": {
+      "total_stops": 14,
+      "first_stop": "BROADWAY",
+      "last_stop": "MANGADU"
+    },
+    "26G": {
+      "total_stops": 12,
+      "first_stop": "BROADWAY",
+      "last_stop": "RAMAPURAM"
+    },
+    "26K": {
+      "total_stops": 13,
+      "first_stop": "BROADWAY",
+      "last_stop": "PERIYAPANICHERI"
+    },
+    "26M": {
+      "total_stops": 13,
+      "first_stop": "BROADWAY",
+      "last_stop": "MUGALIVAKKAM"
+    },
+    "26R": {
+      "total_stops": 14,
+      "first_stop": "BROADWAY",
+      "last_stop": "MUGALIVAKKAM"
+    },
+    "27B": {
+      "total_stops": 10,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "ANNA SQUARE"
+    },
+    "27D": {
+      "total_stops": 12,
+      "first_stop": "FORESHORE ESTATE",
+      "last_stop": "VILLIVAKKAM"
+    },
+    "28A": {
+      "total_stops": 16,
+      "first_stop": "EGMORE NORTH R.S.",
+      "last_stop": "MANALI NEW TOWN"
+    },
+    "28B": {
+      "total_stops": 13,
+      "first_stop": "ENNORE",
+      "last_stop": "EGMORE NORTH R.S."
+    },
+    "29A": {
+      "total_stops": 9,
+      "first_stop": "PERAMBUR",
+      "last_stop": "ANNA SQUARE"
+    },
+    "29AET": {
+      "total_stops": 11,
+      "first_stop": "PERIYAR NAGAR",
+      "last_stop": "ANNA SQUARE"
+    },
+    "29AEX": {
+      "total_stops": 10,
+      "first_stop": "PERAVALLUR KUMARAN NAGAR",
+      "last_stop": "ANNA SQUARE"
+    },
+    "29B": {
+      "total_stops": 11,
+      "first_stop": "PERAMBUR",
+      "last_stop": "SAIDAPET"
+    },
+    "29C": {
+      "total_stops": 13,
+      "first_stop": "PERAMBUR",
+      "last_stop": "BESANT NAGAR"
+    },
+    "29CET": {
+      "total_stops": 15,
+      "first_stop": "PERIYAR NAGAR",
+      "last_stop": "BESANT NAGAR"
+    },
+    "29CEX": {
+      "total_stops": 17,
+      "first_stop": "SRINIVASA NAGAR",
+      "last_stop": "BESANT NAGAR"
+    },
+    "29D": {
+      "total_stops": 12,
+      "first_stop": "MATHUR M.M.D.A.",
+      "last_stop": "VIVEKANANDA HOUSE"
+    },
+    "29E": {
+      "total_stops": 13,
+      "first_stop": "PERAMBUR",
+      "last_stop": "THIRUVERKADU"
+    },
+    "29ET": {
+      "total_stops": 13,
+      "first_stop": "VINAYAGAPURAM",
+      "last_stop": "MANDAVELI"
+    },
+    "29NET": {
+      "total_stops": 18,
+      "first_stop": "VELACHERY",
+      "last_stop": "PERAVALLUR KUMARAN NAGAR"
+    },
+    "2A": {
+      "total_stops": 9,
+      "first_stop": "ANNA SQUARE",
+      "last_stop": "K.KANNADASAN NAGAR"
+    },
+    "2B": {
+      "total_stops": 15,
+      "first_stop": "K.KANNADASAN NAGAR",
+      "last_stop": "K.KANNADASAN NAGAR"
+    },
+    "31A": {
+      "total_stops": 7,
+      "first_stop": "TAMBARAM WEST",
+      "last_stop": "AGARAMTHEN"
+    },
+    "31B": {
+      "total_stops": 9,
+      "first_stop": "TAMBARAM WEST",
+      "last_stop": "KANDIGAI JUNCTION"
+    },
+    "31G": {
+      "total_stops": 10,
+      "first_stop": "TAMBARAM WEST",
+      "last_stop": "MEDAVAKKAM RD.JN."
+    },
+    "31M": {
+      "total_stops": 9,
+      "first_stop": "TAMBARAM WEST",
+      "last_stop": "MADURAPAKKAM"
+    },
+    "31P": {
+      "total_stops": 9,
+      "first_stop": "TAMBARAM EAST",
+      "last_stop": "PONMAR"
+    },
+    "32A": {
+      "total_stops": 11,
+      "first_stop": "TOLLGATE",
+      "last_stop": "FORESHORE ESTATE"
+    },
+    "32B": {
+      "total_stops": 6,
+      "first_stop": "KORUKKUPET R.S.",
+      "last_stop": "VIVEKANANDA HOUSE"
+    },
+    "33B": {
+      "total_stops": 7,
+      "first_stop": "BROADWAY",
+      "last_stop": "K.KANNADASAN NAGAR"
+    },
+    "33C": {
+      "total_stops": 9,
+      "first_stop": "BROADWAY",
+      "last_stop": "K.KANNADASAN NAGAR"
+    },
+    "33L": {
+      "total_stops": 9,
+      "first_stop": "BROADWAY",
+      "last_stop": "KODUNGAIYUR PARVATHI NAGA"
+    },
+    "35C": {
+      "total_stops": 10,
+      "first_stop": "BROADWAY",
+      "last_stop": "KORATTUR"
+    },
+    "36K": {
+      "total_stops": 15,
+      "first_stop": "TOLLGATE",
+      "last_stop": "REDHILLS"
+    },
+    "36M": {
+      "total_stops": 13,
+      "first_stop": "VALLALAR NAGAR",
+      "last_stop": "VICHOOR"
+    },
+    "36V": {
+      "total_stops": 16,
+      "first_stop": "THIRUVOTRIYUR",
+      "last_stop": "REDHILLS"
+    },
+    "37CT": {
+      "total_stops": 11,
+      "first_stop": "VALLALAR NAGAR",
+      "last_stop": "DASARATHAPURAM"
+    },
+    "37E": {
+      "total_stops": 18,
+      "first_stop": "K.KANNADASAN NAGAR",
+      "last_stop": "IYYAPPANTHANGAL"
+    },
+    "37ECT": {
+      "total_stops": 11,
+      "first_stop": "M.K.B.NAGAR",
+      "last_stop": "VADAPALANI"
+    },
+    "37G": {
+      "total_stops": 14,
+      "first_stop": "VALLALAR NAGAR",
+      "last_stop": "IYYAPPANTHANGAL"
+    },
+    "38A": {
+      "total_stops": 11,
+      "first_stop": "BROADWAY",
+      "last_stop": "MANALI"
+    },
+    "38C": {
+      "total_stops": 8,
+      "first_stop": "THIRU.VI.KA.NAGAR",
+      "last_stop": "VIVEKANANDA HOUSE"
+    },
+    "38D": {
+      "total_stops": 12,
+      "first_stop": "THIRUVOTRIYUR",
+      "last_stop": "KODUNGAIYUR PARVATHI NAGA"
+    },
+    "38G": {
+      "total_stops": 19,
+      "first_stop": "BROADWAY",
+      "last_stop": "VAZHUTHIGAIMEDU"
+    },
+    "38H": {
+      "total_stops": 9,
+      "first_stop": "BROADWAY",
+      "last_stop": "MADHAVARAM"
+    },
+    "3CT": {
+      "total_stops": 7,
+      "first_stop": "GUINDY RACE COURSE OFFICE",
+      "last_stop": "TIDEL PARK"
+    },
+    "40A": {
+      "total_stops": 18,
+      "first_stop": "ANNA SQUARE",
+      "last_stop": "PATTABIRAM"
+    },
+    "40H": {
+      "total_stops": 18,
+      "first_stop": "ANNA SQUARE",
+      "last_stop": "PATTABIRAM"
+    },
+    "40L": {
+      "total_stops": 11,
+      "first_stop": "ANNA SQUARE",
+      "last_stop": "J.J.NAGAR WEST"
+    },
+    "40N": {
+      "total_stops": 11,
+      "first_stop": "ANNA SQUARE",
+      "last_stop": "J.J.NAGAR EAST"
+    },
+    "41D": {
+      "total_stops": 14,
+      "first_stop": "MANDAVELI",
+      "last_stop": "AMBATTUR O.T."
+    },
+    "42B": {
+      "total_stops": 9,
+      "first_stop": "BROADWAY",
+      "last_stop": "POOMPUHAR"
+    },
+    "42C": {
+      "total_stops": 11,
+      "first_stop": "BROADWAY",
+      "last_stop": "TEACHERS COLONY"
+    },
+    "42D": {
+      "total_stops": 10,
+      "first_stop": "BROADWAY",
+      "last_stop": "SRINIVASA NAGAR"
+    },
+    "42M": {
+      "total_stops": 12,
+      "first_stop": "BROADWAY",
+      "last_stop": "M.M.B.T."
+    },
+    "44C": {
+      "total_stops": 12,
+      "first_stop": "BROADWAY",
+      "last_stop": "MANALI"
+    },
+    "44CT": {
+      "total_stops": 7,
+      "first_stop": "BROADWAY",
+      "last_stop": "I.O.C."
+    },
+    "45A": {
+      "total_stops": 13,
+      "first_stop": "VIVEKANANDA HOUSE",
+      "last_stop": "MADIPAKKAM B.S."
+    },
+    "45ACT": {
+      "total_stops": 11,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "KILKATTALAI"
+    },
+    "45B": {
+      "total_stops": 12,
+      "first_stop": "BROADWAY",
+      "last_stop": "GUINDY TVK ESTATE"
+    },
+    "45BET": {
+      "total_stops": 14,
+      "first_stop": "ANNA SQUARE",
+      "last_stop": "MUGALIVAKKAM"
+    },
+    "46ET": {
+      "total_stops": 10,
+      "first_stop": "PERIYAR NAGAR",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "46G": {
+      "total_stops": 10,
+      "first_stop": "M.K.B.NAGAR",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "47A": {
+      "total_stops": 13,
+      "first_stop": "VILLIVAKKAM",
+      "last_stop": "THIRUVANMIYUR"
+    },
+    "47C": {
+      "total_stops": 15,
+      "first_stop": "KOTTURPURAM",
+      "last_stop": "AMBATTUR O.T."
+    },
+    "47CX": {
+      "total_stops": 15,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "AYAPPAKKAM"
+    },
+    "47D": {
+      "total_stops": 21,
+      "first_stop": "THIRUVANMIYUR",
+      "last_stop": "AVADI"
+    },
+    "47DCT": {
+      "total_stops": 11,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "KORATTUR"
+    },
+    "48A": {
+      "total_stops": 10,
+      "first_stop": "MADHAVARAM B.S.",
+      "last_stop": "AMBATTUR I.E."
+    },
+    "48AET": {
+      "total_stops": 11,
+      "first_stop": "MADHAVARAM B.S.",
+      "last_stop": "J.J.NAGAR WEST"
+    },
+    "48B": {
+      "total_stops": 11,
+      "first_stop": "VALLALAR NAGAR",
+      "last_stop": "PUDUR"
+    },
+    "48BX": {
+      "total_stops": 12,
+      "first_stop": "VALLALAR NAGAR",
+      "last_stop": "ORAGADAM"
+    },
+    "48C": {
+      "total_stops": 10,
+      "first_stop": "VALLALAR NAGAR",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "48K": {
+      "total_stops": 12,
+      "first_stop": "VALLALAR NAGAR",
+      "last_stop": "KALLIKUPPAM"
+    },
+    "48P": {
+      "total_stops": 14,
+      "first_stop": "VALLALAR NAGAR",
+      "last_stop": "PUTHAGARAM"
+    },
+    "49A": {
+      "total_stops": 11,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "BSNL OFFICE"
+    },
+    "49F": {
+      "total_stops": 12,
+      "first_stop": "MANDAVELI",
+      "last_stop": "POONAMALLEE"
+    },
+    "49K": {
+      "total_stops": 9,
+      "first_stop": "MANDAVELI",
+      "last_stop": "PORUR"
+    },
+    "4M": {
+      "total_stops": 18,
+      "first_stop": "BROADWAY",
+      "last_stop": "MINJUR"
+    },
+    "500A": {
+      "total_stops": 21,
+      "first_stop": "HASTHINAPURAM",
+      "last_stop": "CHENGALPET N.T."
+    },
+    "500D": {
+      "total_stops": 20,
+      "first_stop": "DURGA NAGAR",
+      "last_stop": "CHENGALPET N.T."
+    },
+    "500E": {
+      "total_stops": 18,
+      "first_stop": "TAMBARAM",
+      "last_stop": "ECHANKARANAI"
+    },
+    "500ET": {
+      "total_stops": 20,
+      "first_stop": "CHITLAPAKKAM",
+      "last_stop": "CHENGALPET N.T."
+    },
+    "500P": {
+      "total_stops": 20,
+      "first_stop": "PALLAVARAM",
+      "last_stop": "CHENGALPET N.T."
+    },
+    "500R": {
+      "total_stops": 13,
+      "first_stop": "TAMBARAM",
+      "last_stop": "MARAIMALAI NAGAR I.E."
+    },
+    "500W": {
+      "total_stops": 28,
+      "first_stop": "SAIDAPET WEST",
+      "last_stop": "CHENGALPET N.T."
+    },
+    "505K": {
+      "total_stops": 24,
+      "first_stop": "REDHILLS",
+      "last_stop": "THIRUVALLUR"
+    },
+    "50ET": {
+      "total_stops": 13,
+      "first_stop": "BROADWAY",
+      "last_stop": "IYYAPPANMADAM"
+    },
+    "50M": {
+      "total_stops": 12,
+      "first_stop": "BROADWAY",
+      "last_stop": "THIRUVERKADU"
+    },
+    "514ET": {
+      "total_stops": 28,
+      "first_stop": "ENAMBAKKAM",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "515A": {
+      "total_stops": 16,
+      "first_stop": "TAMBARAM",
+      "last_stop": "KOVALAM"
+    },
+    "515B": {
+      "total_stops": 18,
+      "first_stop": "TAMBARAM",
+      "last_stop": "THIRUPORUR"
+    },
+    "515K": {
+      "total_stops": 11,
+      "first_stop": "KILAMBAKKAM B.S.",
+      "last_stop": "KELAMBAKKAM"
+    },
+    "515M": {
+      "total_stops": 23,
+      "first_stop": "KILAMBAKKAM B.S.",
+      "last_stop": "MAMALLAPURAM"
+    },
+    "515T": {
+      "total_stops": 15,
+      "first_stop": "KILAMBAKKAM B.S.",
+      "last_stop": "THIRUPORUR"
+    },
+    "517K": {
+      "total_stops": 19,
+      "first_stop": "PALLAVARAM",
+      "last_stop": "KOVALAM"
+    },
+    "519T": {
+      "total_stops": 19,
+      "first_stop": "ADYAR B.S.",
+      "last_stop": "THAIYUR KOMAN NAGAR"
+    },
+    "51A": {
+      "total_stops": 15,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "TAMBARAM EAST"
+    },
+    "51AX": {
+      "total_stops": 20,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "51B": {
+      "total_stops": 14,
+      "first_stop": "SAIDAPET",
+      "last_stop": "KARANAI"
+    },
+    "51C": {
+      "total_stops": 12,
+      "first_stop": "VELACHERY B.T",
+      "last_stop": "PUDUPAKKAM RD.JN"
+    },
+    "51D": {
+      "total_stops": 24,
+      "first_stop": "BROADWAY",
+      "last_stop": "TAMBARAM WEST"
+    },
+    "51J": {
+      "total_stops": 21,
+      "first_stop": "BROADWAY",
+      "last_stop": "MAMBAKKAM KOOT ROAD"
+    },
+    "51M": {
+      "total_stops": 9,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "MADIPAKKAM B.S."
+    },
+    "51T": {
+      "total_stops": 17,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "MADURAPAKKAM"
+    },
+    "51X": {
+      "total_stops": 15,
+      "first_stop": "VELACHERY",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "523A": {
+      "total_stops": 26,
+      "first_stop": "THIRUVANMIYUR",
+      "last_stop": "KARUMBAKKAM"
+    },
+    "52B": {
+      "total_stops": 16,
+      "first_stop": "BROADWAY",
+      "last_stop": "HASTHINAPURAM"
+    },
+    "52C": {
+      "total_stops": 11,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "HASTHINAPURAM"
+    },
+    "52G": {
+      "total_stops": 15,
+      "first_stop": "BROADWAY",
+      "last_stop": "COWL BAZAAR"
+    },
+    "52H": {
+      "total_stops": 6,
+      "first_stop": "POZHICHALUR",
+      "last_stop": "HASTHINAPURAM"
+    },
+    "52K": {
+      "total_stops": 14,
+      "first_stop": "BROADWAY",
+      "last_stop": "NANGANALLUR"
+    },
+    "53A": {
+      "total_stops": 15,
+      "first_stop": "BROADWAY",
+      "last_stop": "THIRUMAZHISAI"
+    },
+    "53E": {
+      "total_stops": 16,
+      "first_stop": "BROADWAY",
+      "last_stop": "KUNDRATHUR B.S."
+    },
+    "53G": {
+      "total_stops": 6,
+      "first_stop": "POONAMALLEE",
+      "last_stop": "PADURMEDU"
+    },
+    "53P": {
+      "total_stops": 14,
+      "first_stop": "BROADWAY",
+      "last_stop": "PATTUR"
+    },
+    "547A": {
+      "total_stops": 26,
+      "first_stop": "VALLALAR NAGAR",
+      "last_stop": "PERIYAPALAYAM"
+    },
+    "54B": {
+      "total_stops": 13,
+      "first_stop": "SAIDAPET",
+      "last_stop": "IYYAPPANTHANGAL"
+    },
+    "54C": {
+      "total_stops": 7,
+      "first_stop": "POONAMALLEE",
+      "last_stop": "PATTABIRAM"
+    },
+    "54E": {
+      "total_stops": 14,
+      "first_stop": "D.M.S.",
+      "last_stop": "MEPPUR"
+    },
+    "54G": {
+      "total_stops": 20,
+      "first_stop": "BROADWAY",
+      "last_stop": "KUTHAMBAKKAM"
+    },
+    "54K": {
+      "total_stops": 15,
+      "first_stop": "SAIDAPET",
+      "last_stop": "NEMAM"
+    },
+    "54L": {
+      "total_stops": 19,
+      "first_stop": "BROADWAY",
+      "last_stop": "VELLAVEDU"
+    },
+    "54P": {
+      "total_stops": 10,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "MANGADU"
+    },
+    "54S": {
+      "total_stops": 14,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "VADAKKU MALAIAMBAKKAM"
+    },
+    "54T": {
+      "total_stops": 14,
+      "first_stop": "T.NAGAR",
+      "last_stop": "CHEMBARAMBAKKAM"
+    },
+    "54V": {
+      "total_stops": 21,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "VEPPAMPATTU R.S."
+    },
+    "54VCT": {
+      "total_stops": 11,
+      "first_stop": "POONAMALLEE",
+      "last_stop": "VEPPAMPATTU R.S."
+    },
+    "552K": {
+      "total_stops": 17,
+      "first_stop": "KILKATTALAI",
+      "last_stop": "THIRUPORUR"
+    },
+    "553K": {
+      "total_stops": 8,
+      "first_stop": "POONAMALLEE",
+      "last_stop": "KATRAMBAKKAM"
+    },
+    "553W": {
+      "total_stops": 20,
+      "first_stop": "SAIDAPET WEST",
+      "last_stop": "SRIPERUMBUDUR"
+    },
+    "554B": {
+      "total_stops": 24,
+      "first_stop": "EKKATTUTHANGAL",
+      "last_stop": "SUNGUVARCHATHIRAM"
+    },
+    "555G": {
+      "total_stops": 20,
+      "first_stop": "SHOZHANGANALLUR",
+      "last_stop": "GUDUVANCHERY"
+    },
+    "555M": {
+      "total_stops": 21,
+      "first_stop": "TAMBARAM",
+      "last_stop": "THIRUPORUR"
+    },
+    "555N": {
+      "total_stops": 12,
+      "first_stop": "GUDUVANCHERY",
+      "last_stop": "THIRUPORUR"
+    },
+    "555P": {
+      "total_stops": 23,
+      "first_stop": "PADAPPAI",
+      "last_stop": "SHOZHANGANALLUR P.U.OFFICE"
+    },
+    "555S": {
+      "total_stops": 19,
+      "first_stop": "KILAMBAKKAM B.S.",
+      "last_stop": "SHOZHANGANALLUR"
+    },
+    "557AE": {
+      "total_stops": 26,
+      "first_stop": "REDHILLS",
+      "last_stop": "ANNAMALAICHERY"
+    },
+    "557C": {
+      "total_stops": 26,
+      "first_stop": "REDHILLS",
+      "last_stop": "KALLUR"
+    },
+    "557M": {
+      "total_stops": 26,
+      "first_stop": "REDHILLS",
+      "last_stop": "MADARAPAKKAM"
+    },
+    "558A": {
+      "total_stops": 15,
+      "first_stop": "REDHILLS",
+      "last_stop": "MINJUR"
+    },
+    "558B": {
+      "total_stops": 23,
+      "first_stop": "REDHILLS",
+      "last_stop": "PAZHAVERKADU"
+    },
+    "558C": {
+      "total_stops": 21,
+      "first_stop": "REDHILLS",
+      "last_stop": "PUDHUCHERYMEDU"
+    },
+    "558L": {
+      "total_stops": 25,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "MINJUR"
+    },
+    "558P": {
+      "total_stops": 17,
+      "first_stop": "REDHILLS",
+      "last_stop": "PERUMBEDUKUPPAM"
+    },
+    "55A": {
+      "total_stops": 6,
+      "first_stop": "PALLAVARAM",
+      "last_stop": "PAZHANTHANDALAM"
+    },
+    "55B": {
+      "total_stops": 6,
+      "first_stop": "TAMBARAM",
+      "last_stop": "PAZHANTHANDALAM"
+    },
+    "55C": {
+      "total_stops": 11,
+      "first_stop": "TAMBARAM",
+      "last_stop": "VENKATAMANGALAM"
+    },
+    "55D": {
+      "total_stops": 11,
+      "first_stop": "TAMBARAM",
+      "last_stop": "KEERAPAKKAM"
+    },
+    "55DET": {
+      "total_stops": 13,
+      "first_stop": "TAMBARAM",
+      "last_stop": "KUMIZHI"
+    },
+    "55ET": {
+      "total_stops": 9,
+      "first_stop": "TAMBARAM",
+      "last_stop": "KALAINGER KARUNANIDHI NAGAR"
+    },
+    "55G": {
+      "total_stops": 9,
+      "first_stop": "TAMBARAM",
+      "last_stop": "VENKAMPAKKAM VILLAGE"
+    },
+    "55H": {
+      "total_stops": 16,
+      "first_stop": "AIRPORT METRO",
+      "last_stop": "KEERAPAKKAM HOUSING BOARD"
+    },
+    "55K": {
+      "total_stops": 10,
+      "first_stop": "GUDUVANCHERY",
+      "last_stop": "KUMIZHI"
+    },
+    "55M": {
+      "total_stops": 11,
+      "first_stop": "TAMBARAM",
+      "last_stop": "SPORTS UNIVERSITY"
+    },
+    "55P": {
+      "total_stops": 10,
+      "first_stop": "TAMBARAM WEST",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "55V": {
+      "total_stops": 8,
+      "first_stop": "TAMBARAM",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "55X": {
+      "total_stops": 6,
+      "first_stop": "TAMBARAM",
+      "last_stop": "MANNIVAKKAM W.TANK"
+    },
+    "566B": {
+      "total_stops": 27,
+      "first_stop": "PATTUR",
+      "last_stop": "KOVALAM"
+    },
+    "568B": {
+      "total_stops": 19,
+      "first_stop": "VELACHERY",
+      "last_stop": "THIRUPORUR"
+    },
+    "56A": {
+      "total_stops": 11,
+      "first_stop": "VALLALAR NAGAR",
+      "last_stop": "ENNORE"
+    },
+    "56ACT": {
+      "total_stops": 9,
+      "first_stop": "TOLLGATE",
+      "last_stop": "ENNORE"
+    },
+    "56C": {
+      "total_stops": 8,
+      "first_stop": "BROADWAY",
+      "last_stop": "THIRUVOTRIYUR"
+    },
+    "56D": {
+      "total_stops": 10,
+      "first_stop": "BROADWAY",
+      "last_stop": "MANALI"
+    },
+    "56DET": {
+      "total_stops": 11,
+      "first_stop": "BROADWAY",
+      "last_stop": "MATHUR M.M.D.A. GATE"
+    },
+    "56F": {
+      "total_stops": 9,
+      "first_stop": "BROADWAY",
+      "last_stop": "ERNAVOOR"
+    },
+    "56J": {
+      "total_stops": 14,
+      "first_stop": "BROADWAY",
+      "last_stop": "MANALI NEW TOWN"
+    },
+    "56K": {
+      "total_stops": 9,
+      "first_stop": "BROADWAY",
+      "last_stop": "KARGIL NAGAR"
+    },
+    "56P": {
+      "total_stops": 19,
+      "first_stop": "BROADWAY",
+      "last_stop": "MINJUR N.T."
+    },
+    "56T": {
+      "total_stops": 18,
+      "first_stop": "BROADWAY",
+      "last_stop": "ATHIPETTU R.S."
+    },
+    "570ET": {
+      "total_stops": 28,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "THIRUPORUR"
+    },
+    "570P": {
+      "total_stops": 20,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "PERUMPAKKAM S.C.B."
+    },
+    "570V": {
+      "total_stops": 23,
+      "first_stop": "VADAPALANI",
+      "last_stop": "KELAMBAKKAM"
+    },
+    "572A": {
+      "total_stops": 15,
+      "first_stop": "AVADI",
+      "last_stop": "THIRUVALLUR COLLECTOR OFF"
+    },
+    "572K": {
+      "total_stops": 22,
+      "first_stop": "AMBATTUR I.E.",
+      "last_stop": "KIZHANOOR"
+    },
+    "578A": {
+      "total_stops": 13,
+      "first_stop": "KUNDRATHUR B.S.",
+      "last_stop": "SRIPERUMBUDUR"
+    },
+    "578ET": {
+      "total_stops": 20,
+      "first_stop": "POONAMALLEE",
+      "last_stop": "KUNNAM"
+    },
+    "578PC": {
+      "total_stops": 23,
+      "first_stop": "POONAMALLEE",
+      "last_stop": "ELAMBAKKAM"
+    },
+    "579A": {
+      "total_stops": 24,
+      "first_stop": "TAMBARAM NEW TERMINUS",
+      "last_stop": "WALAJABAD"
+    },
+    "579C": {
+      "total_stops": 24,
+      "first_stop": "TAMBARAM NEW TERMINUS",
+      "last_stop": "WALAJABAD"
+    },
+    "579K": {
+      "total_stops": 22,
+      "first_stop": "KILAMBAKKAM B.S.",
+      "last_stop": "WALAJABAD"
+    },
+    "57A": {
+      "total_stops": 12,
+      "first_stop": "VALLALAR NAGAR",
+      "last_stop": "ANGADU"
+    },
+    "57B": {
+      "total_stops": 7,
+      "first_stop": "REDHILLS",
+      "last_stop": "POTHUR"
+    },
+    "57CCT": {
+      "total_stops": 7,
+      "first_stop": "REDHILLS",
+      "last_stop": "GNAYARU"
+    },
+    "57D": {
+      "total_stops": 19,
+      "first_stop": "BROADWAY",
+      "last_stop": "POOCHIATHIPEDU"
+    },
+    "57E": {
+      "total_stops": 11,
+      "first_stop": "REDHILLS",
+      "last_stop": "VICHOOR"
+    },
+    "57F": {
+      "total_stops": 16,
+      "first_stop": "BROADWAY",
+      "last_stop": "KARANODAI"
+    },
+    "57G": {
+      "total_stops": 11,
+      "first_stop": "REDHILLS",
+      "last_stop": "VAZHUTHIGAIMEDU"
+    },
+    "57H": {
+      "total_stops": 20,
+      "first_stop": "BROADWAY",
+      "last_stop": "NEW ERUMAIVETTIPALAYAM"
+    },
+    "57J": {
+      "total_stops": 21,
+      "first_stop": "BROADWAY",
+      "last_stop": "GNAYARU"
+    },
+    "57M": {
+      "total_stops": 17,
+      "first_stop": "BROADWAY",
+      "last_stop": "ALAMATHI"
+    },
+    "57X": {
+      "total_stops": 22,
+      "first_stop": "VALLALAR NAGAR",
+      "last_stop": "PERIYAPALAYAM"
+    },
+    "580A": {
+      "total_stops": 14,
+      "first_stop": "AVADI",
+      "last_stop": "MEL SEMBEDU"
+    },
+    "580M": {
+      "total_stops": 16,
+      "first_stop": "AVADI",
+      "last_stop": "MALANTHUR"
+    },
+    "583A": {
+      "total_stops": 12,
+      "first_stop": "THIRUVALLUR",
+      "last_stop": "SRIPERUMBUDUR"
+    },
+    "583C": {
+      "total_stops": 16,
+      "first_stop": "TAMBARAM NEW TERMINUS",
+      "last_stop": "SRIPERUMBUDUR"
+    },
+    "583D": {
+      "total_stops": 15,
+      "first_stop": "TAMBARAM NEW TERMINUS",
+      "last_stop": "SRIPERUMBUDUR"
+    },
+    "583K": {
+      "total_stops": 20,
+      "first_stop": "KILAMBAKKAM B.S.",
+      "last_stop": "SRIPERUMBUDUR"
+    },
+    "58V": {
+      "total_stops": 15,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "REDHILLS"
+    },
+    "591C": {
+      "total_stops": 21,
+      "first_stop": "POONAMALLEE",
+      "last_stop": "PERAMBAKKAM L.N.KOIL"
+    },
+    "592V": {
+      "total_stops": 26,
+      "first_stop": "VALLALAR NAGAR",
+      "last_stop": "VENGAL"
+    },
+    "593CT": {
+      "total_stops": 20,
+      "first_stop": "REDHILLS",
+      "last_stop": "CHENNANG KARANAI"
+    },
+    "597A": {
+      "total_stops": 14,
+      "first_stop": "POONAMALLEE",
+      "last_stop": "THIRUVALLUR"
+    },
+    "597C": {
+      "total_stops": 9,
+      "first_stop": "POONAMALLEE",
+      "last_stop": "THIRUNINDRAVOOR"
+    },
+    "597CET": {
+      "total_stops": 11,
+      "first_stop": "POONAMALLEE",
+      "last_stop": "THIRUNINDRAVOOR B.S."
+    },
+    "5B": {
+      "total_stops": 8,
+      "first_stop": "MYLAPORE",
+      "last_stop": "THIAGARAYA NAGAR"
+    },
+    "5C": {
+      "total_stops": 10,
+      "first_stop": "BROADWAY",
+      "last_stop": "TARAMANI"
+    },
+    "5E": {
+      "total_stops": 12,
+      "first_stop": "BESANT NAGAR",
+      "last_stop": "VADAPALANI"
+    },
+    "5G": {
+      "total_stops": 12,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "KANNAGI NAGAR S.C.B."
+    },
+    "5S": {
+      "total_stops": 12,
+      "first_stop": "SAIDAPET",
+      "last_stop": "KANNAGI NAGAR S.C.B."
+    },
+    "60A": {
+      "total_stops": 17,
+      "first_stop": "BROADWAY",
+      "last_stop": "KUNDRATHUR B.S."
+    },
+    "60D": {
+      "total_stops": 15,
+      "first_stop": "BROADWAY",
+      "last_stop": "PAMMAL KAMARAJAPURAM"
+    },
+    "60E": {
+      "total_stops": 18,
+      "first_stop": "BROADWAY",
+      "last_stop": "KUNDRATHUR B.S"
+    },
+    "60G": {
+      "total_stops": 16,
+      "first_stop": "BROADWAY",
+      "last_stop": "POZHICHALUR"
+    },
+    "60H": {
+      "total_stops": 16,
+      "first_stop": "BROADWAY",
+      "last_stop": "SANKARA HEALTH CENTRE"
+    },
+    "61A": {
+      "total_stops": 7,
+      "first_stop": "AVADI",
+      "last_stop": "MELAPPEDU"
+    },
+    "61C": {
+      "total_stops": 6,
+      "first_stop": "AVADI",
+      "last_stop": "ELLAIAMMAN NAGAR"
+    },
+    "61E": {
+      "total_stops": 10,
+      "first_stop": "AVADI",
+      "last_stop": "KILKONDAIYUR"
+    },
+    "61K": {
+      "total_stops": 7,
+      "first_stop": "AVADI",
+      "last_stop": "KANNIAMMAN NAGAR"
+    },
+    "61R": {
+      "total_stops": 13,
+      "first_stop": "AVADI",
+      "last_stop": "REDHILLS"
+    },
+    "62A": {
+      "total_stops": 10,
+      "first_stop": "REDHILLS",
+      "last_stop": "AMBATTUR I.E."
+    },
+    "62B": {
+      "total_stops": 15,
+      "first_stop": "J.J.NAGAR WEST",
+      "last_stop": "REDHILLS"
+    },
+    "62CT": {
+      "total_stops": 11,
+      "first_stop": "AVADI",
+      "last_stop": "REDHILLS"
+    },
+    "62M": {
+      "total_stops": 16,
+      "first_stop": "POONAMALLEE",
+      "last_stop": "M.M.B.T."
+    },
+    "64C": {
+      "total_stops": 11,
+      "first_stop": "BROADWAY",
+      "last_stop": "MANALI"
+    },
+    "64D": {
+      "total_stops": 12,
+      "first_stop": "BROADWAY",
+      "last_stop": "KOSAPPUR"
+    },
+    "64K": {
+      "total_stops": 9,
+      "first_stop": "BROADWAY",
+      "last_stop": "K.KANNADASAN NAGAR"
+    },
+    "64KET": {
+      "total_stops": 10,
+      "first_stop": "BROADWAY",
+      "last_stop": "KODUNGAIYUR PARVATHI NAGA"
+    },
+    "64M": {
+      "total_stops": 8,
+      "first_stop": "M.G.R.CENTRAL",
+      "last_stop": "M.M.B.T."
+    },
+    "65A": {
+      "total_stops": 19,
+      "first_stop": "SAIDAPET",
+      "last_stop": "MUTHAPUDUPET"
+    },
+    "65B": {
+      "total_stops": 13,
+      "first_stop": "POONAMALLEE",
+      "last_stop": "AMBATTUR I.E."
+    },
+    "65CCT": {
+      "total_stops": 12,
+      "first_stop": "AMBATTUR I.E.",
+      "last_stop": "PAKKAM VILLAGE"
+    },
+    "65D": {
+      "total_stops": 14,
+      "first_stop": "AVADI",
+      "last_stop": "MELKONDAIYUR"
+    },
+    "65E": {
+      "total_stops": 8,
+      "first_stop": "AVADI",
+      "last_stop": "BSNL OFFICE"
+    },
+    "65G": {
+      "total_stops": 18,
+      "first_stop": "AVADI",
+      "last_stop": "MEYYUR"
+    },
+    "65H": {
+      "total_stops": 21,
+      "first_stop": "REDHILLS",
+      "last_stop": "AVADI"
+    },
+    "65K": {
+      "total_stops": 10,
+      "first_stop": "POONAMALLEE",
+      "last_stop": "AVADI"
+    },
+    "66A": {
+      "total_stops": 8,
+      "first_stop": "HASTHINAPURAM",
+      "last_stop": "KUNDRATHUR B.S."
+    },
+    "66K": {
+      "total_stops": 12,
+      "first_stop": "KILAMBAKKAM B.S.",
+      "last_stop": "KUNDRATHUR B.S."
+    },
+    "66M": {
+      "total_stops": 15,
+      "first_stop": "TAMBARAM WEST",
+      "last_stop": "SOUTH MALAYAMBAKKAM"
+    },
+    "66P": {
+      "total_stops": 18,
+      "first_stop": "KILAMBAKKAM B.S.",
+      "last_stop": "POONAMALLEE"
+    },
+    "66PX": {
+      "total_stops": 20,
+      "first_stop": "GUDUVANCHERY",
+      "last_stop": "POONAMALLEE"
+    },
+    "6D": {
+      "total_stops": 14,
+      "first_stop": "TOLLGATE",
+      "last_stop": "THIRUVANMIYUR"
+    },
+    "6DET": {
+      "total_stops": 15,
+      "first_stop": "SATHUMA NAGAR",
+      "last_stop": "THIRUVANMIYUR"
+    },
+    "70A": {
+      "total_stops": 10,
+      "first_stop": "AVADI",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "70ACT": {
+      "total_stops": 10,
+      "first_stop": "AVADI",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "70C": {
+      "total_stops": 20,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "70CCT": {
+      "total_stops": 17,
+      "first_stop": "KILAMBAKKAM B.S.",
+      "last_stop": "RAMAPURAM"
+    },
+    "70E": {
+      "total_stops": 25,
+      "first_stop": "M.K.B.NAGAR",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "70F": {
+      "total_stops": 26,
+      "first_stop": "MADHAVARAM B.S.",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "70G": {
+      "total_stops": 18,
+      "first_stop": "VADAPALANI",
+      "last_stop": "GUDUVANCHERY"
+    },
+    "70H": {
+      "total_stops": 12,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "HASTHINAPURAM"
+    },
+    "70J": {
+      "total_stops": 16,
+      "first_stop": "J.J.NAGAR WEST",
+      "last_stop": "TAMBARAM"
+    },
+    "70K": {
+      "total_stops": 25,
+      "first_stop": "AVADI",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "70LCT": {
+      "total_stops": 9,
+      "first_stop": "KORATTUR",
+      "last_stop": "GUINDY TVK ESTATE"
+    },
+    "70M": {
+      "total_stops": 22,
+      "first_stop": "M.M.B.T.",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "70N": {
+      "total_stops": 10,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "NANGANALLUR"
+    },
+    "70T": {
+      "total_stops": 24,
+      "first_stop": "THIRU.VI.KA.NAGAR",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "70V": {
+      "total_stops": 17,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "71D": {
+      "total_stops": 12,
+      "first_stop": "BROADWAY",
+      "last_stop": "PUDUR"
+    },
+    "71E": {
+      "total_stops": 20,
+      "first_stop": "BROADWAY",
+      "last_stop": "THIRUNINDRAVOOR"
+    },
+    "71H": {
+      "total_stops": 16,
+      "first_stop": "BROADWAY",
+      "last_stop": "KAMARAJ NAGAR"
+    },
+    "71V": {
+      "total_stops": 20,
+      "first_stop": "BROADWAY",
+      "last_stop": "VEPPAMPATTU E.WARAN NAGAR"
+    },
+    "72CT": {
+      "total_stops": 4,
+      "first_stop": "POONAMALLEE",
+      "last_stop": "THIRUVERKADU"
+    },
+    "72M": {
+      "total_stops": 12,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "THIRUVERKADU"
+    },
+    "73A": {
+      "total_stops": 11,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "AVADI"
+    },
+    "73C": {
+      "total_stops": 4,
+      "first_stop": "AMBATTUR I.E.",
+      "last_stop": "AYAPPAKKAM"
+    },
+    "73CT": {
+      "total_stops": 4,
+      "first_stop": "AMBATTUR I.E.",
+      "last_stop": "AYAPPAKKAM TNHB"
+    },
+    "76B": {
+      "total_stops": 19,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "OTTIAMBAKKAM"
+    },
+    "77A": {
+      "total_stops": 9,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "AYAPPAKKAM"
+    },
+    "77B": {
+      "total_stops": 9,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "ORAGADAM"
+    },
+    "77CT": {
+      "total_stops": 10,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "VENKATACHALAM NAGAR"
+    },
+    "77E": {
+      "total_stops": 16,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "KANNIAMMAN NAGAR"
+    },
+    "77FCT": {
+      "total_stops": 18,
+      "first_stop": "AVADI",
+      "last_stop": "VADATHUR"
+    },
+    "77K": {
+      "total_stops": 9,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "KARUKKU"
+    },
+    "77M": {
+      "total_stops": 11,
+      "first_stop": "MADANAKUPPAM",
+      "last_stop": "KOYAMBEDU MARKET"
+    },
+    "77P": {
+      "total_stops": 17,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "POOCHIATHIPEDU"
+    },
+    "77T": {
+      "total_stops": 9,
+      "first_stop": "THIRUMULLAIVOYAL COLONY",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "77V": {
+      "total_stops": 16,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "VEPPAMPATTU E.WARAN NAGAR"
+    },
+    "77VET": {
+      "total_stops": 22,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "KOYAMBAKKAM"
+    },
+    "79A": {
+      "total_stops": 13,
+      "first_stop": "TAMBARAM",
+      "last_stop": "NAVALUR SCB"
+    },
+    "79V": {
+      "total_stops": 21,
+      "first_stop": "TAMBARAM",
+      "last_stop": "VENBAKKAM"
+    },
+    "7E": {
+      "total_stops": 10,
+      "first_stop": "BROADWAY",
+      "last_stop": "NOLAMBUR SAKTHI NAGAR"
+    },
+    "7H": {
+      "total_stops": 9,
+      "first_stop": "BROADWAY",
+      "last_stop": "J.J.NAGAR EAST"
+    },
+    "7K": {
+      "total_stops": 8,
+      "first_stop": "BROADWAY",
+      "last_stop": "PADIKUPPAM"
+    },
+    "7M": {
+      "total_stops": 9,
+      "first_stop": "BROADWAY",
+      "last_stop": "J.J.NAGAR WEST"
+    },
+    "7MET": {
+      "total_stops": 11,
+      "first_stop": "BROADWAY",
+      "last_stop": "ATHIPET I.C.F. COLONY"
+    },
+    "88C": {
+      "total_stops": 17,
+      "first_stop": "BROADWAY",
+      "last_stop": "THANDALAM VILLAGE"
+    },
+    "88CET": {
+      "total_stops": 15,
+      "first_stop": "NANDAMBAKKAM VILLAGE",
+      "last_stop": "THIAGARAYA NAGAR"
+    },
+    "88D": {
+      "total_stops": 11,
+      "first_stop": "SAIDAPET WEST",
+      "last_stop": "KUNDRATHUR B.S."
+    },
+    "88K": {
+      "total_stops": 17,
+      "first_stop": "BROADWAY",
+      "last_stop": "KUNDRATHUR B.S."
+    },
+    "88KET": {
+      "total_stops": 23,
+      "first_stop": "BROADWAY",
+      "last_stop": "NALLUR"
+    },
+    "88L": {
+      "total_stops": 11,
+      "first_stop": "VADAPALANI",
+      "last_stop": "PERIYA COLONY"
+    },
+    "88M": {
+      "total_stops": 14,
+      "first_stop": "VADAPALANI",
+      "last_stop": "SOMANGALAM"
+    },
+    "88R": {
+      "total_stops": 18,
+      "first_stop": "SAIDAPET",
+      "last_stop": "AMARAMBEDU"
+    },
+    "89A": {
+      "total_stops": 11,
+      "first_stop": "PORUR",
+      "last_stop": "SOMANGALAM"
+    },
+    "89T": {
+      "total_stops": 12,
+      "first_stop": "TAMBARAM",
+      "last_stop": "KUNDRATHUR B.S."
+    },
+    "89TCT": {
+      "total_stops": 7,
+      "first_stop": "SOMANGALAM",
+      "last_stop": "KUNDRATHUR B.S."
+    },
+    "8ACT": {
+      "total_stops": 4,
+      "first_stop": "TOLLGATE",
+      "last_stop": "VALLALAR NAGAR"
+    },
+    "8B": {
+      "total_stops": 8,
+      "first_stop": "BROADWAY",
+      "last_stop": "THIRU.VI.KA.NAGAR"
+    },
+    "91A": {
+      "total_stops": 15,
+      "first_stop": "HASTHINAPURAM",
+      "last_stop": "THIRUVANMIYUR"
+    },
+    "91R": {
+      "total_stops": 16,
+      "first_stop": "KILAMBAKKAM B.S.",
+      "last_stop": "VELACHERY"
+    },
+    "91V": {
+      "total_stops": 22,
+      "first_stop": "GUDUVANCHERY",
+      "last_stop": "THIRUVANMIYUR"
+    },
+    "95X": {
+      "total_stops": 19,
+      "first_stop": "KILAMBAKKAM B.S.",
+      "last_stop": "THIRUVANMIYUR"
+    },
+    "95XCT": {
+      "total_stops": 16,
+      "first_stop": "KILAMBAKKAM B.S.",
+      "last_stop": "PERUMPAKKAM S.C.B."
+    },
+    "99A": {
+      "total_stops": 9,
+      "first_stop": "TAMBARAM WEST",
+      "last_stop": "SHOZHANGANALLUR"
+    },
+    "99C": {
+      "total_stops": 11,
+      "first_stop": "TAMBARAM WEST",
+      "last_stop": "SEMMANCHERI S.C.B."
+    },
+    "99X": {
+      "total_stops": 18,
+      "first_stop": "KILAMBAKKAM B.S.",
+      "last_stop": "NEELANKARAI"
+    },
+    "9M": {
+      "total_stops": 8,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "A.G.S.OFFICER'S COLONY"
+    },
+    "9MET": {
+      "total_stops": 13,
+      "first_stop": "BROADWAY",
+      "last_stop": "A.G.S.OFFICER'S COLONY"
+    },
+    "A1": {
+      "total_stops": 9,
+      "first_stop": "M.G.R.CENTRAL",
+      "last_stop": "THIRUVANMIYUR"
+    },
+    "A1ET": {
+      "total_stops": 12,
+      "first_stop": "M.G.R.CENTRAL",
+      "last_stop": "OKK.THORAIPAKM SEC.COLONY"
+    },
+    "A45B": {
+      "total_stops": 12,
+      "first_stop": "ANNA SQUARE",
+      "last_stop": "NANDAMBAKKAM"
+    },
+    "A47": {
+      "total_stops": 21,
+      "first_stop": "THIRUVANMIYUR",
+      "last_stop": "AVADI"
+    },
+    "A51": {
+      "total_stops": 20,
+      "first_stop": "BROADWAY",
+      "last_stop": "TAMBARAM WEST"
+    },
+    "B70CT": {
+      "total_stops": 13,
+      "first_stop": "GUINDY TVK ESTATE",
+      "last_stop": "DEVIK ESWARI NAGAR"
+    },
+    "C33": {
+      "total_stops": 16,
+      "first_stop": "K.KANNADASAN NAGAR",
+      "last_stop": "K.KANNADASAN NAGAR"
+    },
+    "C56C": {
+      "total_stops": 8,
+      "first_stop": "THIRUVOTRIYUR",
+      "last_stop": "BROADWAY"
+    },
+    "C56CET": {
+      "total_stops": 9,
+      "first_stop": "AIR NAGAR",
+      "last_stop": "BROADWAY"
+    },
+    "C64": {
+      "total_stops": 16,
+      "first_stop": "K.KANNADASAN NAGAR",
+      "last_stop": "K.KANNADASAN NAGAR"
+    },
+    "D51ET": {
+      "total_stops": 17,
+      "first_stop": "BROADWAY",
+      "last_stop": "CHITHALAPAKKAM TNHB"
+    },
+    "D70": {
+      "total_stops": 13,
+      "first_stop": "AMBATTUR I.E.",
+      "last_stop": "VELACHERY"
+    },
+    "D70CT": {
+      "total_stops": 13,
+      "first_stop": "ELANGO NAGAR OFF.COLONY",
+      "last_stop": "VELACHERY"
+    },
+    "D70X": {
+      "total_stops": 14,
+      "first_stop": "AMBATTUR I.E.",
+      "last_stop": "VELACHERY MRTS"
+    },
+    "E18": {
+      "total_stops": 23,
+      "first_stop": "BROADWAY",
+      "last_stop": "GUDUVANCHERY"
+    },
+    "E51": {
+      "total_stops": 19,
+      "first_stop": "BROADWAY",
+      "last_stop": "OTTIAMBAKKAM"
+    },
+    "F70": {
+      "total_stops": 16,
+      "first_stop": "PATTABIRAM",
+      "last_stop": "GUINDY TVK ESTATE"
+    },
+    "G18": {
+      "total_stops": 18,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "GUDUVANCHERY"
+    },
+    "J51": {
+      "total_stops": 10,
+      "first_stop": "VELACHERY",
+      "last_stop": "VENKADAMANGALAM"
+    },
+    "J66": {
+      "total_stops": 12,
+      "first_stop": "TAMBARAM",
+      "last_stop": "POONAMALLEE"
+    },
+    "M1": {
+      "total_stops": 8,
+      "first_stop": "THIRUVANMIYUR",
+      "last_stop": "KILKATTALAI"
+    },
+    "M18": {
+      "total_stops": 6,
+      "first_stop": "TAMBARAM",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "M18C": {
+      "total_stops": 10,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "KILKATTALAI"
+    },
+    "M18G": {
+      "total_stops": 12,
+      "first_stop": "HASTHINAPURAM",
+      "last_stop": "GUDUVANCHERY"
+    },
+    "M19B": {
+      "total_stops": 10,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "KANNAGI NAGAR S.C.B."
+    },
+    "M1A": {
+      "total_stops": 9,
+      "first_stop": "THIRUVANMIYUR",
+      "last_stop": "NANGANALLUR"
+    },
+    "M27": {
+      "total_stops": 8,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "M51": {
+      "total_stops": 13,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "PRATHYANGIRA DEVI TEMPLE"
+    },
+    "M51D": {
+      "total_stops": 20,
+      "first_stop": "SAIDAPET",
+      "last_stop": "KELAMBAKKAM"
+    },
+    "M51DCT": {
+      "total_stops": 18,
+      "first_stop": "SAIDAPET",
+      "last_stop": "PUTHUPAKKAM/VANDALUR RD.JN."
+    },
+    "M51R": {
+      "total_stops": 13,
+      "first_stop": "BROADWAY",
+      "last_stop": "PUZHUTHIVAKKAM"
+    },
+    "M51V": {
+      "total_stops": 17,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "KOLATHUR"
+    },
+    "M51VC": {
+      "total_stops": 9,
+      "first_stop": "MEDAVAKKAM RD.JN.",
+      "last_stop": "KOLATHUR"
+    },
+    "M52ET": {
+      "total_stops": 13,
+      "first_stop": "POZHICHALUR",
+      "last_stop": "GUDUVANCHERY"
+    },
+    "M60": {
+      "total_stops": 15,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "N.BAKKAM KALAIGNAR NAGAR"
+    },
+    "M70": {
+      "total_stops": 13,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "THIRUVANMIYUR"
+    },
+    "M88": {
+      "total_stops": 8,
+      "first_stop": "VADAPALANI",
+      "last_stop": "KUNDRATHUR B.S."
+    },
+    "M88ET": {
+      "total_stops": 12,
+      "first_stop": "VADAPALANI",
+      "last_stop": "NANDAMBAKKAM VILLAGE"
+    },
+    "M88T": {
+      "total_stops": 14,
+      "first_stop": "VADAPALANI",
+      "last_stop": "AMARAMBEDU EAST"
+    },
+    "MAA1": {
+      "total_stops": 11,
+      "first_stop": "CHENNAI AIRPORT",
+      "last_stop": "KILAMBAKKAM B.S."
+    },
+    "MAA2": {
+      "total_stops": 14,
+      "first_stop": "CHENNAI AIRPORT",
+      "last_stop": "AKKARAI ECR ROAD JN."
+    },
+    "N45B": {
+      "total_stops": 18,
+      "first_stop": "BROADWAY",
+      "last_stop": "KILKATTALAI"
+    },
+    "S1": {
+      "total_stops": 3,
+      "first_stop": "PALLAVARAM R.S.",
+      "last_stop": "THIRISULAM SAKHI NAGAR"
+    },
+    "S100": {
+      "total_stops": 9,
+      "first_stop": "AIRPORT METRO",
+      "last_stop": "TAMBARAM EAST"
+    },
+    "S11": {
+      "total_stops": 7,
+      "first_stop": "GUINDY RACE COURSE",
+      "last_stop": "KILKATTALAI"
+    },
+    "S12": {
+      "total_stops": 4,
+      "first_stop": "GUINDY RACE COURSE",
+      "last_stop": "VELACHERY R.S."
+    },
+    "S13": {
+      "total_stops": 5,
+      "first_stop": "GUINDY RACE COURSE",
+      "last_stop": "VELACHERY"
+    },
+    "S145": {
+      "total_stops": 8,
+      "first_stop": "AYANAVARAM B.S.",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "S14M": {
+      "total_stops": 7,
+      "first_stop": "N.G.O.COLONY",
+      "last_stop": "MEDAVAKKAM RD.JN."
+    },
+    "S15": {
+      "total_stops": 4,
+      "first_stop": "THIRUVANMIYUR R.S.",
+      "last_stop": "MADHYAKAILASH"
+    },
+    "S165": {
+      "total_stops": 6,
+      "first_stop": "KOVUR EB",
+      "last_stop": "PALLAVARAM"
+    },
+    "S166": {
+      "total_stops": 4,
+      "first_stop": "PORUR",
+      "last_stop": "MANIMEDU (AKASH NAGAR)"
+    },
+    "S167": {
+      "total_stops": 7,
+      "first_stop": "PATTUR",
+      "last_stop": "PALLAVARAM"
+    },
+    "S169": {
+      "total_stops": 9,
+      "first_stop": "TOLLGATE",
+      "last_stop": "MOOLAKADAI"
+    },
+    "S17": {
+      "total_stops": 6,
+      "first_stop": "MANDAVELI",
+      "last_stop": "ADYAR GANDHI NAGAR"
+    },
+    "S18D": {
+      "total_stops": 10,
+      "first_stop": "SAIDAPET",
+      "last_stop": "KILKATTALAI"
+    },
+    "S18K": {
+      "total_stops": 8,
+      "first_stop": "M.G.R.CENTRAL",
+      "last_stop": "SAIDAPET WEST PARSN NAGAR"
+    },
+    "S19": {
+      "total_stops": 6,
+      "first_stop": "CHROMEPET",
+      "last_stop": "KILKATTALAI"
+    },
+    "S2": {
+      "total_stops": 7,
+      "first_stop": "CHROMEPET",
+      "last_stop": "MEDAVAKKAM"
+    },
+    "S20": {
+      "total_stops": 6,
+      "first_stop": "ASHOK NAGAR METRO R.S.",
+      "last_stop": "D.L.F."
+    },
+    "S21C": {
+      "total_stops": 6,
+      "first_stop": "M.G.R.CENTRAL",
+      "last_stop": "MYLAPORE"
+    },
+    "S22": {
+      "total_stops": 5,
+      "first_stop": "IYYAPPANTHANGAL",
+      "last_stop": "KUMANANCHAVADI"
+    },
+    "S23": {
+      "total_stops": 6,
+      "first_stop": "PORUR",
+      "last_stop": "POONAMALLEE"
+    },
+    "S24": {
+      "total_stops": 5,
+      "first_stop": "IYYAPPANTHANGAL",
+      "last_stop": "THIRUVERKADU"
+    },
+    "S25": {
+      "total_stops": 4,
+      "first_stop": "VALASARAVAKKAM",
+      "last_stop": "MADURAVOYAL"
+    },
+    "S25A": {
+      "total_stops": 5,
+      "first_stop": "IYYAPPANTHANGAL",
+      "last_stop": "MADURAVOYAL ERIKARAI"
+    },
+    "S26": {
+      "total_stops": 5,
+      "first_stop": "ASHOK NAGAR METRO R.S.",
+      "last_stop": "VALASARAVAKKAM"
+    },
+    "S27": {
+      "total_stops": 8,
+      "first_stop": "PORUR",
+      "last_stop": "GUINDY TVK ESTATE"
+    },
+    "S28": {
+      "total_stops": 8,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "IYYAPPANTHANGAL"
+    },
+    "S30": {
+      "total_stops": 6,
+      "first_stop": "SAIDAPET",
+      "last_stop": "ASHOK PILLAR"
+    },
+    "S30CT": {
+      "total_stops": 2,
+      "first_stop": "GUINDY R.S",
+      "last_stop": "GUINDY G.H"
+    },
+    "S30K": {
+      "total_stops": 5,
+      "first_stop": "KOTTURPURAM R.S",
+      "last_stop": "GUINDY TVK ESTATE"
+    },
+    "S31": {
+      "total_stops": 8,
+      "first_stop": "VADAPALANI",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "S35": {
+      "total_stops": 7,
+      "first_stop": "DEFENCE COLONY",
+      "last_stop": "ASHOK NAGAR METRO R.S."
+    },
+    "S36": {
+      "total_stops": 5,
+      "first_stop": "NUNGAMBAKKAM R.S.",
+      "last_stop": "D.M.S. METRO"
+    },
+    "S3X": {
+      "total_stops": 9,
+      "first_stop": "CHROMEPET ESI",
+      "last_stop": "JOTHI NAGAR MADAMBAKKAM"
+    },
+    "S4": {
+      "total_stops": 7,
+      "first_stop": "CHROMEPET",
+      "last_stop": "MEDAVAKKAM"
+    },
+    "S40": {
+      "total_stops": 4,
+      "first_stop": "PALLAVARAM",
+      "last_stop": "INDIRA NAGAR"
+    },
+    "S41": {
+      "total_stops": 9,
+      "first_stop": "AVADI",
+      "last_stop": "AMBATTUR I.E."
+    },
+    "S42": {
+      "total_stops": 5,
+      "first_stop": "PADI RD. EAST AVENUE RD.JN.",
+      "last_stop": "MADURAVOYAL"
+    },
+    "S43": {
+      "total_stops": 6,
+      "first_stop": "VILLIVAKKAM",
+      "last_stop": "PUDUR"
+    },
+    "S44": {
+      "total_stops": 7,
+      "first_stop": "PERAMBUR",
+      "last_stop": "I.C.F."
+    },
+    "S45": {
+      "total_stops": 10,
+      "first_stop": "AVADI",
+      "last_stop": "POONAMALLEE"
+    },
+    "S47": {
+      "total_stops": 6,
+      "first_stop": "AVADI",
+      "last_stop": "MITTANAMALLEE"
+    },
+    "S47M": {
+      "total_stops": 6,
+      "first_stop": "AVADI",
+      "last_stop": "C.R.P.F. K.V.SCHOOL"
+    },
+    "S48": {
+      "total_stops": 3,
+      "first_stop": "AVADI",
+      "last_stop": "SIRANJEEVI NAGAR"
+    },
+    "S5": {
+      "total_stops": 2,
+      "first_stop": "SECRETARIAT",
+      "last_stop": "FORT RAILWAY STATION"
+    },
+    "S50": {
+      "total_stops": 7,
+      "first_stop": "AVADI",
+      "last_stop": "POONAMALLEE"
+    },
+    "S51": {
+      "total_stops": 6,
+      "first_stop": "NOLAMBUR SAKTHI NAGAR",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "S52": {
+      "total_stops": 6,
+      "first_stop": "AVADI",
+      "last_stop": "THIRUVERKADU"
+    },
+    "S53": {
+      "total_stops": 5,
+      "first_stop": "AMBATTUR I.E.",
+      "last_stop": "MADURAVOYAL ERIKARAI"
+    },
+    "S55": {
+      "total_stops": 9,
+      "first_stop": "AMBATTUR R.S.",
+      "last_stop": "THIRUMULLAIVOYAL SIDCO"
+    },
+    "S55W": {
+      "total_stops": 13,
+      "first_stop": "TAMBARAM WEST",
+      "last_stop": "TAMBARAM WEST"
+    },
+    "S56": {
+      "total_stops": 6,
+      "first_stop": "THIRUVOTRIYUR",
+      "last_stop": "MANALI"
+    },
+    "S58": {
+      "total_stops": 5,
+      "first_stop": "AMBATTUR I.E.",
+      "last_stop": "THIRUMULLAIVOYAL COLONY"
+    },
+    "S59": {
+      "total_stops": 6,
+      "first_stop": "MANGADU",
+      "last_stop": "THIRUVERKADU"
+    },
+    "S6": {
+      "total_stops": 8,
+      "first_stop": "TAMBARAM WEST",
+      "last_stop": "VENGAMBAKKAM / V.RD JN"
+    },
+    "S60": {
+      "total_stops": 6,
+      "first_stop": "M.G.R.KOYAMBEDU",
+      "last_stop": "MADURAVOYAL ERIKARAI"
+    },
+    "S62": {
+      "total_stops": 7,
+      "first_stop": "PERAMBUR",
+      "last_stop": "MANALI"
+    },
+    "S63": {
+      "total_stops": 6,
+      "first_stop": "MANALI",
+      "last_stop": "MOOLAKADAI"
+    },
+    "S64": {
+      "total_stops": 7,
+      "first_stop": "PERAMBUR",
+      "last_stop": "AZEEZEE NAGAR"
+    },
+    "S66": {
+      "total_stops": 7,
+      "first_stop": "KUNDRATHUR B.S.",
+      "last_stop": "PALLAVARAM"
+    },
+    "S67": {
+      "total_stops": 6,
+      "first_stop": "VILLIVAKKAM",
+      "last_stop": "KALLIKUPPAM"
+    },
+    "S69": {
+      "total_stops": 6,
+      "first_stop": "KUNDRATHUR B.S.",
+      "last_stop": "AIRPORT METRO"
+    },
+    "S70K": {
+      "total_stops": 7,
+      "first_stop": "THIRUMANGALAM METRO R.S.",
+      "last_stop": "KORATTUR WATER CANAL"
+    },
+    "S73": {
+      "total_stops": 6,
+      "first_stop": "AMBATTUR I.E.",
+      "last_stop": "THIRUVERKADU"
+    },
+    "S74": {
+      "total_stops": 4,
+      "first_stop": "KILKATTALAI",
+      "last_stop": "PALLAVARAM"
+    },
+    "S75": {
+      "total_stops": 5,
+      "first_stop": "AMBATTUR O.T.",
+      "last_stop": "LUCAS TVS"
+    },
+    "S80": {
+      "total_stops": 6,
+      "first_stop": "CHROMEPET",
+      "last_stop": "THENDRAL NAGAR"
+    },
+    "S81": {
+      "total_stops": 4,
+      "first_stop": "CHROMEPET",
+      "last_stop": "POZHICHALUR"
+    },
+    "S82": {
+      "total_stops": 5,
+      "first_stop": "ALANDUR METRO R.S.",
+      "last_stop": "MADIPAKKAM B.S."
+    },
+    "S83": {
+      "total_stops": 6,
+      "first_stop": "ALANDUR METRO R.S.",
+      "last_stop": "GURUNANAK COLLEGE"
+    },
+    "S84": {
+      "total_stops": 5,
+      "first_stop": "ALANDUR METRO R.S.",
+      "last_stop": "PORUR"
+    },
+    "S86": {
+      "total_stops": 7,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "RAMAPURAM"
+    },
+    "S87": {
+      "total_stops": 6,
+      "first_stop": "K.K.NAGAR",
+      "last_stop": "M.G.R.KOYAMBEDU"
+    },
+    "S88A": {
+      "total_stops": 8,
+      "first_stop": "PORUR",
+      "last_stop": "NANDAMBAKKAM VILLAGE"
+    },
+    "S90": {
+      "total_stops": 5,
+      "first_stop": "TAMBARAM WEST",
+      "last_stop": "GUNDUMEDU ANNA NAGAR"
+    },
+    "S94": {
+      "total_stops": 8,
+      "first_stop": "DURGA NAGAR",
+      "last_stop": "THIRUMUDIVAKKAM SIDCO"
+    },
+    "S95": {
+      "total_stops": 4,
+      "first_stop": "VELACHERY",
+      "last_stop": "PERUNGUDI"
+    },
+    "S97": {
+      "total_stops": 5,
+      "first_stop": "GUINDY METRO",
+      "last_stop": "VELACHERY VIJAYA NAGAR"
+    },
+    "S98": {
+      "total_stops": 4,
+      "first_stop": "LITTLE MOUNT METRO",
+      "last_stop": "TARAMANI"
+    },
+    "SC1": {
+      "total_stops": 7,
+      "first_stop": "I.O.C.",
+      "last_stop": "I.O.C."
+    },
+    "SM1CT": {
+      "total_stops": 5,
+      "first_stop": "VELACHERY",
+      "last_stop": "KILKATTALAI"
+    },
+    "T23C": {
+      "total_stops": 14,
+      "first_stop": "THIRUVANMIYUR",
+      "last_stop": "AYANAVARAM B.S."
+    },
+    "T29": {
+      "total_stops": 16,
+      "first_stop": "THIRU.VI.KA.NAGAR",
+      "last_stop": "THIRUVANMIYUR"
+    },
+    "T29C": {
+      "total_stops": 13,
+      "first_stop": "PERAMBUR",
+      "last_stop": "THIRUVANMIYUR"
+    },
+    "V51": {
+      "total_stops": 17,
+      "first_stop": "THIAGARAYA NAGAR",
+      "last_stop": "TAMBARAM WEST"
+    }
+  }
+}
