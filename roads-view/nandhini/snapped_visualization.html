@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Clusters and Routes Visualization</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        
+        .container {
+            display: flex;
+            height: calc(100vh - 120px);
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .controls {
+            width: 300px;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            overflow-y: auto;
+        }
+        
+        .map-container {
+            flex: 1;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .control-section {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .control-section:last-child {
+            border-bottom: none;
+        }
+        
+        .control-title {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+        
+        .checkbox-item:hover {
+            background: #f8f9fa;
+        }
+        
+        .checkbox-item input {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+        
+        .legend {
+            margin-top: 20px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .stats {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .stats h4 {
+            margin: 0 0 10px 0;
+            font-weight: 600;
+        }
+        
+        .stat-item {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Student Clusters and Routes Visualization</h1>
+    </div>
+    
+    <div class="container">
+        <div class="controls">
+            <div class="control-section">
+                <div class="control-title">Display Options</div>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="showClusters" checked>
+                        <label for="showClusters">Original Clusters</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="showSnappedPoints" checked>
+                        <label for="showSnappedPoints">Snapped Points</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="showRoutes" checked>
+                        <label for="showRoutes">Routes</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="showConnections" checked>
+                        <label for="showConnections">Snap Connections</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="control-section">
+                <div class="control-title">Legend</div>
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #e74c3c;"></div>
+                        <span>Original Clusters</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #27ae60;"></div>
+                        <span>Snapped Points</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #3498db; border-radius: 2px;"></div>
+                        <span>Routes</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #f39c12; border-radius: 2px; height: 2px;"></div>
+                        <span>Snap Connections</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats">
+                <h4>Statistics</h4>
+                <div class="stat-item">Total Clusters: <strong>2</strong></div>
+                <div class="stat-item">Total Students: <strong>11</strong></div>
+                <div class="stat-item">Routes: <strong>1</strong></div>
+                <div class="stat-item">Avg Snap Distance: <strong>87.65m</strong></div>
+            </div>
+        </div>
+        
+        <div class="map-container">
+            <div id="loadingIndicator" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                <div style="text-align: center;">
+                    <div style="margin-bottom: 10px;">Loading data files...</div>
+                    <div style="width: 100px; height: 4px; background: #eee; border-radius: 2px; overflow: hidden;">
+                        <div id="progressBar" style="width: 0%; height: 100%; background: #667eea; transition: width 0.3s;"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script>
+        let map;
+        let markers = {
+            clusters: [],
+            snappedPoints: [],
+            routes: [],
+            connections: []
+        };
+
+        // Data containers
+        let routesData = [];
+        let clusteredStudents = [];
+        let snappedResults = [];
+
+        // Global flag to track if Google Maps is loaded
+        let googleMapsLoaded = false;
+        let dataLoaded = false;
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadAllData();
+        });
+
+        async function loadAllData() {
+            try {
+                console.log('Loading data files...');
+                updateProgress(20, 'Loading route data...');
+                
+                // Load route JSON
+                const routeResponse = await fetch('chennai-complete-roads-60km-precision-2025-08-06.json');
+                if (!routeResponse.ok) throw new Error('Failed to load route data');
+                const routeJson = await routeResponse.json();
+                routesData = routeJson.highways || routeJson.arterials || [routeJson];
+                console.log('Loaded routes:', routesData.length);
+                updateProgress(40, 'Loading cluster data...');
+
+                // Load cluster CSV
+                const clusterResponse = await fetch('clustered_students.csv');
+                if (!clusterResponse.ok) throw new Error('Failed to load cluster data');
+                const clusterText = await clusterResponse.text();
+                clusteredStudents = await parseCSV(clusterText);
+                console.log('Loaded clusters:', clusteredStudents.length);
+                updateProgress(60, 'Loading snapped results...');
+
+                // Load snapped CSV
+                const snappedResponse = await fetch('snapped_clusters_results.csv');
+                if (!snappedResponse.ok) throw new Error('Failed to load snapped data');
+                const snappedText = await snappedResponse.text();
+                snappedResults = await parseCSV(snappedText);
+                console.log('Loaded snapped results:', snappedResults.length);
+
+                // Convert string numbers to floats for coordinates
+                clusteredStudents = clusteredStudents.map(row => ({
+                    ...row,
+                    cluster_number: parseInt(row.cluster_number),
+                    cluster_lat: parseFloat(row.cluster_lat),
+                    cluster_long: parseFloat(row.cluster_long),
+                    num_students: parseInt(row.num_students)
+                }));
+
+                snappedResults = snappedResults.map(row => ({
+                    ...row,
+                    cluster_number: parseInt(row.cluster_number),
+                    original_lat: parseFloat(row.original_lat),
+                    original_lon: parseFloat(row.original_lon),
+                    snapped_lat: parseFloat(row.snapped_lat),
+                    snapped_lon: parseFloat(row.snapped_lon),
+                    snap_distance_meters: parseFloat(row.snap_distance_meters),
+                    num_students: parseInt(row.num_students)
+                }));
+
+                console.log('Data loaded successfully!');
+                updateProgress(80, 'Processing data...');
+                dataLoaded = true;
+                updateStats();
+                
+                // Initialize map if Google Maps is already loaded
+                if (googleMapsLoaded) {
+                    updateProgress(100, 'Initializing map...');
+                    setTimeout(() => {
+                        initMap();
+                        hideLoadingIndicator();
+                    }, 500);
+                }
+                
+            } catch (error) {
+                console.error('Error loading data:', error);
+                alert('Error loading data: ' + error.message);
+            }
+        }
+
+        function parseCSV(csvText) {
+            return new Promise((resolve, reject) => {
+                Papa.parse(csvText, {
+                    header: true,
+                    skipEmptyLines: true,
+                    complete: (results) => {
+                        if (results.errors.length > 0) {
+                            reject(new Error('CSV parsing error: ' + results.errors[0].message));
+                        } else {
+                            resolve(results.data);
+                        }
+                    },
+                    error: reject
+                });
+            });
+        }
+
+        function updateStats() {
+            const totalStudents = clusteredStudents.reduce((sum, cluster) => sum + cluster.num_students, 0);
+            const totalClusters = clusteredStudents.length;
+            const totalRoutes = routesData.length;
+            const avgSnapDistance = snappedResults.length > 0 ? 
+                snappedResults.reduce((sum, snap) => sum + snap.snap_distance_meters, 0) / snappedResults.length : 0;
+
+            document.querySelector('.stats').innerHTML = `
+                <h4>Statistics</h4>
+                <div class="stat-item">Total Clusters: <strong>${totalClusters}</strong></div>
+                <div class="stat-item">Total Students: <strong>${totalStudents}</strong></div>
+                <div class="stat-item">Routes: <strong>${totalRoutes}</strong></div>
+                <div class="stat-item">Avg Snap Distance: <strong>${avgSnapDistance.toFixed(2)}m</strong></div>
+            `;
+        }
+
+        function initializeMapWithData() {
+            console.log('Initializing map with data...');
+            
+            // Check if map div exists and has dimensions
+            const mapDiv = document.getElementById('map');
+            console.log('Map div:', mapDiv);
+            console.log('Map div dimensions:', mapDiv.offsetWidth, 'x', mapDiv.offsetHeight);
+            
+            // Calculate center from cluster data
+            const avgLat = clusteredStudents.reduce((sum, cluster) => sum + cluster.cluster_lat, 0) / clusteredStudents.length;
+            const avgLng = clusteredStudents.reduce((sum, cluster) => sum + cluster.cluster_long, 0) / clusteredStudents.length;
+            
+            console.log('Map center:', avgLat, avgLng);
+            
+            map = new google.maps.Map(mapDiv, {
+                zoom: 10,
+                center: { lat: avgLat, lng: avgLng },
+                styles: [
+                    {
+                        featureType: 'water',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#e9e9e9' }, { lightness: 17 }]
+                    },
+                    {
+                        featureType: 'landscape',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#f5f5f5' }, { lightness: 20 }]
+                    }
+                ]
+            });
+
+            console.log('Map created, creating markers...');
+            createMarkers();
+            setupEventListeners();
+            console.log('Map initialization complete!');
+        }
+
+        function createMarkers() {
+            console.log('Creating markers...');
+            console.log('Clusters to create:', clusteredStudents.length);
+            console.log('Routes to create:', routesData.length);
+            console.log('Snapped results to create:', snappedResults.length);
+            
+            // Clear existing markers
+            Object.values(markers).forEach(markerArray => {
+                markerArray.forEach(marker => {
+                    if (marker.setMap) marker.setMap(null);
+                });
+                markerArray.length = 0;
+            });
+
+            // Create cluster markers
+            clusteredStudents.forEach((cluster, index) => {
+                if (index < 5) console.log('Creating cluster marker:', cluster.cluster_number, cluster.cluster_lat, cluster.cluster_long);
+                const marker = new google.maps.Marker({
+                    position: { lat: cluster.cluster_lat, lng: cluster.cluster_long },
+                    map: map,
+                    title: `Cluster ${cluster.cluster_number}`,
+                    icon: {
+                        path: google.maps.SymbolPath.CIRCLE,
+                        scale: 12,
+                        fillColor: '#e74c3c',
+                        fillOpacity: 0.8,
+                        strokeWeight: 2,
+                        strokeColor: '#c0392b'
+                    }
+                });
+
+                const infoWindow = new google.maps.InfoWindow({
+                    content: `
+                        <div style="padding: 10px;">
+                            <h4>Cluster ${cluster.cluster_number}</h4>
+                            <p><strong>Students:</strong> ${cluster.num_students}</p>
+                            <p><strong>Location:</strong> ${cluster.cluster_lat.toFixed(6)}, ${cluster.cluster_long.toFixed(6)}</p>
+                            <p><strong>Student IDs:</strong> ${cluster.user_ids}</p>
+                        </div>
+                    `
+                });
+
+                marker.addListener('click', () => {
+                    infoWindow.open(map, marker);
+                });
+
+                markers.clusters.push(marker);
+            });
+
+            // Create snapped point markers
+            snappedResults.forEach(snap => {
+                const marker = new google.maps.Marker({
+                    position: { lat: snap.snapped_lat, lng: snap.snapped_lon },
+                    map: map,
+                    title: `Snapped Cluster ${snap.cluster_number}`,
+                    icon: {
+                        path: google.maps.SymbolPath.CIRCLE,
+                        scale: 10,
+                        fillColor: '#27ae60',
+                        fillOpacity: 0.9,
+                        strokeWeight: 2,
+                        strokeColor: '#229954'
+                    }
+                });
+
+                const infoWindow = new google.maps.InfoWindow({
+                    content: `
+                        <div style="padding: 10px;">
+                            <h4>Snapped Point - Cluster ${snap.cluster_number}</h4>
+                            <p><strong>Route:</strong> ${snap.route_name}</p>
+                            <p><strong>Route Type:</strong> ${snap.route_type}</p>
+                            <p><strong>Snap Distance:</strong> ${snap.snap_distance_meters.toFixed(2)}m</p>
+                            <p><strong>Students:</strong> ${snap.num_students}</p>
+                        </div>
+                    `
+                });
+
+                marker.addListener('click', () => {
+                    infoWindow.open(map, marker);
+                });
+
+                markers.snappedPoints.push(marker);
+            });
+
+            // Create route polylines
+            routesData.forEach(route => {
+                if (route.coordinates && route.coordinates.length > 0) {
+                    const path = route.coordinates.map(coord => ({ lat: coord[0], lng: coord[1] }));
+                    
+                    const polyline = new google.maps.Polyline({
+                        path: path,
+                        geodesic: true,
+                        strokeColor: '#3498db',
+                        strokeOpacity: 0.8,
+                        strokeWeight: 4,
+                        map: map
+                    });
+
+                    const infoWindow = new google.maps.InfoWindow();
+                    
+                    polyline.addListener('click', (event) => {
+                        infoWindow.setContent(`
+                            <div style="padding: 10px;">
+                                <h4>${route.name || 'Route'}</h4>
+                                <p><strong>Type:</strong> ${route.type || 'Unknown'}</p>
+                                <p><strong>Points:</strong> ${route.pointCount || route.coordinates.length}</p>
+                                <p><strong>Length:</strong> ${route.estimatedLength ? route.estimatedLength.toFixed(3) : 'Unknown'} km</p>
+                            </div>
+                        `);
+                        infoWindow.setPosition(event.latLng);
+                        infoWindow.open(map);
+                    });
+
+                    markers.routes.push(polyline);
+                }
+            });
+
+            // Create connection lines between original and snapped points
+            snappedResults.forEach(snap => {
+                const connectionLine = new google.maps.Polyline({
+                    path: [
+                        { lat: snap.original_lat, lng: snap.original_lon },
+                        { lat: snap.snapped_lat, lng: snap.snapped_lon }
+                    ],
+                    geodesic: true,
+                    strokeColor: '#f39c12',
+                    strokeOpacity: 0.7,
+                    strokeWeight: 2,
+                    map: map
+                });
+
+                markers.connections.push(connectionLine);
+            });
+        }
+
+        function setupEventListeners() {
+            document.getElementById('showClusters').addEventListener('change', (e) => {
+                markers.clusters.forEach(marker => {
+                    marker.setVisible(e.target.checked);
+                });
+            });
+
+            document.getElementById('showSnappedPoints').addEventListener('change', (e) => {
+                markers.snappedPoints.forEach(marker => {
+                    marker.setVisible(e.target.checked);
+                });
+            });
+
+            document.getElementById('showRoutes').addEventListener('change', (e) => {
+                markers.routes.forEach(route => {
+                    route.setVisible(e.target.checked);
+                });
+            });
+
+            document.getElementById('showConnections').addEventListener('change', (e) => {
+                markers.connections.forEach(connection => {
+                    connection.setVisible(e.target.checked);
+                });
+            });
+        }
+
+        function updateProgress(percent, message) {
+            const progressBar = document.getElementById('progressBar');
+            const loadingText = document.querySelector('#loadingIndicator div div');
+            if (progressBar) progressBar.style.width = percent + '%';
+            if (loadingText) loadingText.textContent = message;
+        }
+
+        function hideLoadingIndicator() {
+            const indicator = document.getElementById('loadingIndicator');
+            if (indicator) {
+                indicator.style.display = 'none';
+            }
+        }
+
+        // Google Maps callback
+        window.initMap = function() {
+            console.log('Google Maps loaded');
+            googleMapsLoaded = true;
+            
+            // Initialize map if data is already loaded
+            if (dataLoaded) {
+                updateProgress(100, 'Initializing map...');
+                setTimeout(() => {
+                    initializeMapWithData();
+                    hideLoadingIndicator();
+                }, 500);
+            }
+        };
+    </script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_KVzNylr1qdcLSIPIBkhR77w09crzUkQ&callback=initMap"></script>
+</body>
+</html>

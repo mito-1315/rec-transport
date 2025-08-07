@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chennai Transport & Student Clustering Visualization</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .controls {
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn.secondary {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+        }
+
+        .btn.secondary:hover {
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+
+        .status {
+            flex-grow: 1;
+            font-weight: bold;
+            color: #333;
+            padding: 10px;
+        }
+
+        .visualization-controls {
+            background: white;
+            padding: 15px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            border-top: 1px solid #eee;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .control-group label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #3498db;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .color-input {
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .range-input {
+            width: 100px;
+        }
+
+        #map {
+            height: 70vh;
+            width: 100%;
+            border-top: 4px solid #3498db;
+        }
+
+        .data-info {
+            background: white;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .info-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border-left: 4px solid #3498db;
+        }
+
+        .info-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #3498db;
+            display: block;
+        }
+
+        .info-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .loading {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .spinner {
+            border: 4px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top: 4px solid white;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .legend {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .legend-text {
+            font-size: 12px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>🗺️ Chennai Transport & Student Clustering Visualization</h1>
+    <p>Road Network + Student Clusters + Individual Student Locations</p>
+</div>
+
+<div class="controls">
+    <button class="btn secondary" onclick="loadRoadData()">🛣️ Load Road Data</button>
+    <button class="btn secondary" onclick="loadStudentData()">👥 Load Student Data</button>
+    <button class="btn" onclick="clearAllData()" id="clearBtn" disabled>🗑️ Clear All</button>
+    <button class="btn" onclick="fitAllData()" id="fitBtn" disabled>🎯 Fit All Data</button>
+    <div class="status" id="status">Ready - Load data to begin visualization</div>
+</div>
+
+<div class="visualization-controls" id="vizControls" style="display: none;">
+    <div class="control-group">
+        <label>Show Roads:</label>
+        <label class="toggle-switch">
+            <input type="checkbox" id="showRoads" checked onchange="toggleRoads()">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="control-group">
+        <label>Show Clusters:</label>
+        <label class="toggle-switch">
+            <input type="checkbox" id="showClusters" checked onchange="toggleClusters()">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="control-group">
+        <label>Show Students:</label>
+        <label class="toggle-switch">
+            <input type="checkbox" id="showStudents" checked onchange="toggleStudents()">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="control-group">
+        <label>Road Color:</label>
+        <input type="color" id="roadColor" class="color-input" value="#007bff" onchange="updateRoadColors()">
+    </div>
+    <div class="control-group">
+        <label>Cluster Color:</label>
+        <input type="color" id="clusterColor" class="color-input" value="#e74c3c" onchange="updateClusterColors()">
+    </div>
+    <div class="control-group">
+        <label>Student Color:</label>
+        <input type="color" id="studentColor" class="color-input" value="#27ae60" onchange="updateStudentColors()">
+    </div>
+    <div class="control-group">
+        <label>Line Width:</label>
+        <input type="range" id="lineWidth" class="range-input" min="1" max="10" value="3" onchange="updateLineWidth()">
+        <span id="widthValue">3</span>
+    </div>
+    <div class="control-group">
+        <label>Opacity:</label>
+        <input type="range" id="opacity" class="range-input" min="0.3" max="1" step="0.1" value="0.8" onchange="updateOpacity()">
+        <span id="opacityValue">0.8</span>
+    </div>
+</div>
+
+<div id="map"></div>
+
+<div class="legend" id="legend" style="display: none;">
+    <h4>Legend</h4>
+    <div class="legend-item">
+        <div class="legend-color" style="background-color: #007bff;"></div>
+        <div class="legend-text">Roads</div>
+    </div>
+    <div class="legend-item">
+        <div class="legend-color" style="background-color: #e74c3c;"></div>
+        <div class="legend-text">Student Clusters</div>
+    </div>
+    <div class="legend-item">
+        <div class="legend-color" style="background-color: #27ae60;"></div>
+        <div class="legend-text">Individual Students</div>
+    </div>
+</div>
+
+<div class="data-info" id="dataInfo" style="display: none;">
+    <div class="info-card">
+        <span class="info-number" id="totalRoads">0</span>
+        <div class="info-label">Total Roads</div>
+    </div>
+    <div class="info-card">
+        <span class="info-number" id="totalClusters">0</span>
+        <div class="info-label">Student Clusters</div>
+    </div>
+    <div class="info-card">
+        <span class="info-number" id="totalStudents">0</span>
+        <div class="info-label">Individual Students</div>
+    </div>
+    <div class="info-card">
+        <span class="info-number" id="totalPoints">0</span>
+        <div class="info-label">Coordinate Points</div>
+    </div>
+</div>
+
+<div class="loading" id="loading">
+    <div class="spinner"></div>
+    <div id="loadingText">Loading data...</div>
+</div>
+
+<script>
+    let map;
+    let roadData = null;
+    let clusterData = null;
+    let studentData = null;
+    let drawnRoads = [];
+    let drawnClusters = [];
+    let drawnStudents = [];
+    let roadPolylines = { highways: [], arterials: [] };
+    let clusterMarkers = [];
+    let studentMarkers = [];
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: 13.0827, lng: 80.2707 }, // Chennai
+            zoom: 10,
+            styles: [
+                {
+                    featureType: 'road',
+                    stylers: [{ visibility: 'simplified' }]
+                },
+                {
+                    featureType: 'poi',
+                    stylers: [{ visibility: 'off' }]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'geometry.fill',
+                    stylers: [{ color: '#a8d7ff' }]
+                }
+            ]
+        });
+    }
+
+    function showLoading(text) {
+        document.getElementById('loadingText').textContent = text;
+        document.getElementById('loading').style.display = 'block';
+    }
+
+    function hideLoading() {
+        document.getElementById('loading').style.display = 'none';
+    }
+
+    function parseCSV(csvText) {
+        const lines = csvText.split('\n');
+        const headers = lines[0].split(',').map(h => h.trim().replace(/"/g, ''));
+        const data = [];
+        
+        for (let i = 1; i < lines.length; i++) {
+            if (lines[i].trim()) {
+                const values = lines[i].split(',').map(v => v.trim().replace(/"/g, ''));
+                const row = {};
+                headers.forEach((header, index) => {
+                    row[header] = values[index];
+                });
+                data.push(row);
+            }
+        }
+        
+        return data;
+    }
+
+    async function loadRoadData() {
+        showLoading('Loading road data...');
+        
+        try {
+            const response = await fetch('chennai-complete-roads-60km-precision-2025-08-06.json');
+            if (!response.ok) {
+                throw new Error('Failed to load road data');
+            }
+            
+            roadData = await response.json();
+            visualizeRoads(roadData);
+            updateDataInfo();
+            enableControls();
+            
+            document.getElementById('status').textContent = `✅ Loaded ${(roadData.highways?.length || 0) + (roadData.arterials?.length || 0)} roads`;
+        } catch (error) {
+            console.error('Error loading road data:', error);
+            document.getElementById('status').textContent = '❌ Error loading road data';
+        } finally {
+            hideLoading();
+        }
+    }
+
+    async function loadStudentData() {
+        showLoading('Loading student data...');
+        
+        try {
+            // Load clustered students data
+            const clusterResponse = await fetch('clustered_students.csv');
+            if (!clusterResponse.ok) {
+                throw new Error('Failed to load cluster data');
+            }
+            const clusterText = await clusterResponse.text();
+            clusterData = parseCSV(clusterText);
+            
+            // Load individual student locations
+            const studentResponse = await fetch('cleaned_student_locations_20250731_010007.csv');
+            if (!studentResponse.ok) {
+                throw new Error('Failed to load student data');
+            }
+            const studentText = await studentResponse.text();
+            studentData = parseCSV(studentText);
+            
+            visualizeClusters(clusterData);
+            visualizeStudents(studentData);
+            updateDataInfo();
+            enableControls();
+            
+            document.getElementById('status').textContent = `✅ Loaded ${clusterData.length} clusters and ${studentData.length} students`;
+        } catch (error) {
+            console.error('Error loading student data:', error);
+            document.getElementById('status').textContent = '❌ Error loading student data';
+        } finally {
+            hideLoading();
+        }
+    }
+
+    function visualizeRoads(data) {
+        clearRoads();
+
+        // Visualize highways
+        if (data.highways) {
+            data.highways.forEach(road => {
+                if (road.coordinates && road.coordinates.length > 1) {
+                    const path = road.coordinates.map(coord => ({
+                        lat: coord[0],
+                        lng: coord[1]
+                    }));
+
+                    const polyline = new google.maps.Polyline({
+                        path: path,
+                        geodesic: true,
+                        strokeColor: document.getElementById('roadColor').value,
+                        strokeOpacity: parseFloat(document.getElementById('opacity').value),
+                        strokeWeight: parseInt(document.getElementById('lineWidth').value),
+                        map: map
+                    });
+
+                    roadPolylines.highways.push({ polyline, road });
+                    drawnRoads.push(polyline);
+                }
+            });
+        }
+
+        // Visualize arterials
+        if (data.arterials) {
+            data.arterials.forEach(road => {
+                if (road.coordinates && road.coordinates.length > 1) {
+                    const path = road.coordinates.map(coord => ({
+                        lat: coord[0],
+                        lng: coord[1]
+                    }));
+
+                    const polyline = new google.maps.Polyline({
+                        path: path,
+                        geodesic: true,
+                        strokeColor: document.getElementById('roadColor').value,
+                        strokeOpacity: parseFloat(document.getElementById('opacity').value),
+                        strokeWeight: parseInt(document.getElementById('lineWidth').value) - 1,
+                        map: map
+                    });
+
+                    roadPolylines.arterials.push({ polyline, road });
+                    drawnRoads.push(polyline);
+                }
+            });
+        }
+    }
+
+    function visualizeClusters(data) {
+        clearClusters();
+
+        data.forEach(cluster => {
+            const lat = parseFloat(cluster.cluster_lat);
+            const lng = parseFloat(cluster.cluster_long);
+            const numStudents = parseInt(cluster.num_students);
+            
+            if (!isNaN(lat) && !isNaN(lng)) {
+                const marker = new google.maps.Marker({
+                    position: { lat, lng },
+                    map: map,
+                    icon: {
+                        path: google.maps.SymbolPath.CIRCLE,
+                        scale: Math.max(8, Math.min(20, numStudents * 2)),
+                        fillColor: document.getElementById('clusterColor').value,
+                        fillOpacity: 0.8,
+                        strokeColor: '#fff',
+                        strokeWeight: 2
+                    },
+                    title: `Cluster ${cluster.cluster_number}: ${numStudents} students`
+                });
+
+                // Add info window
+                const infoWindow = new google.maps.InfoWindow({
+                    content: `
+                        <div style="padding: 10px;">
+                            <h3>Cluster ${cluster.cluster_number}</h3>
+                            <p><strong>Students:</strong> ${numStudents}</p>
+                            <p><strong>Location:</strong> ${lat.toFixed(6)}, ${lng.toFixed(6)}</p>
+                            <p><strong>User IDs:</strong> ${cluster.user_ids}</p>
+                        </div>
+                    `
+                });
+
+                marker.addListener('click', () => {
+                    infoWindow.open(map, marker);
+                });
+
+                clusterMarkers.push(marker);
+                drawnClusters.push(marker);
+            }
+        });
+    }
+
+    function visualizeStudents(data) {
+        clearStudents();
+
+        data.forEach(student => {
+            const lat = parseFloat(student.latitude);
+            const lng = parseFloat(student.longitude);
+            
+            if (!isNaN(lat) && !isNaN(lng)) {
+                const marker = new google.maps.Marker({
+                    position: { lat, lng },
+                    map: map,
+                    icon: {
+                        path: google.maps.SymbolPath.CIRCLE,
+                        scale: 4,
+                        fillColor: document.getElementById('studentColor').value,
+                        fillOpacity: 0.7,
+                        strokeColor: '#fff',
+                        strokeWeight: 1
+                    },
+                    title: `Student ${student.user}: ${student.boarding_point_name}`
+                });
+
+                // Add info window
+                const infoWindow = new google.maps.InfoWindow({
+                    content: `
+                        <div style="padding: 10px;">
+                            <h3>Student ${student.user}</h3>
+                            <p><strong>Bus:</strong> ${student.bus_no}</p>
+                            <p><strong>Boarding Point:</strong> ${student.boarding_point_name}</p>
+                            <p><strong>Address:</strong> ${student.address}</p>
+                            <p><strong>Location:</strong> ${lat.toFixed(6)}, ${lng.toFixed(6)}</p>
+                        </div>
+                    `
+                });
+
+                marker.addListener('click', () => {
+                    infoWindow.open(map, marker);
+                });
+
+                studentMarkers.push(marker);
+                drawnStudents.push(marker);
+            }
+        });
+    }
+
+    function clearRoads() {
+        drawnRoads.forEach(polyline => polyline.setMap(null));
+        drawnRoads = [];
+        roadPolylines = { highways: [], arterials: [] };
+    }
+
+    function clearClusters() {
+        drawnClusters.forEach(marker => marker.setMap(null));
+        drawnClusters = [];
+        clusterMarkers = [];
+    }
+
+    function clearStudents() {
+        drawnStudents.forEach(marker => marker.setMap(null));
+        drawnStudents = [];
+        studentMarkers = [];
+    }
+
+    function clearAllData() {
+        clearRoads();
+        clearClusters();
+        clearStudents();
+        
+        roadData = null;
+        clusterData = null;
+        studentData = null;
+        
+        document.getElementById('vizControls').style.display = 'none';
+        document.getElementById('dataInfo').style.display = 'none';
+        document.getElementById('legend').style.display = 'none';
+        document.getElementById('clearBtn').disabled = true;
+        document.getElementById('fitBtn').disabled = true;
+        
+        document.getElementById('status').textContent = 'Ready - Load data to begin visualization';
+    }
+
+    function enableControls() {
+        document.getElementById('vizControls').style.display = 'flex';
+        document.getElementById('dataInfo').style.display = 'grid';
+        document.getElementById('legend').style.display = 'block';
+        document.getElementById('clearBtn').disabled = false;
+        document.getElementById('fitBtn').disabled = false;
+    }
+
+    function updateDataInfo() {
+        const totalRoads = (roadData?.highways?.length || 0) + (roadData?.arterials?.length || 0);
+        const totalClusters = clusterData?.length || 0;
+        const totalStudents = studentData?.length || 0;
+        const totalPoints = calculateTotalPoints();
+        
+        document.getElementById('totalRoads').textContent = totalRoads.toLocaleString();
+        document.getElementById('totalClusters').textContent = totalClusters.toLocaleString();
+        document.getElementById('totalStudents').textContent = totalStudents.toLocaleString();
+        document.getElementById('totalPoints').textContent = totalPoints.toLocaleString();
+    }
+
+    function calculateTotalPoints() {
+        let total = 0;
+        
+        if (roadData) {
+            if (roadData.highways) {
+                roadData.highways.forEach(road => {
+                    total += road.coordinates?.length || 0;
+                });
+            }
+            if (roadData.arterials) {
+                roadData.arterials.forEach(road => {
+                    total += road.coordinates?.length || 0;
+                });
+            }
+        }
+        
+        return total;
+    }
+
+    function toggleRoads() {
+        const show = document.getElementById('showRoads').checked;
+        drawnRoads.forEach(polyline => polyline.setVisible(show));
+    }
+
+    function toggleClusters() {
+        const show = document.getElementById('showClusters').checked;
+        drawnClusters.forEach(marker => marker.setVisible(show));
+    }
+
+    function toggleStudents() {
+        const show = document.getElementById('showStudents').checked;
+        drawnStudents.forEach(marker => marker.setVisible(show));
+    }
+
+    function updateRoadColors() {
+        const color = document.getElementById('roadColor').value;
+        drawnRoads.forEach(polyline => polyline.setOptions({ strokeColor: color }));
+    }
+
+    function updateClusterColors() {
+        const color = document.getElementById('clusterColor').value;
+        clusterMarkers.forEach(marker => {
+            marker.setIcon({
+                ...marker.getIcon(),
+                fillColor: color
+            });
+        });
+    }
+
+    function updateStudentColors() {
+        const color = document.getElementById('studentColor').value;
+        studentMarkers.forEach(marker => {
+            marker.setIcon({
+                ...marker.getIcon(),
+                fillColor: color
+            });
+        });
+    }
+
+    function updateLineWidth() {
+        const width = parseInt(document.getElementById('lineWidth').value);
+        document.getElementById('widthValue').textContent = width;
+        
+        drawnRoads.forEach(polyline => polyline.setOptions({ strokeWeight: width }));
+    }
+
+    function updateOpacity() {
+        const opacity = parseFloat(document.getElementById('opacity').value);
+        document.getElementById('opacityValue').textContent = opacity;
+        
+        drawnRoads.forEach(polyline => polyline.setOptions({ strokeOpacity: opacity }));
+    }
+
+    function fitAllData() {
+        const bounds = new google.maps.LatLngBounds();
+        
+        // Add road coordinates
+        if (roadData) {
+            if (roadData.highways) {
+                roadData.highways.forEach(road => {
+                    if (road.coordinates) {
+                        road.coordinates.forEach(coord => {
+                            bounds.extend(new google.maps.LatLng(coord[0], coord[1]));
+                        });
+                    }
+                });
+            }
+            if (roadData.arterials) {
+                roadData.arterials.forEach(road => {
+                    if (road.coordinates) {
+                        road.coordinates.forEach(coord => {
+                            bounds.extend(new google.maps.LatLng(coord[0], coord[1]));
+                        });
+                    }
+                });
+            }
+        }
+        
+        // Add cluster coordinates
+        if (clusterData) {
+            clusterData.forEach(cluster => {
+                const lat = parseFloat(cluster.cluster_lat);
+                const lng = parseFloat(cluster.cluster_long);
+                if (!isNaN(lat) && !isNaN(lng)) {
+                    bounds.extend(new google.maps.LatLng(lat, lng));
+                }
+            });
+        }
+        
+        // Add student coordinates
+        if (studentData) {
+            studentData.forEach(student => {
+                const lat = parseFloat(student.latitude);
+                const lng = parseFloat(student.longitude);
+                if (!isNaN(lat) && !isNaN(lng)) {
+                    bounds.extend(new google.maps.LatLng(lat, lng));
+                }
+            });
+        }
+        
+        if (!bounds.isEmpty()) {
+            map.fitBounds(bounds);
+        }
+    }
+</script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKrYOHcwBxUYQDPGo19lDNJtn_sukLn60&callback=initMap">
+</script>
+
+</body>
+</html> 
