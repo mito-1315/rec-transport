@@ -4,7 +4,7 @@ import requests
 import time
 from math import radians, cos, sin, asin, sqrt
 from tqdm import tqdm
-
+output_filename = 'another_name.csv'
 def haversine_distance(lat1, lon1, lat2, lon2):
     """
     Calculate the great circle distance between two points 
@@ -206,7 +206,7 @@ def main():
     distance_df = pd.DataFrame(distance_matrix, index=labels, columns=labels)
     
     # Save as CSV
-    output_filename = '../output/distance_matrix_road.csv'
+    
     distance_df.to_csv(output_filename)
     
     print(f"\n✓ Distance matrix saved as: {output_filename}")
