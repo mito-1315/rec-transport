@@ -1,0 +1,1816 @@
+{
+  "routes": [
+    {
+      "vehicle_id": 0,
+      "stops": [
+        {
+          "stop_id": "D1",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S3",
+          "demand": 3,
+          "cumulative_load": 3
+        },
+        {
+          "stop_id": "S113",
+          "demand": 12,
+          "cumulative_load": 15
+        },
+        {
+          "stop_id": "S168",
+          "demand": 11,
+          "cumulative_load": 26
+        },
+        {
+          "stop_id": "S39",
+          "demand": 14,
+          "cumulative_load": 40
+        },
+        {
+          "stop_id": "S186",
+          "demand": 15,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 31580.0,
+      "load": 55,
+      "depot": "D1"
+    },
+    {
+      "vehicle_id": 1,
+      "stops": [
+        {
+          "stop_id": "D1",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S119",
+          "demand": 55,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 37510.0,
+      "load": 55,
+      "depot": "D1"
+    },
+    {
+      "vehicle_id": 2,
+      "stops": [
+        {
+          "stop_id": "D2",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S120",
+          "demand": 3,
+          "cumulative_load": 3
+        },
+        {
+          "stop_id": "S211",
+          "demand": 32,
+          "cumulative_load": 35
+        },
+        {
+          "stop_id": "S47",
+          "demand": 13,
+          "cumulative_load": 48
+        }
+      ],
+      "distance": 15630.0,
+      "load": 48,
+      "depot": "D2"
+    },
+    {
+      "vehicle_id": 3,
+      "stops": [
+        {
+          "stop_id": "D2",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S105",
+          "demand": 3,
+          "cumulative_load": 3
+        },
+        {
+          "stop_id": "S57",
+          "demand": 9,
+          "cumulative_load": 12
+        },
+        {
+          "stop_id": "S166",
+          "demand": 38,
+          "cumulative_load": 50
+        },
+        {
+          "stop_id": "S148",
+          "demand": 4,
+          "cumulative_load": 54
+        }
+      ],
+      "distance": 28680.0,
+      "load": 54,
+      "depot": "D2"
+    },
+    {
+      "vehicle_id": 4,
+      "stops": [
+        {
+          "stop_id": "D3",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S151",
+          "demand": 11,
+          "cumulative_load": 11
+        },
+        {
+          "stop_id": "S20",
+          "demand": 5,
+          "cumulative_load": 16
+        },
+        {
+          "stop_id": "S25",
+          "demand": 11,
+          "cumulative_load": 27
+        },
+        {
+          "stop_id": "S147",
+          "demand": 12,
+          "cumulative_load": 39
+        },
+        {
+          "stop_id": "S65",
+          "demand": 3,
+          "cumulative_load": 42
+        },
+        {
+          "stop_id": "S91",
+          "demand": 12,
+          "cumulative_load": 54
+        }
+      ],
+      "distance": 85080.0,
+      "load": 54,
+      "depot": "D3"
+    },
+    {
+      "vehicle_id": 5,
+      "stops": [
+        {
+          "stop_id": "D3",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S183",
+          "demand": 31,
+          "cumulative_load": 31
+        },
+        {
+          "stop_id": "S138",
+          "demand": 16,
+          "cumulative_load": 47
+        },
+        {
+          "stop_id": "S97",
+          "demand": 7,
+          "cumulative_load": 54
+        }
+      ],
+      "distance": 65500.0,
+      "load": 54,
+      "depot": "D3"
+    },
+    {
+      "vehicle_id": 6,
+      "stops": [
+        {
+          "stop_id": "D4",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S14",
+          "demand": 5,
+          "cumulative_load": 5
+        },
+        {
+          "stop_id": "S44",
+          "demand": 3,
+          "cumulative_load": 8
+        },
+        {
+          "stop_id": "S27",
+          "demand": 2,
+          "cumulative_load": 10
+        },
+        {
+          "stop_id": "S124",
+          "demand": 32,
+          "cumulative_load": 42
+        },
+        {
+          "stop_id": "S87",
+          "demand": 3,
+          "cumulative_load": 45
+        },
+        {
+          "stop_id": "S174",
+          "demand": 6,
+          "cumulative_load": 51
+        }
+      ],
+      "distance": 110790.0,
+      "load": 51,
+      "depot": "D4"
+    },
+    {
+      "vehicle_id": 7,
+      "stops": [
+        {
+          "stop_id": "D4",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S115",
+          "demand": 2,
+          "cumulative_load": 2
+        },
+        {
+          "stop_id": "S17",
+          "demand": 7,
+          "cumulative_load": 9
+        },
+        {
+          "stop_id": "S22",
+          "demand": 4,
+          "cumulative_load": 13
+        },
+        {
+          "stop_id": "S36",
+          "demand": 2,
+          "cumulative_load": 15
+        },
+        {
+          "stop_id": "S236",
+          "demand": 2,
+          "cumulative_load": 17
+        },
+        {
+          "stop_id": "S101",
+          "demand": 2,
+          "cumulative_load": 19
+        },
+        {
+          "stop_id": "S6",
+          "demand": 16,
+          "cumulative_load": 35
+        },
+        {
+          "stop_id": "S133",
+          "demand": 8,
+          "cumulative_load": 43
+        },
+        {
+          "stop_id": "S233",
+          "demand": 6,
+          "cumulative_load": 49
+        },
+        {
+          "stop_id": "S67",
+          "demand": 2,
+          "cumulative_load": 51
+        },
+        {
+          "stop_id": "S98",
+          "demand": 2,
+          "cumulative_load": 53
+        },
+        {
+          "stop_id": "S75",
+          "demand": 2,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 214750.0,
+      "load": 55,
+      "depot": "D4"
+    },
+    {
+      "vehicle_id": 8,
+      "stops": [
+        {
+          "stop_id": "D5",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S19",
+          "demand": 5,
+          "cumulative_load": 5
+        },
+        {
+          "stop_id": "S240",
+          "demand": 6,
+          "cumulative_load": 11
+        },
+        {
+          "stop_id": "S184",
+          "demand": 4,
+          "cumulative_load": 15
+        },
+        {
+          "stop_id": "S208",
+          "demand": 8,
+          "cumulative_load": 23
+        },
+        {
+          "stop_id": "S13",
+          "demand": 8,
+          "cumulative_load": 31
+        },
+        {
+          "stop_id": "S48",
+          "demand": 17,
+          "cumulative_load": 48
+        },
+        {
+          "stop_id": "S210",
+          "demand": 7,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 124450.0,
+      "load": 55,
+      "depot": "D5"
+    },
+    {
+      "vehicle_id": 9,
+      "stops": [
+        {
+          "stop_id": "D5",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S78",
+          "demand": 11,
+          "cumulative_load": 11
+        },
+        {
+          "stop_id": "S139",
+          "demand": 2,
+          "cumulative_load": 13
+        },
+        {
+          "stop_id": "S80",
+          "demand": 3,
+          "cumulative_load": 16
+        },
+        {
+          "stop_id": "S137",
+          "demand": 2,
+          "cumulative_load": 18
+        },
+        {
+          "stop_id": "S2",
+          "demand": 23,
+          "cumulative_load": 41
+        },
+        {
+          "stop_id": "S221",
+          "demand": 5,
+          "cumulative_load": 46
+        },
+        {
+          "stop_id": "S192",
+          "demand": 9,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 100000.0,
+      "load": 55,
+      "depot": "D5"
+    },
+    {
+      "vehicle_id": 10,
+      "stops": [
+        {
+          "stop_id": "D6",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S50",
+          "demand": 3,
+          "cumulative_load": 3
+        },
+        {
+          "stop_id": "S92",
+          "demand": 4,
+          "cumulative_load": 7
+        },
+        {
+          "stop_id": "S69",
+          "demand": 4,
+          "cumulative_load": 11
+        },
+        {
+          "stop_id": "S49",
+          "demand": 24,
+          "cumulative_load": 35
+        },
+        {
+          "stop_id": "S55",
+          "demand": 9,
+          "cumulative_load": 44
+        },
+        {
+          "stop_id": "S64",
+          "demand": 10,
+          "cumulative_load": 54
+        }
+      ],
+      "distance": 62900.0,
+      "load": 54,
+      "depot": "D6"
+    },
+    {
+      "vehicle_id": 11,
+      "stops": [
+        {
+          "stop_id": "D6",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S99",
+          "demand": 2,
+          "cumulative_load": 2
+        },
+        {
+          "stop_id": "S18",
+          "demand": 3,
+          "cumulative_load": 5
+        },
+        {
+          "stop_id": "S178",
+          "demand": 6,
+          "cumulative_load": 11
+        },
+        {
+          "stop_id": "S96",
+          "demand": 2,
+          "cumulative_load": 13
+        },
+        {
+          "stop_id": "S26",
+          "demand": 4,
+          "cumulative_load": 17
+        },
+        {
+          "stop_id": "S125",
+          "demand": 3,
+          "cumulative_load": 20
+        },
+        {
+          "stop_id": "S136",
+          "demand": 8,
+          "cumulative_load": 28
+        },
+        {
+          "stop_id": "S30",
+          "demand": 4,
+          "cumulative_load": 32
+        },
+        {
+          "stop_id": "S129",
+          "demand": 6,
+          "cumulative_load": 38
+        },
+        {
+          "stop_id": "S207",
+          "demand": 3,
+          "cumulative_load": 41
+        },
+        {
+          "stop_id": "S203",
+          "demand": 8,
+          "cumulative_load": 49
+        },
+        {
+          "stop_id": "S220",
+          "demand": 5,
+          "cumulative_load": 54
+        }
+      ],
+      "distance": 83680.0,
+      "load": 54,
+      "depot": "D6"
+    },
+    {
+      "vehicle_id": 12,
+      "stops": [
+        {
+          "stop_id": "D7",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S158",
+          "demand": 20,
+          "cumulative_load": 20
+        },
+        {
+          "stop_id": "S199",
+          "demand": 20,
+          "cumulative_load": 40
+        },
+        {
+          "stop_id": "S68",
+          "demand": 11,
+          "cumulative_load": 51
+        }
+      ],
+      "distance": 29150.0,
+      "load": 51,
+      "depot": "D7"
+    },
+    {
+      "vehicle_id": 13,
+      "stops": [
+        {
+          "stop_id": "D7",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S106",
+          "demand": 12,
+          "cumulative_load": 12
+        },
+        {
+          "stop_id": "S224",
+          "demand": 16,
+          "cumulative_load": 28
+        },
+        {
+          "stop_id": "S121",
+          "demand": 14,
+          "cumulative_load": 42
+        },
+        {
+          "stop_id": "S84",
+          "demand": 11,
+          "cumulative_load": 53
+        }
+      ],
+      "distance": 26760.0,
+      "load": 53,
+      "depot": "D7"
+    },
+    {
+      "vehicle_id": 14,
+      "stops": [
+        {
+          "stop_id": "D8",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S215",
+          "demand": 17,
+          "cumulative_load": 17
+        },
+        {
+          "stop_id": "S231",
+          "demand": 11,
+          "cumulative_load": 28
+        },
+        {
+          "stop_id": "S77",
+          "demand": 18,
+          "cumulative_load": 46
+        },
+        {
+          "stop_id": "S189",
+          "demand": 8,
+          "cumulative_load": 54
+        }
+      ],
+      "distance": 29280.0,
+      "load": 54,
+      "depot": "D8"
+    },
+    {
+      "vehicle_id": 15,
+      "stops": [
+        {
+          "stop_id": "D8",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S229",
+          "demand": 11,
+          "cumulative_load": 11
+        },
+        {
+          "stop_id": "S52",
+          "demand": 16,
+          "cumulative_load": 27
+        },
+        {
+          "stop_id": "S201",
+          "demand": 6,
+          "cumulative_load": 33
+        },
+        {
+          "stop_id": "S107",
+          "demand": 10,
+          "cumulative_load": 43
+        },
+        {
+          "stop_id": "S45",
+          "demand": 12,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 40220.0,
+      "load": 55,
+      "depot": "D8"
+    },
+    {
+      "vehicle_id": 16,
+      "stops": [
+        {
+          "stop_id": "D9",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S134",
+          "demand": 2,
+          "cumulative_load": 2
+        },
+        {
+          "stop_id": "S108",
+          "demand": 11,
+          "cumulative_load": 13
+        },
+        {
+          "stop_id": "S15",
+          "demand": 13,
+          "cumulative_load": 26
+        },
+        {
+          "stop_id": "S142",
+          "demand": 14,
+          "cumulative_load": 40
+        },
+        {
+          "stop_id": "S190",
+          "demand": 10,
+          "cumulative_load": 50
+        },
+        {
+          "stop_id": "S157",
+          "demand": 5,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 34880.0,
+      "load": 55,
+      "depot": "D9"
+    },
+    {
+      "vehicle_id": 17,
+      "stops": [
+        {
+          "stop_id": "D9",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S226",
+          "demand": 5,
+          "cumulative_load": 5
+        },
+        {
+          "stop_id": "S132",
+          "demand": 6,
+          "cumulative_load": 11
+        },
+        {
+          "stop_id": "S117",
+          "demand": 11,
+          "cumulative_load": 22
+        },
+        {
+          "stop_id": "S51",
+          "demand": 9,
+          "cumulative_load": 31
+        },
+        {
+          "stop_id": "S42",
+          "demand": 4,
+          "cumulative_load": 35
+        },
+        {
+          "stop_id": "S85",
+          "demand": 10,
+          "cumulative_load": 45
+        },
+        {
+          "stop_id": "S53",
+          "demand": 7,
+          "cumulative_load": 52
+        },
+        {
+          "stop_id": "S140",
+          "demand": 2,
+          "cumulative_load": 54
+        }
+      ],
+      "distance": 49980.0,
+      "load": 54,
+      "depot": "D9"
+    },
+    {
+      "vehicle_id": 18,
+      "stops": [
+        {
+          "stop_id": "D10",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S219",
+          "demand": 6,
+          "cumulative_load": 6
+        },
+        {
+          "stop_id": "S131",
+          "demand": 14,
+          "cumulative_load": 20
+        },
+        {
+          "stop_id": "S212",
+          "demand": 5,
+          "cumulative_load": 25
+        },
+        {
+          "stop_id": "S79",
+          "demand": 19,
+          "cumulative_load": 44
+        },
+        {
+          "stop_id": "S149",
+          "demand": 11,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 41530.0,
+      "load": 55,
+      "depot": "D10"
+    },
+    {
+      "vehicle_id": 19,
+      "stops": [
+        {
+          "stop_id": "D10",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S127",
+          "demand": 16,
+          "cumulative_load": 16
+        },
+        {
+          "stop_id": "S169",
+          "demand": 6,
+          "cumulative_load": 22
+        },
+        {
+          "stop_id": "S7",
+          "demand": 5,
+          "cumulative_load": 27
+        },
+        {
+          "stop_id": "S185",
+          "demand": 24,
+          "cumulative_load": 51
+        },
+        {
+          "stop_id": "S35",
+          "demand": 4,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 56360.0,
+      "load": 55,
+      "depot": "D10"
+    },
+    {
+      "vehicle_id": 20,
+      "stops": [
+        {
+          "stop_id": "D11",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S88",
+          "demand": 7,
+          "cumulative_load": 7
+        },
+        {
+          "stop_id": "S171",
+          "demand": 9,
+          "cumulative_load": 16
+        },
+        {
+          "stop_id": "S103",
+          "demand": 18,
+          "cumulative_load": 34
+        },
+        {
+          "stop_id": "S24",
+          "demand": 12,
+          "cumulative_load": 46
+        },
+        {
+          "stop_id": "S214",
+          "demand": 8,
+          "cumulative_load": 54
+        }
+      ],
+      "distance": 40450.0,
+      "load": 54,
+      "depot": "D11"
+    },
+    {
+      "vehicle_id": 21,
+      "stops": [
+        {
+          "stop_id": "D11",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S82",
+          "demand": 17,
+          "cumulative_load": 17
+        },
+        {
+          "stop_id": "S23",
+          "demand": 6,
+          "cumulative_load": 23
+        },
+        {
+          "stop_id": "S74",
+          "demand": 19,
+          "cumulative_load": 42
+        },
+        {
+          "stop_id": "S89",
+          "demand": 9,
+          "cumulative_load": 51
+        }
+      ],
+      "distance": 14580.0,
+      "load": 51,
+      "depot": "D11"
+    },
+    {
+      "vehicle_id": 22,
+      "stops": [
+        {
+          "stop_id": "D12",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S200",
+          "demand": 30,
+          "cumulative_load": 30
+        },
+        {
+          "stop_id": "S165",
+          "demand": 20,
+          "cumulative_load": 50
+        },
+        {
+          "stop_id": "S234",
+          "demand": 3,
+          "cumulative_load": 53
+        }
+      ],
+      "distance": 38100.0,
+      "load": 53,
+      "depot": "D12"
+    },
+    {
+      "vehicle_id": 23,
+      "stops": [
+        {
+          "stop_id": "D12",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S141",
+          "demand": 6,
+          "cumulative_load": 6
+        },
+        {
+          "stop_id": "S154",
+          "demand": 16,
+          "cumulative_load": 22
+        },
+        {
+          "stop_id": "S241",
+          "demand": 5,
+          "cumulative_load": 27
+        },
+        {
+          "stop_id": "S90",
+          "demand": 18,
+          "cumulative_load": 45
+        },
+        {
+          "stop_id": "S71",
+          "demand": 10,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 31330.0,
+      "load": 55,
+      "depot": "D12"
+    },
+    {
+      "vehicle_id": 24,
+      "stops": [
+        {
+          "stop_id": "D13",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S172",
+          "demand": 22,
+          "cumulative_load": 22
+        },
+        {
+          "stop_id": "S176",
+          "demand": 2,
+          "cumulative_load": 24
+        },
+        {
+          "stop_id": "S225",
+          "demand": 7,
+          "cumulative_load": 31
+        },
+        {
+          "stop_id": "S56",
+          "demand": 5,
+          "cumulative_load": 36
+        },
+        {
+          "stop_id": "S66",
+          "demand": 11,
+          "cumulative_load": 47
+        },
+        {
+          "stop_id": "S173",
+          "demand": 5,
+          "cumulative_load": 52
+        },
+        {
+          "stop_id": "S193",
+          "demand": 3,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 43630.0,
+      "load": 55,
+      "depot": "D13"
+    },
+    {
+      "vehicle_id": 25,
+      "stops": [
+        {
+          "stop_id": "D13",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S12",
+          "demand": 2,
+          "cumulative_load": 2
+        },
+        {
+          "stop_id": "S155",
+          "demand": 16,
+          "cumulative_load": 18
+        },
+        {
+          "stop_id": "S33",
+          "demand": 3,
+          "cumulative_load": 21
+        },
+        {
+          "stop_id": "S227",
+          "demand": 9,
+          "cumulative_load": 30
+        },
+        {
+          "stop_id": "S29",
+          "demand": 7,
+          "cumulative_load": 37
+        },
+        {
+          "stop_id": "S128",
+          "demand": 16,
+          "cumulative_load": 53
+        }
+      ],
+      "distance": 51520.0,
+      "load": 53,
+      "depot": "D13"
+    },
+    {
+      "vehicle_id": 26,
+      "stops": [
+        {
+          "stop_id": "D14",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S60",
+          "demand": 6,
+          "cumulative_load": 6
+        },
+        {
+          "stop_id": "S238",
+          "demand": 10,
+          "cumulative_load": 16
+        },
+        {
+          "stop_id": "S34",
+          "demand": 16,
+          "cumulative_load": 32
+        },
+        {
+          "stop_id": "S109",
+          "demand": 10,
+          "cumulative_load": 42
+        },
+        {
+          "stop_id": "S195",
+          "demand": 7,
+          "cumulative_load": 49
+        },
+        {
+          "stop_id": "S209",
+          "demand": 4,
+          "cumulative_load": 53
+        }
+      ],
+      "distance": 48860.0,
+      "load": 53,
+      "depot": "D14"
+    },
+    {
+      "vehicle_id": 27,
+      "stops": [
+        {
+          "stop_id": "D14",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S197",
+          "demand": 13,
+          "cumulative_load": 13
+        },
+        {
+          "stop_id": "S150",
+          "demand": 24,
+          "cumulative_load": 37
+        },
+        {
+          "stop_id": "S159",
+          "demand": 8,
+          "cumulative_load": 45
+        },
+        {
+          "stop_id": "S130",
+          "demand": 10,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 56460.0,
+      "load": 55,
+      "depot": "D14"
+    },
+    {
+      "vehicle_id": 28,
+      "stops": [
+        {
+          "stop_id": "D15",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S145",
+          "demand": 17,
+          "cumulative_load": 17
+        },
+        {
+          "stop_id": "S9",
+          "demand": 18,
+          "cumulative_load": 35
+        },
+        {
+          "stop_id": "S118",
+          "demand": 17,
+          "cumulative_load": 52
+        },
+        {
+          "stop_id": "S205",
+          "demand": 3,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 39630.0,
+      "load": 55,
+      "depot": "D15"
+    },
+    {
+      "vehicle_id": 29,
+      "stops": [
+        {
+          "stop_id": "D15",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S230",
+          "demand": 17,
+          "cumulative_load": 17
+        },
+        {
+          "stop_id": "S62",
+          "demand": 15,
+          "cumulative_load": 32
+        },
+        {
+          "stop_id": "S167",
+          "demand": 6,
+          "cumulative_load": 38
+        },
+        {
+          "stop_id": "S232",
+          "demand": 7,
+          "cumulative_load": 45
+        },
+        {
+          "stop_id": "S170",
+          "demand": 9,
+          "cumulative_load": 54
+        }
+      ],
+      "distance": 49330.0,
+      "load": 54,
+      "depot": "D15"
+    },
+    {
+      "vehicle_id": 30,
+      "stops": [
+        {
+          "stop_id": "D16",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S8",
+          "demand": 7,
+          "cumulative_load": 7
+        },
+        {
+          "stop_id": "S135",
+          "demand": 14,
+          "cumulative_load": 21
+        },
+        {
+          "stop_id": "S116",
+          "demand": 5,
+          "cumulative_load": 26
+        },
+        {
+          "stop_id": "S43",
+          "demand": 3,
+          "cumulative_load": 29
+        },
+        {
+          "stop_id": "S179",
+          "demand": 2,
+          "cumulative_load": 31
+        },
+        {
+          "stop_id": "S59",
+          "demand": 2,
+          "cumulative_load": 33
+        },
+        {
+          "stop_id": "S156",
+          "demand": 3,
+          "cumulative_load": 36
+        },
+        {
+          "stop_id": "S73",
+          "demand": 7,
+          "cumulative_load": 43
+        },
+        {
+          "stop_id": "S58",
+          "demand": 11,
+          "cumulative_load": 54
+        }
+      ],
+      "distance": 92300.0,
+      "load": 54,
+      "depot": "D16"
+    },
+    {
+      "vehicle_id": 31,
+      "stops": [
+        {
+          "stop_id": "D16",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S81",
+          "demand": 2,
+          "cumulative_load": 2
+        },
+        {
+          "stop_id": "S100",
+          "demand": 10,
+          "cumulative_load": 12
+        },
+        {
+          "stop_id": "S163",
+          "demand": 29,
+          "cumulative_load": 41
+        },
+        {
+          "stop_id": "S32",
+          "demand": 11,
+          "cumulative_load": 52
+        }
+      ],
+      "distance": 75350.0,
+      "load": 52,
+      "depot": "D16"
+    },
+    {
+      "vehicle_id": 32,
+      "stops": [
+        {
+          "stop_id": "D17",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S223",
+          "demand": 6,
+          "cumulative_load": 6
+        },
+        {
+          "stop_id": "S182",
+          "demand": 2,
+          "cumulative_load": 8
+        },
+        {
+          "stop_id": "S83",
+          "demand": 19,
+          "cumulative_load": 27
+        },
+        {
+          "stop_id": "S112",
+          "demand": 13,
+          "cumulative_load": 40
+        },
+        {
+          "stop_id": "S143",
+          "demand": 6,
+          "cumulative_load": 46
+        },
+        {
+          "stop_id": "S228",
+          "demand": 9,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 57960.0,
+      "load": 55,
+      "depot": "D17"
+    },
+    {
+      "vehicle_id": 33,
+      "stops": [
+        {
+          "stop_id": "D17",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S177",
+          "demand": 6,
+          "cumulative_load": 6
+        },
+        {
+          "stop_id": "S164",
+          "demand": 16,
+          "cumulative_load": 22
+        },
+        {
+          "stop_id": "S16",
+          "demand": 17,
+          "cumulative_load": 39
+        },
+        {
+          "stop_id": "S213",
+          "demand": 5,
+          "cumulative_load": 44
+        },
+        {
+          "stop_id": "S188",
+          "demand": 2,
+          "cumulative_load": 46
+        },
+        {
+          "stop_id": "S11",
+          "demand": 6,
+          "cumulative_load": 52
+        }
+      ],
+      "distance": 53860.0,
+      "load": 52,
+      "depot": "D17"
+    },
+    {
+      "vehicle_id": 34,
+      "stops": [
+        {
+          "stop_id": "D18",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S181",
+          "demand": 14,
+          "cumulative_load": 14
+        },
+        {
+          "stop_id": "S63",
+          "demand": 5,
+          "cumulative_load": 19
+        },
+        {
+          "stop_id": "S40",
+          "demand": 3,
+          "cumulative_load": 22
+        },
+        {
+          "stop_id": "S76",
+          "demand": 6,
+          "cumulative_load": 28
+        },
+        {
+          "stop_id": "S194",
+          "demand": 11,
+          "cumulative_load": 39
+        },
+        {
+          "stop_id": "S54",
+          "demand": 3,
+          "cumulative_load": 42
+        },
+        {
+          "stop_id": "S198",
+          "demand": 11,
+          "cumulative_load": 53
+        },
+        {
+          "stop_id": "S218",
+          "demand": 2,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 78900.0,
+      "load": 55,
+      "depot": "D18"
+    },
+    {
+      "vehicle_id": 35,
+      "stops": [
+        {
+          "stop_id": "D18",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S61",
+          "demand": 30,
+          "cumulative_load": 30
+        },
+        {
+          "stop_id": "S153",
+          "demand": 4,
+          "cumulative_load": 34
+        },
+        {
+          "stop_id": "S114",
+          "demand": 17,
+          "cumulative_load": 51
+        },
+        {
+          "stop_id": "S46",
+          "demand": 2,
+          "cumulative_load": 53
+        },
+        {
+          "stop_id": "S152",
+          "demand": 2,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 75110.0,
+      "load": 55,
+      "depot": "D18"
+    },
+    {
+      "vehicle_id": 36,
+      "stops": [
+        {
+          "stop_id": "D19",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S95",
+          "demand": 32,
+          "cumulative_load": 32
+        },
+        {
+          "stop_id": "S31",
+          "demand": 23,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 27040.0,
+      "load": 55,
+      "depot": "D19"
+    },
+    {
+      "vehicle_id": 37,
+      "stops": [
+        {
+          "stop_id": "D19",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S1",
+          "demand": 25,
+          "cumulative_load": 25
+        },
+        {
+          "stop_id": "S196",
+          "demand": 9,
+          "cumulative_load": 34
+        },
+        {
+          "stop_id": "S162",
+          "demand": 8,
+          "cumulative_load": 42
+        },
+        {
+          "stop_id": "S216",
+          "demand": 5,
+          "cumulative_load": 47
+        },
+        {
+          "stop_id": "S235",
+          "demand": 6,
+          "cumulative_load": 53
+        }
+      ],
+      "distance": 32770.0,
+      "load": 53,
+      "depot": "D19"
+    },
+    {
+      "vehicle_id": 38,
+      "stops": [
+        {
+          "stop_id": "D20",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S41",
+          "demand": 16,
+          "cumulative_load": 16
+        },
+        {
+          "stop_id": "S123",
+          "demand": 11,
+          "cumulative_load": 27
+        },
+        {
+          "stop_id": "S237",
+          "demand": 2,
+          "cumulative_load": 29
+        },
+        {
+          "stop_id": "S191",
+          "demand": 11,
+          "cumulative_load": 40
+        },
+        {
+          "stop_id": "S5",
+          "demand": 15,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 33060.0,
+      "load": 55,
+      "depot": "D20"
+    },
+    {
+      "vehicle_id": 39,
+      "stops": [
+        {
+          "stop_id": "D20",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S180",
+          "demand": 7,
+          "cumulative_load": 7
+        },
+        {
+          "stop_id": "S144",
+          "demand": 24,
+          "cumulative_load": 31
+        },
+        {
+          "stop_id": "S104",
+          "demand": 9,
+          "cumulative_load": 40
+        },
+        {
+          "stop_id": "S102",
+          "demand": 12,
+          "cumulative_load": 52
+        }
+      ],
+      "distance": 21030.0,
+      "load": 52,
+      "depot": "D20"
+    },
+    {
+      "vehicle_id": 40,
+      "stops": [
+        {
+          "stop_id": "D21",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S204",
+          "demand": 10,
+          "cumulative_load": 10
+        },
+        {
+          "stop_id": "S111",
+          "demand": 4,
+          "cumulative_load": 14
+        },
+        {
+          "stop_id": "S21",
+          "demand": 2,
+          "cumulative_load": 16
+        },
+        {
+          "stop_id": "S206",
+          "demand": 5,
+          "cumulative_load": 21
+        },
+        {
+          "stop_id": "S187",
+          "demand": 21,
+          "cumulative_load": 42
+        },
+        {
+          "stop_id": "S222",
+          "demand": 6,
+          "cumulative_load": 48
+        },
+        {
+          "stop_id": "S239",
+          "demand": 4,
+          "cumulative_load": 52
+        },
+        {
+          "stop_id": "S37",
+          "demand": 2,
+          "cumulative_load": 54
+        }
+      ],
+      "distance": 39650.0,
+      "load": 54,
+      "depot": "D21"
+    },
+    {
+      "vehicle_id": 41,
+      "stops": [
+        {
+          "stop_id": "D22",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S4",
+          "demand": 13,
+          "cumulative_load": 13
+        },
+        {
+          "stop_id": "S110",
+          "demand": 6,
+          "cumulative_load": 19
+        },
+        {
+          "stop_id": "S202",
+          "demand": 19,
+          "cumulative_load": 38
+        },
+        {
+          "stop_id": "S10",
+          "demand": 4,
+          "cumulative_load": 42
+        },
+        {
+          "stop_id": "S175",
+          "demand": 13,
+          "cumulative_load": 55
+        }
+      ],
+      "distance": 45640.0,
+      "load": 55,
+      "depot": "D22"
+    },
+    {
+      "vehicle_id": 42,
+      "stops": [
+        {
+          "stop_id": "D23",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S28",
+          "demand": 20,
+          "cumulative_load": 20
+        },
+        {
+          "stop_id": "S72",
+          "demand": 16,
+          "cumulative_load": 36
+        },
+        {
+          "stop_id": "S160",
+          "demand": 7,
+          "cumulative_load": 43
+        },
+        {
+          "stop_id": "S122",
+          "demand": 11,
+          "cumulative_load": 54
+        }
+      ],
+      "distance": 40620.0,
+      "load": 54,
+      "depot": "D23"
+    },
+    {
+      "vehicle_id": 43,
+      "stops": [
+        {
+          "stop_id": "D24",
+          "demand": 0,
+          "cumulative_load": 0
+        },
+        {
+          "stop_id": "S126",
+          "demand": 5,
+          "cumulative_load": 5
+        },
+        {
+          "stop_id": "S146",
+          "demand": 3,
+          "cumulative_load": 8
+        },
+        {
+          "stop_id": "S94",
+          "demand": 2,
+          "cumulative_load": 10
+        },
+        {
+          "stop_id": "S38",
+          "demand": 5,
+          "cumulative_load": 15
+        },
+        {
+          "stop_id": "S93",
+          "demand": 5,
+          "cumulative_load": 20
+        },
+        {
+          "stop_id": "S86",
+          "demand": 2,
+          "cumulative_load": 22
+        },
+        {
+          "stop_id": "S70",
+          "demand": 4,
+          "cumulative_load": 26
+        },
+        {
+          "stop_id": "S217",
+          "demand": 6,
+          "cumulative_load": 32
+        },
+        {
+          "stop_id": "S161",
+          "demand": 19,
+          "cumulative_load": 51
+        }
+      ],
+      "distance": 62210.0,
+      "load": 51,
+      "depot": "D24"
+    }
+  ],
+  "depot_usage": {
+    "D1": 2,
+    "D2": 2,
+    "D3": 2,
+    "D4": 2,
+    "D5": 2,
+    "D6": 2,
+    "D7": 2,
+    "D8": 2,
+    "D9": 2,
+    "D10": 2,
+    "D11": 2,
+    "D12": 2,
+    "D13": 2,
+    "D14": 2,
+    "D15": 2,
+    "D16": 2,
+    "D17": 2,
+    "D18": 2,
+    "D19": 2,
+    "D20": 2,
+    "D21": 1,
+    "D22": 1,
+    "D23": 1,
+    "D24": 1
+  },
+  "summary": {
+    "total_routes": 44,
+    "total_distance": 2418100.0,
+    "total_students": 2366,
+    "avg_distance_per_route": 54956.818181818184,
+    "avg_students_per_bus": 53.77272727272727,
+    "depots_used": 24,
+    "max_vehicles_from_depot": 2
+  }
+}
