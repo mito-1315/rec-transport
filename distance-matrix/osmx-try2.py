@@ -4,7 +4,7 @@ import requests
 import time
 from math import radians, cos, sin, asin, sqrt
 from tqdm import tqdm
-output_filename = 'another_name.csv'
+output_filename = './output/distMatrixWithDepot.csv'
 def haversine_distance(lat1, lon1, lat2, lon2):
     """
     Calculate the great circle distance between two points 
@@ -172,8 +172,8 @@ def create_distance_matrix_mapbox(df, api_key):
 
 def main():
     # Load your CSV file
-    print("Loading data from snapped.csv...")
-    df = pd.read_csv('../output/snapped.csv')
+    print("Loading data from merged_mdvrp_data.csv...")
+    df = pd.read_csv('merged_mdvrp_data.csv')
     
     print(f"Loaded {len(df)} locations")
     
@@ -199,8 +199,8 @@ def main():
         print("Invalid choice, using fast method...")
         distance_matrix = create_distance_matrix_proper_osrm(df, use_fallback=True)
     
-    # Create labels for rows and columns using cluster numbers
-    labels = [f"cluster_{int(row['cluster_number'])}" for _, row in df.iterrows()]
+    # Create labels for rows and columns using stop_id
+    labels = [f"{row['stop_id']}" for _, row in df.iterrows()]
     
     # Create DataFrame with proper labels
     distance_df = pd.DataFrame(distance_matrix, index=labels, columns=labels)
