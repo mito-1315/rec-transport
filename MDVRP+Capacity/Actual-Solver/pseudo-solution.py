@@ -524,7 +524,7 @@ def main():
     print("Loading MDVRP data...")
     
     # Create solver
-    solver = DepotToSchoolMDVRP('mdvrp_data.csv')
+    solver = DepotToSchoolMDVRP('./inputs/mdvrp_data.csv')
     
     # Solve the problem
     solution = solver.solve_mdvrp(time_limit_seconds=300)
