@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_68730e3d9edfeb880ff263061c124e20 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+    <div style="position: fixed; bottom: 50px; left: 50px; width: 350px; 
+                background-color: white; border:2px solid grey; z-index:9999; 
+                font-size:12px; padding: 15px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+                overflow-y: auto; max-height: 400px;">
+    <b style="font-size: 14px; color: #333;">🗺️ Comprehensive Route Visualization</b><br><br>
+    
+    <b>📅 Days:</b><br>
+    <div style="margin-left: 10px;">
+        • Monday, Tuesday, Wednesday<br>
+        • Thursday, Friday, Saturday
+    </div><br>
+    
+    <b>⏰ Time Slots:</b><br>
+    <div style="margin-left: 10px;">
+        • <span style="color: blue;">● 8:00 AM</span> - Morning pickup<br>
+        • <span style="color: green;">● 10:00 AM</span> - Mid-morning<br>
+        • <span style="color: orange;">● 3:00 PM</span> - Afternoon<br>
+        • <span style="color: purple;">● 5:00 PM</span> - Evening<br>
+        • <span style="color: darkred;">● Leave</span> - Departure
+    </div><br>
+    
+    <b>📍 Map Elements:</b><br>
+    <div style="margin-left: 10px;">
+        • <i class="fa fa-graduation-cap" style="color:red"></i> College Start Point<br>
+        • <span style="color: blue;">●</span> Large circles = Centroids (grouped stops)<br>
+        • <span style="color: blue;">●</span> Small dots = Individual students<br>
+        • Circle size = Number of students
+    </div><br>
+    
+    <b>🔧 Tools:</b><br>
+    <div style="margin-left: 10px;">
+        • Search box for finding locations<br>
+        • Measure tool for distances<br>
+        • Fullscreen mode<br>
+        • Layer control (top right)
+    </div>
+    </div>
+    
+    
+            <div class="folium-map" id="map_68730e3d9edfeb880ff263061c124e20" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_68730e3d9edfeb880ff263061c124e20 = L.map(
+                "map_68730e3d9edfeb880ff263061c124e20",
+                {
+                    center: [13.008794724595475, 80.00342657961114],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2f630b4aa14d1623c60074e1ceb70c65 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2f630b4aa14d1623c60074e1ceb70c65.addTo(map_68730e3d9edfeb880ff263061c124e20);
+        
+    
+            var tile_layer_4f8a8518dc40a56705970193940b748d = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4f8a8518dc40a56705970193940b748d.addTo(map_68730e3d9edfeb880ff263061c124e20);
+        
+    
+            var tile_layer_2fb53e76f29bbf3dee739ca0a9c7b2b5 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2fb53e76f29bbf3dee739ca0a9c7b2b5.addTo(map_68730e3d9edfeb880ff263061c124e20);
+        
+    
+            var marker_5d4f11b875c1242828c1331b488ef4ee = L.marker(
+                [13.008794724595475, 80.00342657961114],
+                {
+}
+            ).addTo(map_68730e3d9edfeb880ff263061c124e20);
+        
+    
+            var icon_af94d1d907291b31372aac10d6bd3688 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_471056979de683ef362d513d137a7f48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_112178d6630558906bef082d1aec4fb2 = $(`<div id="html_112178d6630558906bef082d1aec4fb2" style="width: 100.0%; height: 100.0%;"><b>🏫 College - Starting Point</b></div>`)[0];
+                popup_471056979de683ef362d513d137a7f48.setContent(html_112178d6630558906bef082d1aec4fb2);
+            
+        
+
+        marker_5d4f11b875c1242828c1331b488ef4ee.bindPopup(popup_471056979de683ef362d513d137a7f48)
+        ;
+
+        
+    
+    
+                marker_5d4f11b875c1242828c1331b488ef4ee.setIcon(icon_af94d1d907291b31372aac10d6bd3688);
+            
+    
+            var layer_control_c51e86a4b5770bcb28ffc57a1f49493c_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_2f630b4aa14d1623c60074e1ceb70c65,
+                    "Terrain" : tile_layer_4f8a8518dc40a56705970193940b748d,
+                    "Light" : tile_layer_2fb53e76f29bbf3dee739ca0a9c7b2b5,
+                },
+                overlays :  {
+                    "All Points" : feature_group_e1eb7851fef406b8857d706e0cecd206,
+                },
+            };
+            let layer_control_c51e86a4b5770bcb28ffc57a1f49493c = L.control.layers(
+                layer_control_c51e86a4b5770bcb28ffc57a1f49493c_layers.base_layers,
+                layer_control_c51e86a4b5770bcb28ffc57a1f49493c_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_68730e3d9edfeb880ff263061c124e20);
+
+        
+    
+            var feature_group_e1eb7851fef406b8857d706e0cecd206 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_e1eb7851fef406b8857d706e0cecd206.addTo(map_68730e3d9edfeb880ff263061c124e20);
+        
+    
+            var feature_group_e1eb7851fef406b8857d706e0cecd206searchControl = new L.Control.Search({
+                layer: feature_group_e1eb7851fef406b8857d706e0cecd206,
+                
+                collapsed: false,
+                textPlaceholder: 'Search locations...',
+                position:'topleft',
+            
+                initial: false,
+                
+                hideMarkerOnCollapse: true
+            
+                });
+                feature_group_e1eb7851fef406b8857d706e0cecd206searchControl.on('search:locationfound', function(e) {
+                    feature_group_e1eb7851fef406b8857d706e0cecd206.setStyle(function(feature){
+                        return feature.properties.style
+                    })
+                    
+                    if(e.layer._popup)
+                        e.layer.openPopup();
+                })
+                feature_group_e1eb7851fef406b8857d706e0cecd206searchControl.on('search:collapsed', function(e) {
+                        feature_group_e1eb7851fef406b8857d706e0cecd206.setStyle(function(feature){
+                            return feature.properties.style
+                    });
+                });
+            map_68730e3d9edfeb880ff263061c124e20.addControl( feature_group_e1eb7851fef406b8857d706e0cecd206searchControl );
+
+        
+    
+            var measure_control_512eb53733b21e8956287b0b009e140d = new L.Control.Measure(
+                {
+  "position": "topright",
+  "primaryLengthUnit": "meters",
+  "secondaryLengthUnit": "miles",
+  "primaryAreaUnit": "sqmeters",
+  "secondaryAreaUnit": "acres",
+});
+            map_68730e3d9edfeb880ff263061c124e20.addControl(measure_control_512eb53733b21e8956287b0b009e140d);
+
+            // Workaround for using this plugin with Leaflet>=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_68730e3d9edfeb880ff263061c124e20);
+        
+</script>
+</html>

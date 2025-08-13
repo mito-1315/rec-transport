@@ -1,0 +1,4 @@
+cluster_number,original_lat,original_lon,snapped_lat,snapped_lon,route_name,route_type,route_id,snap_distance_meters,num_students
+16,12.667329704210838,79.5401486773955,12.6808598,79.5708042,Kancheepuram - Thiruvathipuram Road,arterial,687854973,3650.15,3
+18,13.106735069036104,79.4249875958654,13.1649857,79.4372602,Chittoor - Tiruttani Road,arterial,84658009,6612.1,2
+69,12.940897415308482,80.14578452596939,12.9465623,80.1366393,Grand Southern Trunk Road,arterial,95641243,1174.3,6

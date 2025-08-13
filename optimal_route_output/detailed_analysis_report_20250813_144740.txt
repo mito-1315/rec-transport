@@ -1,0 +1,1377 @@
+================================================================================
+DETAILED BUS ROUTE OPTIMIZATION ANALYSIS REPORT
+================================================================================
+Generated on: 2025-08-13 14:47:40
+
+OPTIMIZATION SUMMARY:
+----------------------------------------
+Total Students: 2524
+Total Routes: 113
+Total Distance: 4824.60 km
+Total Time: 8594.0 minutes
+Average Capacity Utilization: 40.6%
+Average Distance per Route: 42.70 km
+
+DETAILED ROUTE BREAKDOWN:
+----------------------------------------
+
+BUS_01:
+  Students: 52/55 (94.5%)
+  Stops: 2
+  Distance: 44.26 km
+  Time: 74.5 minutes
+  Depot: Lucas
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Jawaharlal Nehru Road (100 Feet Road) (27 students)
+    2. East avenue Road (25 students)
+
+BUS_02:
+  Students: 32/55 (58.2%)
+  Stops: 2
+  Distance: 35.05 km
+  Time: 69.3 minutes
+  Depot: Lucas
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Jawaharlal Nehru Road (100 Feet Road) (13 students)
+    2. Konnur High Road (19 students)
+
+BUS_03:
+  Students: 53/55 (96.4%)
+  Stops: 2
+  Distance: 47.68 km
+  Time: 79.8 minutes
+  Depot: KPM (White gate)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Kancheepuram - Vandavasi Road (30 students)
+    2. NH132B (23 students)
+
+BUS_04:
+  Students: 33/55 (60.0%)
+  Stops: 2
+  Distance: 47.93 km
+  Time: 81.9 minutes
+  Depot: KPM (White gate)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chengalpattu - Kancheepuram Highway (17 students)
+    2. Chengalpattu - Kancheepuram Highway (16 students)
+
+BUS_05:
+  Students: 37/55 (67.3%)
+  Stops: 5
+  Distance: 44.24 km
+  Time: 70.4 minutes
+  Depot: Mudichur
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. ORR Service Road (3 students)
+    2. Grand Southern Trunk Road (4 students)
+    3. Tambaram - Mudichur - Sriperumbudur Road (7 students)
+    4. Tambaram - Mudichur - Sriperumbudur Road (20 students)
+    5. Tambaram - Mudichur - Sriperumbudur Road (3 students)
+
+BUS_06:
+  Students: 19/55 (34.5%)
+  Stops: 2
+  Distance: 22.61 km
+  Time: 37.3 minutes
+  Depot: Thiruvallur (Manavalan nagar)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Singaperumalkoil - Sriperumbudur - Thiruvallur - Red Hills Road (6 students)
+    2. Singaperumalkoil - Sriperumbudur - Thiruvallur - Red Hills Road (13 students)
+
+BUS_07:
+  Students: 52/55 (94.5%)
+  Stops: 4
+  Distance: 34.46 km
+  Time: 77.7 minutes
+  Depot: Sathya Garden
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Mount - Poonamallee - Avadi Road (18 students)
+    2. Kodambakkam – Sriperumbudur Road (11 students)
+    3. Kodambakkam – Sriperumbudur Road (8 students)
+    4. Arcot Road (15 students)
+
+BUS_08:
+  Students: 6/55 (10.9%)
+  Stops: 1
+  Distance: 60.37 km
+  Time: 98.5 minutes
+  Depot: Sathya Garden
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chennai Bypass Expressway (6 students)
+
+BUS_09:
+  Students: 27/55 (49.1%)
+  Stops: 2
+  Distance: 51.99 km
+  Time: 85.2 minutes
+  Depot: Arakkonam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Sadras - Chengalpattu - Kancheepuram - Arakkonam - Tiruthani Road (11 students)
+    2. Sadras - Chengalpattu - Kancheepuram - Arakkonam - Tiruthani Road (16 students)
+
+BUS_10:
+  Students: 53/55 (96.4%)
+  Stops: 6
+  Distance: 52.98 km
+  Time: 103.5 minutes
+  Depot: Vyasarpadi
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Unnamed secondary Road (9 students)
+    2. Kamarajar Salai (8 students)
+    3. Tondiarpet High Road (5 students)
+    4. Tondiarpet High Road (11 students)
+    5. Moolakadai Flyover (11 students)
+    6. MKB Nagar West Avenue (9 students)
+
+BUS_11:
+  Students: 15/55 (27.3%)
+  Stops: 2
+  Distance: 49.82 km
+  Time: 76.5 minutes
+  Depot: Chengalpet
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Anna Salai High Road (8 students)
+    2. Chennai - Trichy - Dindugal Road (Old NH45) (7 students)
+
+BUS_12:
+  Students: 52/55 (94.5%)
+  Stops: 3
+  Distance: 37.95 km
+  Time: 84.8 minutes
+  Depot: Sathya Garden
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. 70 Feet Road (18 students)
+    2. 11th Avenue (17 students)
+    3. Arya Gowda Road (17 students)
+
+BUS_13:
+  Students: 13/55 (23.6%)
+  Stops: 2
+  Distance: 39.65 km
+  Time: 94.0 minutes
+  Depot: Sathya Garden
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Inner Ring Road (6 students)
+    2. Venkatanarayana Road (7 students)
+
+BUS_14:
+  Students: 14/55 (25.5%)
+  Stops: 3
+  Distance: 27.46 km
+  Time: 43.1 minutes
+  Depot: Avadi (Kavarapalayam)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. NH48 (8 students)
+    2. NH48 (4 students)
+    3. NH48 (2 students)
+
+BUS_15:
+  Students: 51/55 (92.7%)
+  Stops: 3
+  Distance: 32.58 km
+  Time: 67.3 minutes
+  Depot: Kovilambakkam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Poonamallee - Kundrathur - Pallavaram Road (18 students)
+    2. Poonamallee - Kundrathur - Pallavaram Road (21 students)
+    3. Indira Gandhi Road (12 students)
+
+BUS_16:
+  Students: 16/55 (29.1%)
+  Stops: 3
+  Distance: 33.33 km
+  Time: 62.3 minutes
+  Depot: Kovilambakkam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Tiruneermalai Main Road (8 students)
+    2. Grand Southern Trunk Road (6 students)
+    3. Pallavaram - Thoraipakkam Road (2 students)
+
+BUS_17:
+  Students: 7/55 (12.7%)
+  Stops: 2
+  Distance: 37.20 km
+  Time: 64.3 minutes
+  Depot: Avadi (Kavarapalayam)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Unnamed secondary Road (2 students)
+    2. ORR Service Road (5 students)
+
+BUS_18:
+  Students: 16/55 (29.1%)
+  Stops: 3
+  Distance: 47.58 km
+  Time: 73.0 minutes
+  Depot: Thachoor Koot Road (Petrol Bunk)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. ORR Service Road (4 students)
+    2. Grand Northern Trunk Road (6 students)
+    3. Grand Northern Trunk Road (6 students)
+
+BUS_19:
+  Students: 46/55 (83.6%)
+  Stops: 4
+  Distance: 26.91 km
+  Time: 54.3 minutes
+  Depot: Ayapakkam (Giri Parking)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Mount - Poonamallee - Avadi Road (18 students)
+    2. Mount - Poonamallee - Avadi Road (13 students)
+    3. Thiruverkadu - Ambattur Road (11 students)
+    4. Thiruverkadu - Ambattur Road (4 students)
+
+BUS_20:
+  Students: 28/55 (50.9%)
+  Stops: 3
+  Distance: 41.97 km
+  Time: 91.8 minutes
+  Depot: Vyasarpadi
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Gengu Reddy Road (6 students)
+    2. McNichols Road (5 students)
+    3. Purasawalkam High Road (17 students)
+
+BUS_21:
+  Students: 39/55 (70.9%)
+  Stops: 2
+  Distance: 41.68 km
+  Time: 70.8 minutes
+  Depot: Kallikuppam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chennai Bypass (19 students)
+    2. Unnamed primary Road (20 students)
+
+BUS_22:
+  Students: 18/55 (32.7%)
+  Stops: 1
+  Distance: 30.74 km
+  Time: 61.0 minutes
+  Depot: Kallikuppam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Kalli Kuppam Road (KKRoad) (18 students)
+
+BUS_23:
+  Students: 31/55 (56.4%)
+  Stops: 4
+  Distance: 48.52 km
+  Time: 95.2 minutes
+  Depot: Kovilambakkam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Velachery Mudhanmai Salai (13 students)
+    2. Velachery Mudhanmai Salai (3 students)
+    3. Mount - Medavakkam Road (9 students)
+    4. Mount - Medavakkam Road (6 students)
+
+BUS_24:
+  Students: 9/55 (16.4%)
+  Stops: 1
+  Distance: 71.84 km
+  Time: 99.6 minutes
+  Depot: Nemili
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Arakkonam - Ocheri Road (9 students)
+
+BUS_25:
+  Students: 5/55 (9.1%)
+  Stops: 2
+  Distance: 66.85 km
+  Time: 97.7 minutes
+  Depot: Andarkuppam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Puduvoyal – Pulicat Road (2 students)
+    2. Unnamed primary Road (3 students)
+
+BUS_26:
+  Students: 5/55 (9.1%)
+  Stops: 1
+  Distance: 78.55 km
+  Time: 140.6 minutes
+  Depot: Thiruvallur (Venakatesan G)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Korathalaiyar Bridge - Puthur Road (5 students)
+
+BUS_27:
+  Students: 5/55 (9.1%)
+  Stops: 1
+  Distance: 33.40 km
+  Time: 56.5 minutes
+  Depot: Thiruvallur (Manavalan nagar)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Thandalam - Perambakkam - Thakkolam - Arugilpadi Road (5 students)
+
+BUS_28:
+  Students: 39/55 (70.9%)
+  Stops: 2
+  Distance: 38.61 km
+  Time: 86.0 minutes
+  Depot: Velachery
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Mount - Medavakkam Road (20 students)
+    2. MDR622 (19 students)
+
+BUS_29:
+  Students: 47/55 (85.5%)
+  Stops: 3
+  Distance: 51.37 km
+  Time: 105.9 minutes
+  Depot: Kovilambakkam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Grand Southern Trunk Road (14 students)
+    2. Mount - Medavakkam Road (16 students)
+    3. Velachery Main Road (17 students)
+
+BUS_30:
+  Students: 9/55 (16.4%)
+  Stops: 1
+  Distance: 36.77 km
+  Time: 76.4 minutes
+  Depot: Velachery
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Inner Ring Road (Southern Sector) (9 students)
+
+BUS_31:
+  Students: 55/55 (100.0%)
+  Stops: 3
+  Distance: 38.83 km
+  Time: 83.5 minutes
+  Depot: Sathya Garden
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Nelson Manickam Road (22 students)
+    2. Jawaharlal Nehru Road (100 Feet Road) (16 students)
+    3. Jawaharlal Nehru Road (100 Feet Road) (17 students)
+
+BUS_32:
+  Students: 18/55 (32.7%)
+  Stops: 2
+  Distance: 37.88 km
+  Time: 81.7 minutes
+  Depot: Sathya Garden
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Tank Bund Road (11 students)
+    2. Kodambakkam Railway Flyover (7 students)
+
+BUS_33:
+  Students: 15/55 (27.3%)
+  Stops: 2
+  Distance: 29.77 km
+  Time: 51.6 minutes
+  Depot: Mudichur
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chennai - Chittoor - Bangalore Road (Old NH4) (4 students)
+    2. Singaperumalkoil - Sriperumbudur - Thiruvallur - Red Hills Road (11 students)
+
+BUS_34:
+  Students: 9/55 (16.4%)
+  Stops: 2
+  Distance: 63.05 km
+  Time: 89.6 minutes
+  Depot: Minjur
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Thiruvottriyur – Ponneri – Panchetty Road (5 students)
+    2. Thiruvottriyur – Ponneri – Panchetty Road (4 students)
+
+BUS_35:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 62.53 km
+  Time: 98.2 minutes
+  Depot: Uthiramerur
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Uthiramerur - Kancheepuram Road (2 students)
+
+BUS_36:
+  Students: 7/55 (12.7%)
+  Stops: 2
+  Distance: 53.94 km
+  Time: 75.3 minutes
+  Depot: Kelambakkam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Vandalur - Mambakkam - Kelambakkam Road (2 students)
+    2. Rajiv Gandhi Salai (5 students)
+
+BUS_37:
+  Students: 11/55 (20.0%)
+  Stops: 2
+  Distance: 27.75 km
+  Time: 53.9 minutes
+  Depot: Ayapakkam (Giri Parking)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. NH48 (4 students)
+    2. Thirumazhisai - Thiruvallur - Uthukottai Road (7 students)
+
+BUS_38:
+  Students: 9/55 (16.4%)
+  Stops: 2
+  Distance: 53.05 km
+  Time: 86.3 minutes
+  Depot: Ennore
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chennai - Ennore Road (7 students)
+    2. Chennai - Ennore Road (2 students)
+
+BUS_39:
+  Students: 54/55 (98.2%)
+  Stops: 2
+  Distance: 27.36 km
+  Time: 55.8 minutes
+  Depot: Lucas
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Unnamed secondary Road (30 students)
+    2. Unnamed secondary Road (24 students)
+
+BUS_40:
+  Students: 28/55 (50.9%)
+  Stops: 3
+  Distance: 31.31 km
+  Time: 63.1 minutes
+  Depot: Ayapakkam (Giri Parking)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Vanagaram - Ambathur - Puzhal Road (8 students)
+    2. EVR Periyar Salai (9 students)
+    3. Alapakkam Main Road (11 students)
+
+BUS_41:
+  Students: 58/55 (105.5%)
+  Stops: 1
+  Distance: 27.58 km
+  Time: 60.8 minutes
+  Depot: Sathya Garden
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Mount - Poonamallee - Avadi Road (58 students)
+
+BUS_42:
+  Students: 50/55 (90.9%)
+  Stops: 2
+  Distance: 24.96 km
+  Time: 60.4 minutes
+  Depot: Sathya Garden
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Poonamallee - Kundrathur - Pallavaram Road (32 students)
+    2. Mount - Poonamallee - Avadi Road (18 students)
+
+BUS_43:
+  Students: 38/55 (69.1%)
+  Stops: 3
+  Distance: 29.65 km
+  Time: 57.6 minutes
+  Depot: Ayapakkam (Giri Parking)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. NH48 (12 students)
+    2. Chennai - Chittoor - Bangalore Road (Old NH4) (16 students)
+    3. Mount - Poonamallee - Avadi Road (10 students)
+
+BUS_44:
+  Students: 6/55 (10.9%)
+  Stops: 2
+  Distance: 38.15 km
+  Time: 65.8 minutes
+  Depot: Avadi (Kavarapalayam)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Kovilpadagai Main Road (3 students)
+    2. Kovilpadagai Main Road (3 students)
+
+BUS_45:
+  Students: 53/55 (96.4%)
+  Stops: 4
+  Distance: 55.96 km
+  Time: 112.9 minutes
+  Depot: Vyasarpadi
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Thiruvottriyur High Road (17 students)
+    2. Varadharaja Perumal Koil Street (15 students)
+    3. Suryanarayana Street (11 students)
+    4. North Wall Road (10 students)
+
+BUS_46:
+  Students: 7/55 (12.7%)
+  Stops: 1
+  Distance: 41.38 km
+  Time: 90.7 minutes
+  Depot: Vyasarpadi
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Rajaji Salai (7 students)
+
+BUS_47:
+  Students: 28/55 (50.9%)
+  Stops: 4
+  Distance: 50.18 km
+  Time: 117.3 minutes
+  Depot: Sathya Garden
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Anna Salai (Mount Road) (7 students)
+    2. RA Puram 2nd Main Road (9 students)
+    3. Ramkrishna Mutt Road (6 students)
+    4. Avvai Shanmugam Salai (6 students)
+
+BUS_48:
+  Students: 4/55 (7.3%)
+  Stops: 2
+  Distance: 68.37 km
+  Time: 103.8 minutes
+  Depot: Thiruthani
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chittoor - Tiruttani Road (2 students)
+    2. Sadras - Chengalpattu - Kancheepuram - Arakkonam - Tiruthani Road (2 students)
+
+BUS_49:
+  Students: 37/55 (67.3%)
+  Stops: 4
+  Distance: 43.53 km
+  Time: 80.9 minutes
+  Depot: Kovilambakkam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Velachery Mudhanmai Salai (13 students)
+    2. Camp Salai (7 students)
+    3. Camp Salai (6 students)
+    4. Velachery Mudhanmai Salai (11 students)
+
+BUS_50:
+  Students: 38/55 (69.1%)
+  Stops: 3
+  Distance: 28.04 km
+  Time: 56.7 minutes
+  Depot: Thiruvallur (Venakatesan G)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chennai Tirupati Highway (10 students)
+    2. NH716 (12 students)
+    3. Unnamed primary Road (16 students)
+
+BUS_51:
+  Students: 4/55 (7.3%)
+  Stops: 2
+  Distance: 49.18 km
+  Time: 76.9 minutes
+  Depot: Arakkonam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Thandalam - Perambakkam - Thakkolam - Arugilpadi Road (2 students)
+    2. Thandalam - Perambakkam - Thakkolam - Arugilpadi Road (2 students)
+
+BUS_52:
+  Students: 8/55 (14.5%)
+  Stops: 2
+  Distance: 29.80 km
+  Time: 51.7 minutes
+  Depot: Veppamapattu
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chennai Tirupati Highway (5 students)
+    2. Chennai Tirupati Highway (3 students)
+
+BUS_53:
+  Students: 21/55 (38.2%)
+  Stops: 2
+  Distance: 50.63 km
+  Time: 85.9 minutes
+  Depot: KPM (White gate)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Uthiramerur - Kancheepuram Road (16 students)
+    2. Uthiramerur - Kancheepuram Road (5 students)
+
+BUS_54:
+  Students: 32/55 (58.2%)
+  Stops: 1
+  Distance: 27.43 km
+  Time: 56.9 minutes
+  Depot: Lucas
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Thirumangalam – Mogappair Road (32 students)
+
+BUS_55:
+  Students: 32/55 (58.2%)
+  Stops: 1
+  Distance: 27.75 km
+  Time: 58.4 minutes
+  Depot: Lucas
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Thiruvalluvar Saalai (32 students)
+
+BUS_56:
+  Students: 54/55 (98.2%)
+  Stops: 2
+  Distance: 29.58 km
+  Time: 63.0 minutes
+  Depot: Lucas
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Bazaar Road (29 students)
+    2. Jawaharlal Nehru Road (100 Feet Road) (25 students)
+
+BUS_57:
+  Students: 27/55 (49.1%)
+  Stops: 3
+  Distance: 33.02 km
+  Time: 65.7 minutes
+  Depot: Lucas
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. EVR Periyar Salai (10 students)
+    2. EVR Periyar Salai (6 students)
+    3. EVR Periyar Salai (11 students)
+
+BUS_58:
+  Students: 6/55 (10.9%)
+  Stops: 2
+  Distance: 53.58 km
+  Time: 107.6 minutes
+  Depot: VGP (Golden Beach)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Dr MGR Main Road (3 students)
+    2. East Coast Road (3 students)
+
+BUS_59:
+  Students: 3/55 (5.5%)
+  Stops: 1
+  Distance: 61.14 km
+  Time: 95.2 minutes
+  Depot: Uthiramerur
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Bukkathurai - Uthiramerur Road (3 students)
+
+BUS_60:
+  Students: 44/55 (80.0%)
+  Stops: 2
+  Distance: 31.46 km
+  Time: 69.3 minutes
+  Depot: Sathya Garden
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Kaliamman Koil Street (19 students)
+    2. PT Rajan Salai (25 students)
+
+BUS_61:
+  Students: 55/55 (100.0%)
+  Stops: 4
+  Distance: 31.52 km
+  Time: 72.2 minutes
+  Depot: Sathya Garden
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Arcot Road (14 students)
+    2. Reddy Street (10 students)
+    3. Arcot Road (14 students)
+    4. Anna Main Road (17 students)
+
+BUS_62:
+  Students: 8/55 (14.5%)
+  Stops: 2
+  Distance: 33.51 km
+  Time: 55.0 minutes
+  Depot: Mudichur
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Kodambakkam – Sriperumbudur Road (6 students)
+    2. Kodambakkam – Sriperumbudur Road (2 students)
+
+BUS_63:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 52.56 km
+  Time: 84.6 minutes
+  Depot: KPM (White gate)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chengalpattu - Kancheepuram Highway (2 students)
+
+BUS_64:
+  Students: 36/55 (65.5%)
+  Stops: 3
+  Distance: 41.30 km
+  Time: 74.9 minutes
+  Depot: Mudichur
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Tambaram - Mudichur - Sriperumbudur Road (6 students)
+    2. Grand Southern Trunk Road (12 students)
+    3. Grand Southern Trunk Road (18 students)
+
+BUS_65:
+  Students: 40/55 (72.7%)
+  Stops: 3
+  Distance: 27.99 km
+  Time: 56.5 minutes
+  Depot: Ayapakkam (Giri Parking)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chennai - Chittoor - Bangalore Road (Old NH4) (23 students)
+    2. ORR Service Road (11 students)
+    3. Nazarathpet Road (6 students)
+
+BUS_66:
+  Students: 38/55 (69.1%)
+  Stops: 1
+  Distance: 30.41 km
+  Time: 57.2 minutes
+  Depot: Kallikuppam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chennai - Tiruttani - Renigunta Road (38 students)
+
+BUS_67:
+  Students: 31/55 (56.4%)
+  Stops: 1
+  Distance: 34.89 km
+  Time: 63.8 minutes
+  Depot: Kallikuppam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chennai - Tiruttani - Renigunta Road (31 students)
+
+BUS_68:
+  Students: 3/55 (5.5%)
+  Stops: 1
+  Distance: 50.97 km
+  Time: 73.5 minutes
+  Depot: Andarkuppam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Grand Northern Trunk Road (Old NH5) (3 students)
+
+BUS_69:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 37.95 km
+  Time: 61.0 minutes
+  Depot: Veppamapattu
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Korattur – Thinnanur – Periyapalayam Road (2 students)
+
+BUS_70:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 84.65 km
+  Time: 110.1 minutes
+  Depot: Nemili
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. NH48 (2 students)
+
+BUS_71:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 81.60 km
+  Time: 100.4 minutes
+  Depot: Andarkuppam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. NH16 (2 students)
+
+BUS_72:
+  Students: 42/55 (76.4%)
+  Stops: 2
+  Distance: 34.95 km
+  Time: 76.9 minutes
+  Depot: Lucas
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. 2nd Avenue, Anna Nagar West (24 students)
+    2. Anna Nagar 2nd Avenue (18 students)
+
+BUS_73:
+  Students: 42/55 (76.4%)
+  Stops: 3
+  Distance: 40.68 km
+  Time: 89.3 minutes
+  Depot: Lucas
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. EVR Periyar Salai (18 students)
+    2. Konnur High Road (11 students)
+    3. Konnur High Road (13 students)
+
+BUS_74:
+  Students: 5/55 (9.1%)
+  Stops: 1
+  Distance: 39.73 km
+  Time: 56.2 minutes
+  Depot: Veerapuram
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Singaperumalkoil - Sriperumbudur - Thiruvallur - Red Hills Road (5 students)
+
+BUS_75:
+  Students: 36/55 (65.5%)
+  Stops: 4
+  Distance: 29.69 km
+  Time: 56.4 minutes
+  Depot: Ayapakkam (Giri Parking)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chennai - Tiruttani - Renigunta Road (8 students)
+    2. Thiruverkadu - Ambattur Road (9 students)
+    3. Thiruverkadu - Ambattur Road (12 students)
+    4. Thiruverkadu - Ambattur Road (7 students)
+
+BUS_76:
+  Students: 19/55 (34.5%)
+  Stops: 3
+  Distance: 40.73 km
+  Time: 61.8 minutes
+  Depot: Urapakkam (Vandalur)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Grand Southern Trunk Road (14 students)
+    2. Grand Southern Trunk Road (2 students)
+    3. Nellikuppam Road (3 students)
+
+BUS_77:
+  Students: 18/55 (32.7%)
+  Stops: 3
+  Distance: 27.16 km
+  Time: 45.2 minutes
+  Depot: Veppamapattu
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. ORR Service Road (7 students)
+    2. Chennai - Tiruttani - Renigunta Road (5 students)
+    3. Chennai - Tiruttani - Renigunta Road (6 students)
+
+BUS_78:
+  Students: 37/55 (67.3%)
+  Stops: 4
+  Distance: 46.77 km
+  Time: 111.4 minutes
+  Depot: Vyasarpadi
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Peters Road (11 students)
+    2. Triplicane High Road (15 students)
+    3. Arunachalam Street (9 students)
+    4. Memorial Hall Road (2 students)
+
+BUS_79:
+  Students: 18/55 (32.7%)
+  Stops: 3
+  Distance: 49.62 km
+  Time: 108.2 minutes
+  Depot: Velachery
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Mahatma Gandhi Road (6 students)
+    2. East Coast Road (7 students)
+    3. Sardar Patel Road (5 students)
+
+BUS_80:
+  Students: 32/55 (58.2%)
+  Stops: 4
+  Distance: 58.08 km
+  Time: 114.6 minutes
+  Depot: Ennore
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Thiruvottriyur High Road (4 students)
+    2. Chennai - Ennore Road (10 students)
+    3. Chennai - Ennore Road (8 students)
+    4. Chennai - Ennore Road (10 students)
+
+BUS_81:
+  Students: 52/55 (94.5%)
+  Stops: 6
+  Distance: 50.26 km
+  Time: 87.4 minutes
+  Depot: Red Hills
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chennai Bypass (6 students)
+    2. Madhavaram - Red Hills Road (11 students)
+    3. Paper Mills Road (16 students)
+    4. Unnamed secondary Road (5 students)
+    5. Unnamed primary Road (5 students)
+    6. Grand Northern Trunk Road (9 students)
+
+BUS_82:
+  Students: 6/55 (10.9%)
+  Stops: 2
+  Distance: 44.80 km
+  Time: 70.3 minutes
+  Depot: Mudichur
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chennai - Chittoor - Bangalore Road (4 students)
+    2. NH48 (2 students)
+
+BUS_83:
+  Students: 5/55 (9.1%)
+  Stops: 1
+  Distance: 49.06 km
+  Time: 77.8 minutes
+  Depot: Dusi (Sekar)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Kancheepuram - Vandavasi Road (5 students)
+
+BUS_84:
+  Students: 3/55 (5.5%)
+  Stops: 1
+  Distance: 43.89 km
+  Time: 60.4 minutes
+  Depot: KPM (White gate)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. NH48 (3 students)
+
+BUS_85:
+  Students: 4/55 (7.3%)
+  Stops: 1
+  Distance: 28.96 km
+  Time: 45.9 minutes
+  Depot: Mudichur
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. NH48 (4 students)
+
+BUS_86:
+  Students: 54/55 (98.2%)
+  Stops: 3
+  Distance: 27.02 km
+  Time: 57.3 minutes
+  Depot: Avadi (Kavarapalayam)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Mount - Poonamallee - Avadi Road (14 students)
+    2. Mount - Poonamallee - Avadi Road (16 students)
+    3. Chennai - Tiruttani - Renigunta Road (24 students)
+
+BUS_87:
+  Students: 33/55 (60.0%)
+  Stops: 3
+  Distance: 26.42 km
+  Time: 54.7 minutes
+  Depot: Avadi (Kavarapalayam)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. 4th Main Road (12 students)
+    2. Kamarajanagar Main Road (9 students)
+    3. Chennai - Tiruttani - Renigunta Road (12 students)
+
+BUS_88:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 40.41 km
+  Time: 71.5 minutes
+  Depot: Thiruvallur (Venakatesan G)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Kadambathur Bridge (2 students)
+
+BUS_89:
+  Students: 4/55 (7.3%)
+  Stops: 1
+  Distance: 42.30 km
+  Time: 63.7 minutes
+  Depot: Avadi (Kavarapalayam)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. ORR Service Road (4 students)
+
+BUS_90:
+  Students: 50/55 (90.9%)
+  Stops: 2
+  Distance: 43.76 km
+  Time: 80.9 minutes
+  Depot: Vyasarpadi
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Paper Mills Road (31 students)
+    2. Paper Mills Road (19 students)
+
+BUS_91:
+  Students: 41/55 (74.5%)
+  Stops: 3
+  Distance: 47.42 km
+  Time: 87.9 minutes
+  Depot: Vyasarpadi
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Erukkancheri High Road (9 students)
+    2. Paper Mills Road (16 students)
+    3. Paper Mills Road (16 students)
+
+BUS_92:
+  Students: 12/55 (21.8%)
+  Stops: 2
+  Distance: 35.24 km
+  Time: 75.8 minutes
+  Depot: Velachery
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Binny Road (5 students)
+    2. Five Furlong Road (7 students)
+
+BUS_93:
+  Students: 23/55 (41.8%)
+  Stops: 4
+  Distance: 57.37 km
+  Time: 95.5 minutes
+  Depot: KPM (White gate)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Kancheepuram - Rajakulam Road (6 students)
+    2. Kancheepuram - Rajakulam Road (4 students)
+    3. Chengalpattu - Kancheepuram Highway (7 students)
+    4. Chengalpattu - Kancheepuram Highway (6 students)
+
+BUS_94:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 45.02 km
+  Time: 64.3 minutes
+  Depot: Veerapuram
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Grand Southern Trunk Road (2 students)
+
+BUS_95:
+  Students: 45/55 (81.8%)
+  Stops: 4
+  Distance: 44.44 km
+  Time: 104.9 minutes
+  Depot: Vyasarpadi
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Narayana Guru Salai (10 students)
+    2. Purasawalkam High Road (11 students)
+    3. Strahans Road (14 students)
+    4. Unnamed secondary Road (10 students)
+
+BUS_96:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 24.01 km
+  Time: 46.3 minutes
+  Depot: Veppamapattu
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Thirumazhisai - Thiruvallur - Uthukottai Road (2 students)
+
+BUS_97:
+  Students: 8/55 (14.5%)
+  Stops: 2
+  Distance: 34.85 km
+  Time: 51.1 minutes
+  Depot: Mudichur
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. ORR Service Road (3 students)
+    2. Unnamed primary Road (5 students)
+
+BUS_98:
+  Students: 5/55 (9.1%)
+  Stops: 1
+  Distance: 19.58 km
+  Time: 45.4 minutes
+  Depot: Veppamapattu
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Korattur – Thinnanur – Periyapalayam Road (5 students)
+
+BUS_99:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 35.57 km
+  Time: 66.7 minutes
+  Depot: Thiruvallur (Venakatesan G)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Thirumazhisai - Thiruvallur - Uthukottai Road (2 students)
+
+BUS_100:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 22.61 km
+  Time: 37.3 minutes
+  Depot: Thiruvallur (Manavalan nagar)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Singaperumalkoil - Sriperumbudur - Thiruvallur - Red Hills Road (2 students)
+
+BUS_101:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 51.35 km
+  Time: 69.5 minutes
+  Depot: Andarkuppam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Chennai – Pulicut Road (2 students)
+
+BUS_102:
+  Students: 28/55 (50.9%)
+  Stops: 3
+  Distance: 69.97 km
+  Time: 123.3 minutes
+  Depot: Sathya Garden
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Poonamallee - Kundrathur - Pallavaram Road (10 students)
+    2. Kodambakkam – Sriperumbudur Road (12 students)
+    3. Chennai Bypass Expressway (6 students)
+
+BUS_103:
+  Students: 45/55 (81.8%)
+  Stops: 4
+  Distance: 35.35 km
+  Time: 83.5 minutes
+  Depot: Sathya Garden
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Mount - Poonamallee - Avadi Road (7 students)
+    2. Manapakkam Main Road (5 students)
+    3. Valluvar Salai (9 students)
+    4. Arcot Road (24 students)
+
+BUS_104:
+  Students: 3/55 (5.5%)
+  Stops: 1
+  Distance: 51.60 km
+  Time: 80.7 minutes
+  Depot: Mudichur
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Unnamed secondary Road (3 students)
+
+BUS_105:
+  Students: 7/55 (12.7%)
+  Stops: 2
+  Distance: 45.92 km
+  Time: 67.0 minutes
+  Depot: Veerapuram
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Grand Southern Trunk Road (4 students)
+    2. Grand Southern Trunk Road (3 students)
+
+BUS_106:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 87.14 km
+  Time: 104.9 minutes
+  Depot: Arcot
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. NH48 (2 students)
+
+BUS_107:
+  Students: 3/55 (5.5%)
+  Stops: 1
+  Distance: 33.68 km
+  Time: 53.0 minutes
+  Depot: Mudichur
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Marmalong Bridge - Irumbuliyur - Vandalur - Mudichur - Oragadam - Walajabad Road (3 students)
+
+BUS_108:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 52.27 km
+  Time: 77.8 minutes
+  Depot: Nemili
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Sadras - Chengalpattu - Kancheepuram - Arakkonam - Tiruthani Road (2 students)
+
+BUS_109:
+  Students: 5/55 (9.1%)
+  Stops: 2
+  Distance: 41.76 km
+  Time: 68.5 minutes
+  Depot: Thiruvallur (Manavalan nagar)
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Thandalam - Perambakkam - Thakkolam - Arugilpadi Road (2 students)
+    2. Thandalam - Perambakkam - Thakkolam - Arugilpadi Road (3 students)
+
+BUS_110:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 27.31 km
+  Time: 47.0 minutes
+  Depot: Mudichur
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Kodambakkam – Sriperumbudur Road (2 students)
+
+BUS_111:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 48.62 km
+  Time: 98.2 minutes
+  Depot: Dusi (Sekar)
+  Route Type: Estimated
+  Stop Sequence:
+    1. Kancheepuram - Vandavasi Road (2 students)
+
+BUS_112:
+  Students: 2/55 (3.6%)
+  Stops: 1
+  Distance: 53.29 km
+  Time: 88.9 minutes
+  Depot: Kovilambakkam
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Medavakkam - Mambakkam - Sembakkam Road (2 students)
+
+BUS_113:
+  Students: 11/55 (20.0%)
+  Stops: 1
+  Distance: 47.35 km
+  Time: 101.5 minutes
+  Depot: Vyasarpadi
+  Route Type: Google Optimized
+  Stop Sequence:
+    1. Kamarajar Salai (11 students)
+
+EFFICIENCY ANALYSIS:
+----------------------------------------
+High Efficiency Routes (>90%): 16
+Medium Efficiency Routes (75-90%): 7
+Low Efficiency Routes (<75%): 90
+
+Low efficiency routes for review:
+  BUS_02: 58.2% utilization
+  BUS_04: 60.0% utilization
+  BUS_05: 67.3% utilization
+  BUS_06: 34.5% utilization
+  BUS_08: 10.9% utilization
+  BUS_09: 49.1% utilization
+  BUS_11: 27.3% utilization
+  BUS_13: 23.6% utilization
+  BUS_14: 25.5% utilization
+  BUS_16: 29.1% utilization
+  BUS_17: 12.7% utilization
+  BUS_18: 29.1% utilization
+  BUS_20: 50.9% utilization
+  BUS_21: 70.9% utilization
+  BUS_22: 32.7% utilization
+  BUS_23: 56.4% utilization
+  BUS_24: 16.4% utilization
+  BUS_25: 9.1% utilization
+  BUS_26: 9.1% utilization
+  BUS_27: 9.1% utilization
+  BUS_28: 70.9% utilization
+  BUS_30: 16.4% utilization
+  BUS_32: 32.7% utilization
+  BUS_33: 27.3% utilization
+  BUS_34: 16.4% utilization
+  BUS_35: 3.6% utilization
+  BUS_36: 12.7% utilization
+  BUS_37: 20.0% utilization
+  BUS_38: 16.4% utilization
+  BUS_40: 50.9% utilization
+  BUS_43: 69.1% utilization
+  BUS_44: 10.9% utilization
+  BUS_46: 12.7% utilization
+  BUS_47: 50.9% utilization
+  BUS_48: 7.3% utilization
+  BUS_49: 67.3% utilization
+  BUS_50: 69.1% utilization
+  BUS_51: 7.3% utilization
+  BUS_52: 14.5% utilization
+  BUS_53: 38.2% utilization
+  BUS_54: 58.2% utilization
+  BUS_55: 58.2% utilization
+  BUS_57: 49.1% utilization
+  BUS_58: 10.9% utilization
+  BUS_59: 5.5% utilization
+  BUS_62: 14.5% utilization
+  BUS_63: 3.6% utilization
+  BUS_64: 65.5% utilization
+  BUS_65: 72.7% utilization
+  BUS_66: 69.1% utilization
+  BUS_67: 56.4% utilization
+  BUS_68: 5.5% utilization
+  BUS_69: 3.6% utilization
+  BUS_70: 3.6% utilization
+  BUS_71: 3.6% utilization
+  BUS_74: 9.1% utilization
+  BUS_75: 65.5% utilization
+  BUS_76: 34.5% utilization
+  BUS_77: 32.7% utilization
+  BUS_78: 67.3% utilization
+  BUS_79: 32.7% utilization
+  BUS_80: 58.2% utilization
+  BUS_82: 10.9% utilization
+  BUS_83: 9.1% utilization
+  BUS_84: 5.5% utilization
+  BUS_85: 7.3% utilization
+  BUS_87: 60.0% utilization
+  BUS_88: 3.6% utilization
+  BUS_89: 7.3% utilization
+  BUS_91: 74.5% utilization
+  BUS_92: 21.8% utilization
+  BUS_93: 41.8% utilization
+  BUS_94: 3.6% utilization
+  BUS_96: 3.6% utilization
+  BUS_97: 14.5% utilization
+  BUS_98: 9.1% utilization
+  BUS_99: 3.6% utilization
+  BUS_100: 3.6% utilization
+  BUS_101: 3.6% utilization
+  BUS_102: 50.9% utilization
+  BUS_104: 5.5% utilization
+  BUS_105: 12.7% utilization
+  BUS_106: 3.6% utilization
+  BUS_107: 5.5% utilization
+  BUS_108: 3.6% utilization
+  BUS_109: 9.1% utilization
+  BUS_110: 3.6% utilization
+  BUS_111: 3.6% utilization
+  BUS_112: 3.6% utilization
+  BUS_113: 20.0% utilization

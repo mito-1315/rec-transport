@@ -1,0 +1,5 @@
+cluster_number,original_lat,original_lon,snapped_lat,snapped_lon,route_name,route_type,route_id,snap_distance_meters,num_students
+8,12.6596265404361,79.54250892174637,12.6808598,79.5708042,Kancheepuram - Thiruvathipuram Road,arterial,687854973,3872.64,3
+16,13.1750723,80.0199562,13.1755133,80.0292943,Korattur – Thinnanur – Periyapalayam Road,arterial,834092625,1012.21,2
+30,13.167901983438378,80.09481601817262,13.1778907,80.0926407,ORR Service Road,arterial,1075657733,1135.39,4
+68,12.93850715844084,80.14821430437608,12.9465623,80.1366393,Grand Southern Trunk Road,arterial,95641243,1541.34,6

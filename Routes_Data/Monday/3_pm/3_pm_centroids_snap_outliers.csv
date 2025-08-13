@@ -1,0 +1,3 @@
+cluster_number,original_lat,original_lon,snapped_lat,snapped_lon,route_name,route_type,route_id,snap_distance_meters,num_students
+8,12.664979988149437,79.54066654214965,12.6808598,79.5708042,Kancheepuram - Thiruvathipuram Road,arterial,687854973,3715.86,3
+24,13.125415111493192,79.92686901130736,13.1350295,79.928418,Chennai Tirupati Highway,highway,1040827858,1082.15,2

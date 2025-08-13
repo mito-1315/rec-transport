@@ -1,0 +1,247 @@
+Bus_ID,Sequence,Stop_Name,Latitude,Longitude,Students
+BUS_01,1,Jawaharlal Nehru Road (100 Feet Road),13.1244297,80.2039086,27
+BUS_01,2,East avenue Road,13.1081301,80.1834405,25
+BUS_02,1,Jawaharlal Nehru Road (100 Feet Road),13.117585,80.1980171,13
+BUS_02,2,Konnur High Road,13.1038188,80.2043294,19
+BUS_03,1,Kancheepuram - Vandavasi Road,12.8196396,79.6954967,30
+BUS_03,2,NH132B,12.8386313,79.7017388,23
+BUS_04,1,Chengalpattu - Kancheepuram Highway,12.8263762,79.7082716,17
+BUS_04,2,Chengalpattu - Kancheepuram Highway,12.8467476,79.6954089,16
+BUS_05,1,ORR Service Road,12.9182365,80.0763806,3
+BUS_05,2,Grand Southern Trunk Road,12.907067,80.0969048,4
+BUS_05,3,Tambaram - Mudichur - Sriperumbudur Road,12.9256076,80.1015803,7
+BUS_05,4,Tambaram - Mudichur - Sriperumbudur Road,12.9208643,80.0897264,20
+BUS_05,5,Tambaram - Mudichur - Sriperumbudur Road,12.9161916,80.064586,3
+BUS_06,1,Singaperumalkoil - Sriperumbudur - Thiruvallur - Red Hills Road,13.0835758,79.9082837,6
+BUS_06,2,Singaperumalkoil - Sriperumbudur - Thiruvallur - Red Hills Road,13.1066306,79.909061,13
+BUS_07,1,Mount - Poonamallee - Avadi Road,13.0323644,80.1634373,18
+BUS_07,2,Kodambakkam – Sriperumbudur Road,13.0190631,80.1425374,11
+BUS_07,3,Kodambakkam – Sriperumbudur Road,13.0282551,80.151315,8
+BUS_07,4,Arcot Road,13.0366911,80.1577632,15
+BUS_08,1,Chennai Bypass Expressway,13.0399718,80.1494906,6
+BUS_09,1,Sadras - Chengalpattu - Kancheepuram - Arakkonam - Tiruthani Road,13.0726049,79.671687,11
+BUS_09,2,Sadras - Chengalpattu - Kancheepuram - Arakkonam - Tiruthani Road,13.0952783,79.6587218,16
+BUS_10,1,Unnamed secondary Road,13.1464727,80.2401984,9
+BUS_10,2,Kamarajar Salai,13.1651013,80.2538059,8
+BUS_10,3,Tondiarpet High Road,13.1365522,80.2565655,5
+BUS_10,4,Tondiarpet High Road,13.1308106,80.2513305,11
+BUS_10,5,Moolakadai Flyover,13.1294933,80.2407261,11
+BUS_10,6,MKB Nagar West Avenue,13.1214127,80.2593309,9
+BUS_11,1,Anna Salai High Road,12.6923202,79.977506,8
+BUS_11,2,Chennai - Trichy - Dindugal Road (Old NH45),12.6810883,79.9815472,7
+BUS_12,1,70 Feet Road,13.0280355,80.2261679,18
+BUS_12,2,11th Avenue,13.0324539,80.2184352,17
+BUS_12,3,Arya Gowda Road,13.0429082,80.2220416,17
+BUS_13,1,Inner Ring Road,13.0254279,80.2069983,6
+BUS_13,2,Venkatanarayana Road,13.0332055,80.2383291,7
+BUS_14,1,NH48,13.0093775,79.997444,8
+BUS_14,2,NH48,13.0160537,80.005472,4
+BUS_14,3,NH48,13.0242352,80.0232451,2
+BUS_15,1,Poonamallee - Kundrathur - Pallavaram Road,12.9796351,80.1289858,18
+BUS_15,2,Poonamallee - Kundrathur - Pallavaram Road,12.9743556,80.1354368,21
+BUS_15,3,Indira Gandhi Road,12.9686602,80.148252,12
+BUS_16,1,Tiruneermalai Main Road,12.9577196,80.127177,8
+BUS_16,2,Grand Southern Trunk Road,12.9542247,80.1420342,6
+BUS_16,3,Pallavaram - Thoraipakkam Road,12.9539225,80.1618265,2
+BUS_17,1,Unnamed secondary Road,13.1441272,80.059733,2
+BUS_17,2,ORR Service Road,13.1589007,80.0617797,5
+BUS_18,1,ORR Service Road,13.1955735,80.15511,4
+BUS_18,2,Grand Northern Trunk Road,13.2029901,80.1759665,6
+BUS_18,3,Grand Northern Trunk Road,13.1908713,80.190073,6
+BUS_19,1,Mount - Poonamallee - Avadi Road,13.0908856,80.1084504,18
+BUS_19,2,Mount - Poonamallee - Avadi Road,13.080051,80.1099993,13
+BUS_19,3,Thiruverkadu - Ambattur Road,13.0715396,80.1230343,11
+BUS_19,4,Thiruverkadu - Ambattur Road,13.0903791,80.1238186,4
+BUS_20,1,Gengu Reddy Road,13.0731972,80.2524824,6
+BUS_20,2,McNichols Road,13.0714633,80.2416141,5
+BUS_20,3,Purasawalkam High Road,13.0846071,80.2447311,17
+BUS_21,1,Chennai Bypass,13.1323215,80.1714386,19
+BUS_21,2,Unnamed primary Road,13.1302579,80.1579369,20
+BUS_22,1,Kalli Kuppam Road (KKRoad),13.1185829,80.1574137,18
+BUS_23,1,Velachery Mudhanmai Salai,12.9169387,80.1939435,13
+BUS_23,2,Velachery Mudhanmai Salai,12.9416721,80.206254,3
+BUS_23,3,Mount - Medavakkam Road,12.955952,80.1868305,9
+BUS_23,4,Mount - Medavakkam Road,12.9406188,80.1827273,6
+BUS_24,1,Arakkonam - Ocheri Road,12.9251652,79.5680523,9
+BUS_25,1,Puduvoyal – Pulicat Road,13.3400979,80.1875609,2
+BUS_25,2,Unnamed primary Road,13.3197245,80.1825128,3
+BUS_26,1,Korathalaiyar Bridge - Puthur Road,13.3336689,79.8904538,5
+BUS_27,1,Thandalam - Perambakkam - Thakkolam - Arugilpadi Road,13.0312146,79.8561927,5
+BUS_28,1,Mount - Medavakkam Road,12.990266,80.1983434,20
+BUS_28,2,MDR622,12.9648611,80.1988128,19
+BUS_29,1,Grand Southern Trunk Road,12.9910147,80.180964,14
+BUS_29,2,Mount - Medavakkam Road,12.9722223,80.1912881,16
+BUS_29,3,Velachery Main Road,12.9797452,80.2211016,17
+BUS_30,1,Inner Ring Road (Southern Sector),12.9774891,80.2050769,9
+BUS_31,1,Nelson Manickam Road,13.0678104,80.2269115,22
+BUS_31,2,Jawaharlal Nehru Road (100 Feet Road),13.0668577,80.2098652,16
+BUS_31,3,Jawaharlal Nehru Road (100 Feet Road),13.0591456,80.2116665,17
+BUS_32,1,Tank Bund Road,13.0573302,80.2417428,11
+BUS_32,2,Kodambakkam Railway Flyover,13.05411,80.229353,7
+BUS_33,1,Chennai - Chittoor - Bangalore Road (Old NH4),12.9685375,79.9508648,4
+BUS_33,2,Singaperumalkoil - Sriperumbudur - Thiruvallur - Red Hills Road,12.952297,79.9398674,11
+BUS_34,1,Thiruvottriyur – Ponneri – Panchetty Road,13.2622789,80.2740284,5
+BUS_34,2,Thiruvottriyur – Ponneri – Panchetty Road,13.2787896,80.2601839,4
+BUS_35,1,Uthiramerur - Kancheepuram Road,12.7188324,79.754445,2
+BUS_36,1,Vandalur - Mambakkam - Kelambakkam Road,12.7997072,80.1978817,2
+BUS_36,2,Rajiv Gandhi Salai,12.804098,80.2239072,5
+BUS_37,1,NH48,13.0367234,80.0463079,4
+BUS_37,2,Thirumazhisai - Thiruvallur - Uthukottai Road,13.0541191,80.0626209,7
+BUS_38,1,Chennai - Ennore Road,13.1841827,80.3087816,7
+BUS_38,2,Chennai - Ennore Road,13.2088824,80.3162235,2
+BUS_39,1,Unnamed secondary Road,13.0811279,80.165092,30
+BUS_39,2,Unnamed secondary Road,13.0832055,80.1720488,24
+BUS_40,1,Vanagaram - Ambathur - Puzhal Road,13.0673358,80.1520855,8
+BUS_40,2,EVR Periyar Salai,13.0649161,80.1721712,9
+BUS_40,3,Alapakkam Main Road,13.0606091,80.1638857,11
+BUS_41,1,Mount - Poonamallee - Avadi Road,13.0382972,80.1344583,58
+BUS_42,1,Poonamallee - Kundrathur - Pallavaram Road,13.0436252,80.115125,32
+BUS_42,2,Mount - Poonamallee - Avadi Road,13.0410842,80.12757,18
+BUS_43,1,NH48,13.0608277,80.135595,12
+BUS_43,2,Chennai - Chittoor - Bangalore Road (Old NH4),13.047624,80.1202266,16
+BUS_43,3,Mount - Poonamallee - Avadi Road,13.053787,80.1131979,10
+BUS_44,1,Kovilpadagai Main Road,13.1489467,80.1041817,3
+BUS_44,2,Kovilpadagai Main Road,13.1356361,80.1030221,3
+BUS_45,1,Thiruvottriyur High Road,13.1158031,80.2832731,17
+BUS_45,2,Varadharaja Perumal Koil Street,13.1250972,80.2901414,15
+BUS_45,3,Suryanarayana Street,13.1128092,80.2923433,11
+BUS_45,4,North Wall Road,13.104549,80.2775016,10
+BUS_46,1,Rajaji Salai,13.0956267,80.2926528,7
+BUS_47,1,Anna Salai (Mount Road),13.040093,80.2471791,7
+BUS_47,2,RA Puram 2nd Main Road,13.0270889,80.2599259,9
+BUS_47,3,Ramkrishna Mutt Road,13.0324043,80.267503,6
+BUS_47,4,Avvai Shanmugam Salai,13.0480609,80.2627831,6
+BUS_48,1,Chittoor - Tiruttani Road,13.1802421,79.6057495,2
+BUS_48,2,Sadras - Chengalpattu - Kancheepuram - Arakkonam - Tiruthani Road,13.166651,79.6151085,2
+BUS_49,1,Velachery Mudhanmai Salai,12.9224803,80.1399188,13
+BUS_49,2,Camp Salai,12.9177991,80.1459621,7
+BUS_49,3,Camp Salai,12.9098737,80.1428582,6
+BUS_49,4,Velachery Mudhanmai Salai,12.9236636,80.1563784,11
+BUS_50,1,Chennai Tirupati Highway,13.1367858,79.9227684,10
+BUS_50,2,NH716,13.1397329,79.9071287,12
+BUS_50,3,Unnamed primary Road,13.1248986,79.9111109,16
+BUS_51,1,Thandalam - Perambakkam - Thakkolam - Arugilpadi Road,13.0160514,79.730141,2
+BUS_51,2,Thandalam - Perambakkam - Thakkolam - Arugilpadi Road,13.0193065,79.7015351,2
+BUS_52,1,Chennai Tirupati Highway,13.1261257,79.9937592,5
+BUS_52,2,Chennai Tirupati Highway,13.1250591,80.0079577,3
+BUS_53,1,Uthiramerur - Kancheepuram Road,12.8133381,79.7057931,16
+BUS_53,2,Uthiramerur - Kancheepuram Road,12.8029775,79.7106416,5
+BUS_54,1,Thirumangalam – Mogappair Road,13.0882287,80.1808849,32
+BUS_55,1,Thiruvalluvar Saalai,13.0795453,80.1804801,32
+BUS_56,1,Bazaar Road,13.0861659,80.18815,29
+BUS_56,2,Jawaharlal Nehru Road (100 Feet Road),13.0892987,80.1984626,25
+BUS_57,1,EVR Periyar Salai,13.069554,80.181279,10
+BUS_57,2,EVR Periyar Salai,13.0731491,80.1896355,6
+BUS_57,3,EVR Periyar Salai,13.0767159,80.2051543,11
+BUS_58,1,Dr MGR Main Road,12.9694382,80.2454099,3
+BUS_58,2,East Coast Road,12.9513769,80.255062,3
+BUS_59,1,Bukkathurai - Uthiramerur Road,12.6152364,79.7591194,3
+BUS_60,1,Kaliamman Koil Street,13.0601703,80.1956371,19
+BUS_60,2,PT Rajan Salai,13.0401134,80.2050964,25
+BUS_61,1,Arcot Road,13.0449255,80.1859977,14
+BUS_61,2,Reddy Street,13.0490629,80.1938845,10
+BUS_61,3,Arcot Road,13.0478205,80.2030528,14
+BUS_61,4,Anna Main Road,13.0376131,80.1933511,17
+BUS_62,1,Kodambakkam – Sriperumbudur Road,12.9974667,80.0944867,6
+BUS_62,2,Kodambakkam – Sriperumbudur Road,13.0053498,80.1077229,2
+BUS_63,1,Chengalpattu - Kancheepuram Highway,12.8043217,79.7682319,2
+BUS_64,1,Tambaram - Mudichur - Sriperumbudur Road,12.9250316,80.1108545,6
+BUS_64,2,Grand Southern Trunk Road,12.9442642,80.1348523,12
+BUS_64,3,Grand Southern Trunk Road,12.9318015,80.1230704,18
+BUS_65,1,Chennai - Chittoor - Bangalore Road (Old NH4),13.0505209,80.092928,23
+BUS_65,2,ORR Service Road,13.0370201,80.0880854,11
+BUS_65,3,Nazarathpet Road,13.045663,80.0798683,6
+BUS_66,1,Chennai - Tiruttani - Renigunta Road,13.122126,80.1473929,38
+BUS_67,1,Chennai - Tiruttani - Renigunta Road,13.1307576,80.1305618,31
+BUS_68,1,Grand Northern Trunk Road (Old NH5),13.2522051,80.1554569,3
+BUS_69,1,Korattur – Thinnanur – Periyapalayam Road,13.1770065,80.0292554,2
+BUS_70,1,NH48,12.8964873,79.4979044,2
+BUS_71,1,NH16,13.4087761,80.1211767,2
+BUS_72,1,"2nd Avenue, Anna Nagar West",13.0850874,80.2083439,24
+BUS_72,2,Anna Nagar 2nd Avenue,13.0852877,80.224195,18
+BUS_73,1,EVR Periyar Salai,13.0748287,80.2183293,18
+BUS_73,2,Konnur High Road,13.0983954,80.2354855,11
+BUS_73,3,Konnur High Road,13.0995166,80.217425,13
+BUS_74,1,Singaperumalkoil - Sriperumbudur - Thiruvallur - Red Hills Road,12.8791391,79.9366357,5
+BUS_75,1,Chennai - Tiruttani - Renigunta Road,13.1047646,80.1531682,8
+BUS_75,2,Thiruverkadu - Ambattur Road,13.0974571,80.1462648,9
+BUS_75,3,Thiruverkadu - Ambattur Road,13.0982989,80.1367939,12
+BUS_75,4,Thiruverkadu - Ambattur Road,13.098807,80.1320216,7
+BUS_76,1,Grand Southern Trunk Road,12.8644399,80.0745198,14
+BUS_76,2,Grand Southern Trunk Road,12.8523903,80.0665875,2
+BUS_76,3,Nellikuppam Road,12.8414097,80.0616652,3
+BUS_77,1,ORR Service Road,13.1199574,80.0522794,7
+BUS_77,2,Chennai - Tiruttani - Renigunta Road,13.1251146,80.0420347,5
+BUS_77,3,Chennai - Tiruttani - Renigunta Road,13.1245513,80.0267371,6
+BUS_78,1,Peters Road,13.0531773,80.2717407,11
+BUS_78,2,Triplicane High Road,13.0600572,80.274274,15
+BUS_78,3,Arunachalam Street,13.075789,80.2681402,9
+BUS_78,4,Memorial Hall Road,13.0834125,80.2782213,2
+BUS_79,1,Mahatma Gandhi Road,12.9962673,80.2624653,6
+BUS_79,2,East Coast Road,12.9814436,80.2592991,7
+BUS_79,3,Sardar Patel Road,13.0066442,80.24615,5
+BUS_80,1,Thiruvottriyur High Road,13.1338671,80.2926645,4
+BUS_80,2,Chennai - Ennore Road,13.1495337,80.2988791,10
+BUS_80,3,Chennai - Ennore Road,13.1607411,80.3024955,8
+BUS_80,4,Chennai - Ennore Road,13.1710834,80.305016,10
+BUS_81,1,Chennai Bypass,13.1465943,80.2023367,6
+BUS_81,2,Madhavaram - Red Hills Road,13.1555952,80.2269937,11
+BUS_81,3,Paper Mills Road,13.1377265,80.2075976,16
+BUS_81,4,Unnamed secondary Road,13.1439096,80.1902892,5
+BUS_81,5,Unnamed primary Road,13.156321,80.196405,5
+BUS_81,6,Grand Northern Trunk Road,13.1641203,80.2024375,9
+BUS_82,1,Chennai - Chittoor - Bangalore Road,12.9263879,79.8811874,4
+BUS_82,2,NH48,12.9338896,79.9087661,2
+BUS_83,1,Kancheepuram - Vandavasi Road,12.780219,79.6776669,5
+BUS_84,1,NH48,12.8712678,79.7112987,3
+BUS_85,1,NH48,12.9814932,79.967806,4
+BUS_86,1,Mount - Poonamallee - Avadi Road,13.116293,80.10278,14
+BUS_86,2,Mount - Poonamallee - Avadi Road,13.1112241,80.1087043,16
+BUS_86,3,Chennai - Tiruttani - Renigunta Road,13.1193384,80.0945052,24
+BUS_87,1,4th Main Road,13.1022145,80.1068079,12
+BUS_87,2,Kamarajanagar Main Road,13.1092007,80.095096,9
+BUS_87,3,Chennai - Tiruttani - Renigunta Road,13.1192282,80.0733776,12
+BUS_88,1,Kadambathur Bridge,13.0977707,79.8605871,2
+BUS_89,1,ORR Service Road,13.1785269,80.0970981,4
+BUS_90,1,Paper Mills Road,13.1233699,80.2228531,31
+BUS_90,2,Paper Mills Road,13.1139891,80.2351816,19
+BUS_91,1,Erukkancheri High Road,13.1391984,80.2274981,9
+BUS_91,2,Paper Mills Road,13.1288541,80.215692,16
+BUS_91,3,Paper Mills Road,13.1188184,80.225731,16
+BUS_92,1,Binny Road,13.0073884,80.1988454,5
+BUS_92,2,Five Furlong Road,12.9991525,80.2147506,7
+BUS_93,1,Kancheepuram - Rajakulam Road,12.8380984,79.7277504,6
+BUS_93,2,Kancheepuram - Rajakulam Road,12.8389849,79.7190597,4
+BUS_93,3,Chengalpattu - Kancheepuram Highway,12.8180719,79.7326585,7
+BUS_93,4,Chengalpattu - Kancheepuram Highway,12.8206376,79.7180123,6
+BUS_94,1,Grand Southern Trunk Road,12.7430501,79.9923106,2
+BUS_95,1,Narayana Guru Salai,13.088607,80.2635124,10
+BUS_95,2,Purasawalkam High Road,13.0859571,80.2555208,11
+BUS_95,3,Strahans Road,13.0977799,80.2528422,14
+BUS_95,4,Unnamed secondary Road,13.1084685,80.2502219,10
+BUS_96,1,Thirumazhisai - Thiruvallur - Uthukottai Road,13.0712691,80.0330817,2
+BUS_97,1,ORR Service Road,12.9005398,80.0710662,3
+BUS_97,2,Unnamed primary Road,12.8863302,80.0793426,5
+BUS_98,1,Korattur – Thinnanur – Periyapalayam Road,13.094362,80.0066645,5
+BUS_99,1,Thirumazhisai - Thiruvallur - Uthukottai Road,13.1580761,79.8899642,2
+BUS_100,1,Singaperumalkoil - Sriperumbudur - Thiruvallur - Red Hills Road,13.0559984,79.9127309,2
+BUS_101,1,Chennai – Pulicut Road,13.2989391,80.1558252,2
+BUS_102,1,Poonamallee - Kundrathur - Pallavaram Road,13.029265,80.1112467,10
+BUS_102,2,Kodambakkam – Sriperumbudur Road,13.0097107,80.1211656,12
+BUS_102,3,Chennai Bypass Expressway,13.0151619,80.1299135,6
+BUS_103,1,Mount - Poonamallee - Avadi Road,13.0281033,80.17086,7
+BUS_103,2,Manapakkam Main Road,13.0131711,80.1715601,5
+BUS_103,3,Valluvar Salai,13.0254551,80.1831086,9
+BUS_103,4,Arcot Road,13.040935,80.1730794,24
+BUS_104,1,Unnamed secondary Road,12.8896379,80.1396313,3
+BUS_105,1,Grand Southern Trunk Road,12.8101756,80.0298912,4
+BUS_105,2,Grand Southern Trunk Road,12.798914,80.0227695,3
+BUS_106,1,NH48,12.9006877,79.4603333,2
+BUS_107,1,Marmalong Bridge - Irumbuliyur - Vandalur - Mudichur - Oragadam - Walajabad Road,12.8880479,80.026835,3
+BUS_108,1,Sadras - Chengalpattu - Kancheepuram - Arakkonam - Tiruthani Road,12.9895108,79.6765006,2
+BUS_109,1,Thandalam - Perambakkam - Thakkolam - Arugilpadi Road,13.0299327,79.8278725,2
+BUS_109,2,Thandalam - Perambakkam - Thakkolam - Arugilpadi Road,13.0356667,79.8153941,3
+BUS_110,1,Kodambakkam – Sriperumbudur Road,12.9770792,80.0513148,2
+BUS_111,1,Kancheepuram - Vandavasi Road,12.7494339,79.6754962,2
+BUS_112,1,Medavakkam - Mambakkam - Sembakkam Road,12.8874935,80.1731108,2
+BUS_113,1,Kamarajar Salai,13.0377577,80.2783566,11

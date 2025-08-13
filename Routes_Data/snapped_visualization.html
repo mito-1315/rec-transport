@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Stop Centroids Visualization</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+        .info-window {
+            max-width: 300px;
+        }
+        .legend {
+            background: white;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            position: absolute;
+            bottom: 30px;
+            right: 10px;
+            z-index: 1000;
+        }
+        .legend-item {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .legend-line {
+            width: 20px;
+            height: 3px;
+            margin-right: 5px;
+            display: inline-block;
+        }
+        .cluster-stats {
+            background: white;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            max-height: 300px;
+            overflow-y: auto;
+            width: 250px;
+        }
+        .cluster-item {
+            border-bottom: 1px solid #eee;
+            padding: 5px 0;
+            cursor: pointer;
+        }
+        .cluster-item:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="legend">
+        <h3>Legend</h3>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: red;"></div>
+            <span>Original Centroid</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: blue;"></div>
+            <span>Snapped Centroid</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: green;"></div>
+            <span>Student Location</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-line" style="background-color: black;"></div>
+            <span>Connection</span>
+        </div>
+    </div>
+    <div class="cluster-stats" id="cluster-stats">
+        <h3>Cluster Statistics</h3>
+        <div id="cluster-list"></div>
+    </div>
+
+    <script>
+        // Data structures to hold our CSV data
+        let snappedCentroids = [];
+        let centroids = [];
+        let studentAssignments = [];
+        
+        // Colors for different clusters
+        const clusterColors = ['#FF4136', '#2ECC40', '#0074D9', '#B10DC9', '#FF851B', '#7FDBFF', '#F012BE'];
+        
+        // Parse CSV data
+        function parseCSV(csv) {
+            const lines = csv.trim().split('\n');
+            const headers = lines[0].split(',');
+            
+            return lines.slice(1).map(line => {
+                const values = line.split(',');
+                const obj = {};
+                
+                headers.forEach((header, i) => {
+                    // Try to convert to number if possible
+                    const value = values[i];
+                    obj[header] = isNaN(value) ? value : Number(value);
+                });
+                
+                return obj;
+            });
+        }
+        
+        // Initialize the map and load data
+        function initMap() {
+            // Create the map
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: {lat: 13.0, lng: 80.0}, // Will be adjusted based on data
+                mapTypeId: 'roadmap'
+            });
+
+            const fs = require('fs');
+            const snappedCentroids = fs.readFileSync('Routes_Data/Friday/3_pm/3_pm_centroids_snapped.csv', 'utf8');
+            const centroids = fs.readFileSync('Routes_Data/Friday/3_pm/3_pm_centroids.csv', 'utf8');
+            const studentAssignments = fs.readFileSync('Routes_Data/Friday/3_pm/3_pm_student_assignments.csv', 'utf8');
+
+            snappedCentroids = parseCSV(snappedCentroids);
+            centroids = parseCSV(centroids);
+            studentAssignments = parseCSV(studentAssignments);
+            
+            
+            
+            // Calculate bounds to fit all points
+            const bounds = new google.maps.LatLngBounds();
+            
+            // Group students by cluster
+            const studentsByCluster = {};
+            studentAssignments.forEach(student => {
+                const clusterId = student.cluster_id;
+                if (!studentsByCluster[clusterId]) {
+                    studentsByCluster[clusterId] = [];
+                }
+                studentsByCluster[clusterId].push(student);
+            });
+            
+            // Process each cluster
+            snappedCentroids.forEach((snapped, index) => {
+                const clusterId = snapped.cluster_number;
+                const color = clusterColors[clusterId % clusterColors.length];
+                
+                // Original centroid position
+                const originalPos = {
+                    lat: snapped.original_lat,
+                    lng: snapped.original_lon
+                };
+                
+                // Snapped centroid position
+                const snappedPos = {
+                    lat: snapped.snapped_lat,
+                    lng: snapped.snapped_lon
+                };
+                
+                // Add to bounds
+                bounds.extend(originalPos);
+                bounds.extend(snappedPos);
+                
+                // Create marker for original centroid
+                const originalMarker = new google.maps.Marker({
+                    position: originalPos,
+                    map: map,
+                    title: `Original Centroid (Cluster ${clusterId})`,
+                    icon: {
+                        path: google.maps.SymbolPath.CIRCLE,
+                        scale: 8,
+                        fillColor: "red",
+                        fillOpacity: 0.8,
+                        strokeWeight: 1,
+                        strokeColor: "white"
+                    }
+                });
+                
+                // Create info window for original centroid
+                const originalInfo = new google.maps.InfoWindow({
+                    content: `<div class="info-window">
+                        <h3>Original Centroid (Cluster ${clusterId})</h3>
+                        <p><strong>Route:</strong> ${snapped.route_name}</p>
+                        <p><strong>Type:</strong> ${snapped.route_type}</p>
+                        <p><strong>Students:</strong> ${snapped.num_students}</p>
+                        <p><strong>Position:</strong> ${snapped.original_lat.toFixed(6)}, ${snapped.original_lon.toFixed(6)}</p>
+                    </div>`
+                });
+                
+                originalMarker.addListener('click', () => {
+                    originalInfo.open(map, originalMarker);
+                });
+                
+                // Create marker for snapped centroid
+                const snappedMarker = new google.maps.Marker({
+                    position: snappedPos,
+                    map: map,
+                    title: `Snapped Centroid (Cluster ${clusterId})`,
+                    icon: {
+                        path: google.maps.SymbolPath.CIRCLE,
+                        scale: 8,
+                        fillColor: "blue",
+                        fillOpacity: 0.8,
+                        strokeWeight: 1,
+                        strokeColor: "white"
+                    }
+                });
+                
+                // Create info window for snapped centroid
+                const snappedInfo = new google.maps.InfoWindow({
+                    content: `<div class="info-window">
+                        <h3>Snapped Centroid (Cluster ${clusterId})</h3>
+                        <p><strong>Route:</strong> ${snapped.route_name}</p>
+                        <p><strong>Type:</strong> ${snapped.route_type}</p>
+                        <p><strong>Students:</strong> ${snapped.num_students}</p>
+                        <p><strong>Position:</strong> ${snapped.snapped_lat.toFixed(6)}, ${snapped.snapped_lon.toFixed(6)}</p>
+                        <p><strong>Snap Distance:</strong> ${snapped.snap_distance_meters.toFixed(2)} meters</p>
+                    </div>`
+                });
+                
+                snappedMarker.addListener('click', () => {
+                    snappedInfo.open(map, snappedMarker);
+                });
+                
+                // Draw line between original and snapped
+                const snapLine = new google.maps.Polyline({
+                    path: [originalPos, snappedPos],
+                    geodesic: true,
+                    strokeColor: '#000000',
+                    strokeOpacity: 0.8,
+                    strokeWeight: 2
+                });
+                
+                snapLine.setMap(map);
+                
+                // Add students for this cluster
+                const students = studentsByCluster[clusterId] || [];
+                students.forEach(student => {
+                    const studentPos = {
+                        lat: student.student_lat,
+                        lng: student.student_lon
+                    };
+                    
+                    // Add to bounds
+                    bounds.extend(studentPos);
+                    
+                    // Create marker for student
+                    const studentMarker = new google.maps.Marker({
+                        position: studentPos,
+                        map: map,
+                        title: `Student: ${student.email}`,
+                        icon: {
+                            path: google.maps.SymbolPath.CIRCLE,
+                            scale: 6,
+                            fillColor: "green",
+                            fillOpacity: 0.6,
+                            strokeWeight: 1,
+                            strokeColor: "white"
+                        }
+                    });
+                    
+                    // Create info window for student
+                    const studentInfo = new google.maps.InfoWindow({
+                        content: `<div class="info-window">
+                            <h3>Student Information</h3>
+                            <p><strong>ID:</strong> ${student.user}</p>
+                            <p><strong>Email:</strong> ${student.email}</p>
+                            <p><strong>Department:</strong> ${student.department}</p>
+                            <p><strong>Distance to Stop:</strong> ${student.road_distance_km.toFixed(2)} km</p>
+                            <p><strong>Within Distance Limit:</strong> ${student.within_distance_limit}</p>
+                            <p><strong>Assigned Cluster:</strong> ${student.cluster_id}</p>
+                        </div>`
+                    });
+                    
+                    studentMarker.addListener('click', () => {
+                        studentInfo.open(map, studentMarker);
+                    });
+                    
+                    // Draw line from student to snapped centroid
+                    const studentLine = new google.maps.Polyline({
+                        path: [studentPos, snappedPos],
+                        geodesic: true,
+                        strokeColor: color,
+                        strokeOpacity: 0.5,
+                        strokeWeight: 1
+                    });
+                    
+                    studentLine.setMap(map);
+                });
+            });
+            
+            // Fit map to bounds
+            map.fitBounds(bounds);
+            
+            // Populate cluster stats
+            populateClusterStats(map);
+        }
+        
+        // Populate the cluster statistics sidebar
+        function populateClusterStats(map) {
+            const clusterList = document.getElementById('cluster-list');
+            
+            // Merge data for comprehensive cluster info
+            const mergedClusters = centroids.map(centroid => {
+                const clusterId = centroid.cluster_id;
+                const snapped = snappedCentroids.find(s => s.cluster_number === clusterId);
+                
+                return {
+                    id: clusterId,
+                    original: {
+                        lat: centroid.centroid_lat,
+                        lng: centroid.centroid_lon
+                    },
+                    snapped: snapped ? {
+                        lat: snapped.snapped_lat,
+                        lng: snapped.snapped_lon,
+                        route: snapped.route_name,
+                        type: snapped.route_type,
+                        snap_distance: snapped.snap_distance_meters
+                    } : null,
+                    students: centroid.student_count,
+                    avg_distance: centroid.avg_distance,
+                    max_distance: centroid.max_distance,
+                    reachability: centroid.reachability_percentage
+                };
+            });
+            
+            mergedClusters.forEach(cluster => {
+                const div = document.createElement('div');
+                div.className = 'cluster-item';
+                div.innerHTML = `
+                    <strong>Cluster ${cluster.id}</strong><br>
+                    Students: ${cluster.students}<br>
+                    Avg Distance: ${cluster.avg_distance.toFixed(2)} km<br>
+                    Reachability: ${cluster.reachability.toFixed(2)}%
+                `;
+                
+                // Click to center map on this cluster
+                div.addEventListener('click', () => {
+                    if (cluster.snapped) {
+                        map.setCenter(cluster.snapped);
+                        map.setZoom(15);
+                    } else {
+                        map.setCenter(cluster.original);
+                        map.setZoom(15);
+                    }
+                });
+                
+                clusterList.appendChild(div);
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiVn2TbI7qSuTzw1EKvY4urq7V5aTZkZg&callback=initMap">
+    </script>
+</body>
+</html>

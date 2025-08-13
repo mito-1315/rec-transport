@@ -1,0 +1,4 @@
+cluster_number,original_lat,original_lon,snapped_lat,snapped_lon,route_name,route_type,route_id,snap_distance_meters,num_students
+13,12.656962384710594,79.54220591272066,12.6808598,79.5708042,Kancheepuram - Thiruvathipuram Road,arterial,687854973,4084.97,3
+19,12.986911489693725,80.20787858650718,12.9935659,80.2012362,Mount - Medavakkam Road,arterial,361730132,1032.22,6
+43,12.977965970017475,80.18335704563405,12.9746954,80.1922118,Mount - Medavakkam Road,arterial,179253495,1026.07,7

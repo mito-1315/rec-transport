@@ -1,0 +1,3 @@
+cluster_number,original_lat,original_lon,snapped_lat,snapped_lon,route_name,route_type,route_id,snap_distance_meters,num_students
+2,12.946686768405836,80.14863726325292,12.9525109,80.1411974,Grand Southern Trunk Road,arterial,1237149197,1034.13,2
+27,12.793207165577854,80.03296901329344,12.7996403,80.0232521,Grand Southern Trunk Road,highway,95222417,1273.52,2

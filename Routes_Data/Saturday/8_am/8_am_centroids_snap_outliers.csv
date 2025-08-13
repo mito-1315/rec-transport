@@ -1,0 +1,6 @@
+cluster_number,original_lat,original_lon,snapped_lat,snapped_lon,route_name,route_type,route_id,snap_distance_meters,num_students
+13,12.939104966841052,80.14835607751337,12.9465623,80.1366393,Grand Southern Trunk Road,arterial,95641243,1516.53,10
+15,12.666385258002936,79.54009220835655,12.6808598,79.5708042,Kancheepuram - Thiruvathipuram Road,arterial,687854973,3700.2,3
+17,13.11128885,79.4256513,13.1649857,79.4372602,Chittoor - Tiruttani Road,arterial,84658009,6101.71,2
+76,13.0086519,79.84087869999999,13.0141737,79.8509073,Walajabad - Sunguvarchathiram - Keelachery Road,arterial,1270620082,1247.99,2
+88,12.85955947947634,80.0410119549998,12.842294,80.0578848,Grand Southern Trunk Road,highway,1230246874,2651.73,3

@@ -1,0 +1,6 @@
+cluster_number,original_lat,original_lon,snapped_lat,snapped_lon,route_name,route_type,route_id,snap_distance_meters,num_students
+2,12.907266154542048,80.1559103615953,12.9084595,80.1428217,Camp Salai,arterial,726604161,1424.81,2
+16,12.666536794512504,79.54095565946109,12.6808598,79.5708042,Kancheepuram - Thiruvathipuram Road,arterial,687854973,3608.61,4
+62,12.94247965334454,80.15432246507066,12.9548561,80.1568884,Pallavaram - Thoraipakkam Road,arterial,864059071,1404.01,5
+78,13.0611622,80.0199562,13.0719827,80.0323813,Thirumazhisai - Thiruvallur - Uthukottai Road,arterial,827608978,1805.25,2
+96,13.3425842,80.2209773,13.3406488,80.1968868,Chennai – Pulicat Road,arterial,29310651,2615.32,2

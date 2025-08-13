@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "busroutes",
+			"path": "../bus-routes-opti/busroutes"
+		},
+		{
+			"name": "rec-transport",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "rec-transport"
+	}
+}
